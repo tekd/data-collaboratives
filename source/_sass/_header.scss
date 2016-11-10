@@ -1,0 +1,20 @@
+.top-section {
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  .gov-logo {
+    padding-top: 12%;
+    padding-bottom: 20px;
+    width: 10%;
+  }
+
+  .logo {
+    padding-top: 10%;
+  }
+
+  .data-collab-img {
+    margin-top: -50px;
+    width: 55%;
+  }
+}
