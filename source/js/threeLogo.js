@@ -4,7 +4,7 @@ var camera = new THREE.PerspectiveCamera(80,1,1,1000);
 var scene = new THREE.Scene();
 
 scene.add(camera);
-renderer.setSize(300, 300);
+renderer.setSize(250, 250);
 $container.append(renderer.domElement);
 
 ///////////////////////////////////////////////
