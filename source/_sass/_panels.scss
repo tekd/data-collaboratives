@@ -1,0 +1,33 @@
+.page-section {
+  padding: 0;
+
+  .column {
+    text-align: center;
+    height: 700px!important;
+    margin: 0;
+    display: inline;
+    padding: 0;
+    height: 100%;
+
+    &--yellow {
+      background-color: $yellow;
+      color: $gray;
+    }
+
+    &--gray {
+      background-color: $gray;
+      color: white;
+    }
+  }
+
+  p {
+    padding: 100px;
+    // padding-top: 150px;
+  }
+
+  .first-panel {
+    text-align: right!important;
+    font-size: 1.6rem;
+  }
+
+}
