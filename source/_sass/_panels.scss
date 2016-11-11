@@ -1,4 +1,4 @@
-.page-section {
+.first-section {
   padding: 0;
 
   .column {
@@ -8,6 +8,10 @@
     display: inline;
     padding: 0;
     height: 100%;
+
+    // @include breakpoint($large) {
+    //   height: 700px!important;
+    // }
 
     &--yellow {
       background-color: $yellow;
@@ -22,6 +26,7 @@
 
   p {
     padding: 100px;
+    margin: 0;
     // padding-top: 150px;
   }
 
@@ -30,9 +35,20 @@
     font-size: 1.6rem;
   }
 
+  .second-panel {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
   .first-panel-logo {
     width: 30%;
     padding-right: 100px;
   }
+}
 
+.second-section {
+  background: url(../images/temporary.png) no-repeat center center;
+  background-size: cover;
+  padding: 0;
+  height: 700px;
 }
