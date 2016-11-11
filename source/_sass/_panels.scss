@@ -26,8 +26,13 @@
   }
 
   .first-panel {
-    text-align: right!important;
+    text-align: right;
     font-size: 1.6rem;
+  }
+
+  .first-panel-logo {
+    width: 30%;
+    padding-right: 100px;
   }
 
 }
