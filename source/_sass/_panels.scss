@@ -1,4 +1,4 @@
-.first-section {
+.page-section {
   padding: 0;
 
   .column {
@@ -18,16 +18,25 @@
       color: $gray;
     }
 
+    &--yellow-opaque {
+      background-color: $yellow;
+      opacity: 0.9;
+      color: $gray;
+    }
+
     &--gray {
       background-color: $gray;
       color: white;
+    }
+
+    &--transparent {
+      display: none;
     }
   }
 
   p {
     padding: 100px;
     margin: 0;
-    // padding-top: 150px;
   }
 
   .first-panel {
@@ -44,11 +53,46 @@
     width: 30%;
     padding-right: 100px;
   }
+
+
+
+  &__background-img {
+    background: url(../images/temporary.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  .right-panel {
+    text-align: left;
+    // padding: 100px;
+
+    h5 {
+      margin: 0;
+      padding: 100px;
+      padding-bottom: 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      padding-bottom: 0;
+      padding-top: 15px;
+      margin: 0;
+
+    }
+  }
+
 }
 
-.second-section {
-  background: url(../images/temporary.png) no-repeat center center;
-  background-size: cover;
-  padding: 0;
-  height: 700px;
-}
+// .second-section {
+//   background: url(../images/temporary.png) no-repeat center center;
+//   background-size: cover;
+//   padding: 0;
+//   height: 700px;
+//
+//   .column {
+//
+//     &--yellow {
+//
+//     }
+//   }
+// }
