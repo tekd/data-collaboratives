@@ -1,46 +1,26 @@
 .page-section {
   padding: 0;
+}
 
-  .column {
-
-
-    &--yellow-opaque {
-      background-color: $yellow;
-      opacity: 0.9;
-      color: $gray;
-    }
-
-
-    &--transparent {
-      display: none;
-    }
-  }
-
-
-
-
-  &__background-img {
+.dual-panel {
+  &--img-bg {
     background: url(../images/temporary.png) no-repeat center center;
     background-size: cover;
   }
 
-  // .right-panel {
-  //   text-align: left;
-    // padding: 100px;
-
-    h5 {
-      margin: 0;
-      padding: 100px;
-      padding-bottom: 0;
-      font-size: 1.2rem;
-    }
-
-}
-
-.dual-panel {
   &__p {
+    padding-top: 150px!important;
     padding: 100px;
     margin: 0;
+
+    &--mod {
+      padding-right: 100px;
+      padding-left: 100px;
+
+      &--last {
+        padding-bottom: 200px;
+      }
+    }
   }
 
   &__first-panel {
@@ -55,6 +35,10 @@
       padding-bottom: 100px;
       padding-top: 100px;
     }
+
+    &--transparet {
+      display: none;
+    }
   }
 
   &__second-panel {
@@ -63,7 +47,21 @@
     color: white;
     font-size: 1.2rem;
     text-align: left;
+
+    &--yellow-opaque {
+      background-color: $yellow;
+      opacity: 0.9;
+      color: $gray;
+      height: 100%;
+    }
   }
+
+  h5 {
+    margin: 0;
+    padding-top: 150px;
+    padding-left: 100px;
+  }
+
 }
 
 .divider {
