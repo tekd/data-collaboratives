@@ -36,7 +36,7 @@
       padding-top: 100px;
     }
 
-    &--transparet {
+    &--transparent {
       display: none;
     }
   }
@@ -74,5 +74,52 @@
 
   &--main-color-darker {
     background-color: darken($main-color, 4) !important;
+  }
+
+  &--gray {
+    background-color: $gray;
+    color: white;
+  }
+
+  &--yellow {
+    background-color: $main-color;
+    color: $gray;
+  }
+
+  &__h5 {
+    padding: 20px;
+  }
+
+  &__p {
+    padding: 20px 300px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.grid {
+  text-align: center;
+  margin: 0;
+
+  &__section {
+    height: 100%;
+
+    &--gray {
+      background-color: lighten($gray, 90%);
+    }
+    //add breakpoint that uses nth child on small
+  }
+
+  &__header {
+    margin: 0;
+    padding-top: 40px;
+    font-weight: 600;
+    color: $gray;
+  }
+
+  &__subheading {
+    padding: 10px 100px 40px;
+    margin: 0;
   }
 }
