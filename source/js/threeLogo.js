@@ -14,7 +14,7 @@ camera.position.z = 200;
 
 // Material
 var pinkMat = new THREE.MeshPhongMaterial({
-  color      :  new THREE.Color("rgb(250,237,50)"),
+  color      :  new THREE.Color("#e5c810"),
   emissive   :  new THREE.Color("rgb(50,50,50)"),
   specular   :  new THREE.Color("rgb(250,237,50)"),
   shininess  :  80,
@@ -50,9 +50,9 @@ Ico.rotation.z = 2;
 scene.add(Ico);
 
 function update(){
-  Ico.rotation.x+=2/100;
-  Ico.rotation.y+=2/100;
-  Ico.rotation.z+=2/100;
+  Ico.rotation.x+=1/400;
+  Ico.rotation.y+=1/120;
+  // Ico.rotation.z+=2/100;
 }
 
 // Render
