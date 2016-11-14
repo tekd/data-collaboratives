@@ -81,9 +81,43 @@
     color: white;
   }
 
+  &--yellow {
+    background-color: $main-color;
+    color: $gray;
+  }
+
+  &__h5 {
+    padding: 20px;
+  }
+
   &__p {
-    padding: 200px;
-    font-size: 2.2rem;
+    padding: 20px 300px 20px;
+    font-weight: 600;
+    font-size: 1rem;
     text-align: center;
+  }
+}
+
+.grid {
+  text-align: center;
+  margin: 0;
+
+  &__section {
+    height: 100%;
+
+    &--gray {
+      background-color: lighten($gray, 90%);
+    }
+  }
+
+  &__header {
+    margin: 0;
+    padding-top: 40px;
+    font-weight: 600;
+    color: $gray;
+  }
+
+  &__subheading {
+    padding: 10px 100px 40px;
   }
 }
