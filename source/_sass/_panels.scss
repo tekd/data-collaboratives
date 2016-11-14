@@ -36,7 +36,7 @@
       padding-top: 100px;
     }
 
-    &--transparet {
+    &--transparent {
       display: none;
     }
   }
@@ -74,5 +74,16 @@
 
   &--main-color-darker {
     background-color: darken($main-color, 4) !important;
+  }
+
+  &--gray {
+    background-color: $gray;
+    color: white;
+  }
+
+  &__p {
+    padding: 200px;
+    font-size: 2.2rem;
+    text-align: center;
   }
 }
