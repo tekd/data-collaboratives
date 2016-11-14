@@ -3,17 +3,15 @@
     background-color: $yellow;
   }
 
-  .gov-logo {
-    padding-top: 14%;
-    padding-bottom: 20px;
-    width: 10%;
+  &--logo {
+    padding-bottom: 130px;
   }
 
-  .logo {
+  &__logo {
     padding-top: 12%;
   }
 
-  .data-collab-img {
+  &__main-img {
     margin-top: -50px;
     width: 55%;
   }
