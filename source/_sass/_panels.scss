@@ -108,6 +108,7 @@
     &--gray {
       background-color: lighten($gray, 90%);
     }
+    //add breakpoint that uses nth child on small
   }
 
   &__header {
@@ -119,5 +120,6 @@
 
   &__subheading {
     padding: 10px 100px 40px;
+    margin: 0;
   }
 }
