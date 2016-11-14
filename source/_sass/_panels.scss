@@ -2,16 +2,7 @@
   padding: 0;
 
   .column {
-    text-align: center;
-    height: 700px!important;
-    margin: 0;
-    display: inline;
-    padding: 0;
-    height: 100%;
 
-    // @include breakpoint($large) {
-    //   height: 700px!important;
-    // }
 
     &--yellow {
       background-color: $yellow;
@@ -80,19 +71,17 @@
 
     }
   }
-
 }
 
-// .second-section {
-//   background: url(../images/temporary.png) no-repeat center center;
-//   background-size: cover;
-//   padding: 0;
-//   height: 700px;
-//
-//   .column {
-//
-//     &--yellow {
-//
-//     }
-//   }
-// }
+.divider {
+  &--logo {
+    h2 { text-align: center; }
+    img {
+      max-width: 200px;
+    }
+  }
+
+  &--main-color-darker {
+    background-color: darken($main-color, 4) !important;
+  }
+}
