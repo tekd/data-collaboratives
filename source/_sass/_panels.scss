@@ -4,46 +4,18 @@
   .column {
 
 
-    &--yellow {
-      background-color: $yellow;
-      color: $gray;
-    }
-
     &--yellow-opaque {
       background-color: $yellow;
       opacity: 0.9;
       color: $gray;
     }
 
-    &--gray {
-      background-color: $gray;
-      color: white;
-    }
 
     &--transparent {
       display: none;
     }
   }
 
-  p {
-    padding: 100px;
-    margin: 0;
-  }
-
-  .first-panel {
-    text-align: right;
-    font-size: 1.6rem;
-  }
-
-  .second-panel {
-    text-align: left;
-    font-size: 1.2rem;
-  }
-
-  .first-panel-logo {
-    width: 30%;
-    padding-right: 100px;
-  }
 
 
 
@@ -52,8 +24,8 @@
     background-size: cover;
   }
 
-  .right-panel {
-    text-align: left;
+  // .right-panel {
+  //   text-align: left;
     // padding: 100px;
 
     h5 {
@@ -63,13 +35,34 @@
       font-size: 1.2rem;
     }
 
-    p {
-      font-size: 1rem;
-      padding-bottom: 0;
-      padding-top: 15px;
-      margin: 0;
+}
 
+.dual-panel {
+  &__p {
+    padding: 100px;
+    margin: 0;
+  }
+
+  &__first-panel {
+    background-color: $main-color;
+    color: $gray;
+    font-size: 1.7rem;
+    text-align: right;
+
+    &__logo {
+      width: 30%;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      padding-top: 100px;
     }
+  }
+
+  &__second-panel {
+    height: 100%;
+    background-color: $gray;
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
   }
 }
 
