@@ -25,9 +25,9 @@ gulp.task('image', function () {
     .pipe(gulp.dest('_site/images'));
 });
 
-gulp.task('vendor', function () {
-  return gulp.src('source/vendor/**/*')
-    .pipe(gulp.dest('_site/vendor'));
+gulp.task('scripts', function () {
+  return gulp.src('source/scripts/**/*')
+    .pipe(gulp.dest('_site/scripts'));
 });
 
 gulp.task('push-gh-master', shell.task(['git push origin master']));
@@ -40,7 +40,7 @@ gulp.task('push-gh-pages', function () {
 gulp.task('deploy', function (callback) {
   runSequence(
     'image',
-    'vendor',
+    'scripts',
     'push-gh-master',
     'push-gh-pages',
     callback
