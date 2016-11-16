@@ -1,6 +1,15 @@
 ---
 ---
 
+$small-only: (max-width 40em);
+$medium: 40.063em 64em;
+$large: 64.063em 90em;
+
+$yellow: #e5c810;
+$main-color: $yellow;
+$gray: rgba(black, 0.7);
+
+@import 'breakpoint';
 @import 'custom_styles';
 @import 'base';
 @import 'header';

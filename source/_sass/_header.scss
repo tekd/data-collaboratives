@@ -14,5 +14,8 @@
   &__main-img {
     margin-top: -50px;
     width: 55%;
+    @include breakpoint($small-only) {
+      width: 90%;
+    }
   }
 }

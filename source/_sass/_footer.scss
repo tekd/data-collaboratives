@@ -3,6 +3,9 @@
   height: 600px;
   padding: 0;
   position: relative;
+  @include breakpoint($small-only) {
+    height: 400px;
+  }
 
   &--darken {
     background-color: darken($main-color, 4) !important;
@@ -11,14 +14,15 @@
   }
 
   &__icons {
-    color: white;
     position: absolute;
     right: 50px;
     bottom: 50px;
 
-    // @include breakpoint($small-only) {
-    //   color: red;
-    // }
+    @include breakpoint($small-only) {
+      position: relative;
+      left: 20px;
+      top: 170px;
+    }
   }
 
   &__partner-logo {
