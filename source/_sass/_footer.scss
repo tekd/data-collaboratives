@@ -11,14 +11,15 @@
   }
 
   &__icons {
-    color: white;
     position: absolute;
     right: 50px;
     bottom: 50px;
 
-    // @include breakpoint($small-only) {
-    //   color: red;
-    // }
+    @include breakpoint($small-only) {
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+    }
   }
 
   &__partner-logo {
