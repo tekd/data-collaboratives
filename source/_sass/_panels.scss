@@ -3,7 +3,7 @@
 }
 
 .dual-panel {
-  position:relative;
+  // position:relative;
 
   &--img-bg {
     background: url(../images/temporary.png) no-repeat center center;
@@ -14,6 +14,11 @@
     padding-top: 150px!important;
     padding: 100px;
     margin: 0;
+    @include breakpoint($small-only) {
+      font-size: 1.2rem;
+      padding: 30px;
+      padding-top: 50px!important;
+    }
 
     &--mod {
       padding-right: 100px;
@@ -26,6 +31,7 @@
   }
 
   &__first-panel {
+    // width: 100%!important;
     background-color: $main-color;
     color: $gray;
     font-size: 1.7rem;
@@ -36,6 +42,11 @@
       padding-right: 100px;
       padding-bottom: 100px;
       padding-top: 100px;
+      @include breakpoint($small-only) {
+        padding-right: 15px;
+        padding-top: 40px;
+        width: 35%;
+      }
     }
 
     &--transparent {
@@ -44,8 +55,8 @@
   }
 
   &__second-panel {
-    position: absolute;
     height: 100%!important;
+    // width: 100%!important;
     background-color: $gray;
     color: white;
     font-size: 1.2rem;
@@ -91,6 +102,9 @@
 
   &__h5 {
     padding: 20px;
+    @include breakpoint($small-only) {
+      text-align: center;
+    }
   }
 
   &__p {
@@ -98,6 +112,9 @@
     font-weight: 600;
     font-size: 1rem;
     text-align: center;
+    @include breakpoint($small-only) {
+      padding: 20px 50px 20px;
+    }
   }
 }
 
@@ -111,7 +128,10 @@
     &--gray {
       background-color: lighten($gray, 90%);
     }
-    //add breakpoint that uses nth child on small
+
+    @include breakpoint($small-only) {
+
+    }
   }
 
   &__header {
@@ -124,5 +144,9 @@
   &__subheading {
     padding: 10px 100px 40px;
     margin: 0;
+    @include breakpoint($small-only) {
+      text-align: center;
+      padding: 20px 20px 40px;
+    }
   }
 }
