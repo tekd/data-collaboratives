@@ -15,13 +15,15 @@
     position: absolute;
     right: 50px;
     bottom: 50px;
+
+    // @include breakpoint($small-only) {
+    //   color: red;
+    // }
   }
 
   &__partner-logo {
     color: white;
     display: inline;
-
-
 
     img {
       opacity: 1;
