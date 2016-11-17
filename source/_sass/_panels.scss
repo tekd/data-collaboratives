@@ -62,6 +62,10 @@
     font-size: 1.2rem;
     text-align: left;
 
+    @include breakpoint($small-only) {
+      padding-bottom: 150px;
+    }
+
     &--yellow-opaque {
       background-color: $yellow;
       opacity: 0.9;
@@ -126,12 +130,17 @@
   &__section {
     height: 100%;
 
-    &--gray {
+    &--large-gray {
       background-color: lighten($gray, 90%);
+      @include breakpoint($small-only) {
+        background-color: white;
+      }
     }
 
-    @include breakpoint($small-only) {
-
+    &--small-gray {
+      @include breakpoint($small-only) {
+        background-color: lighten($gray, 90%);
+      }
     }
   }
 
@@ -143,11 +152,11 @@
   }
 
   &__subheading {
-    padding: 10px 100px 40px;
+    padding: 10px 100px 50px;
     margin: 0;
     @include breakpoint($small-only) {
       text-align: center;
-      padding: 20px 20px 40px;
+      padding: 20px 20px 50px;
     }
   }
 }
