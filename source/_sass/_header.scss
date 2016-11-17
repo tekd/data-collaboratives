@@ -14,8 +14,36 @@
   &__main-img {
     margin-top: -50px;
     width: 55%;
+    padding-bottom: 70px;
     @include breakpoint($small-only) {
       width: 90%;
+      padding-top: 50px;
+    }
+  }
+}
+
+.webgl {
+  .top-section {
+    &__backup-logo {
+      display: none;
+      // width: 150px;
+      // padding-bottom: 10%;
+      // padding-top: 15%;
+    }
+  }
+}
+
+.no-webgl {
+  .top-section {
+
+    &__logo {
+      display: none;
+    }
+
+    &__backup-logo {
+      width: 150px;
+      padding-bottom: 10%;
+      padding-top: 15%;
     }
   }
 }
