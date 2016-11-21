@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 
-email: 
+title:
+email:
 description: > # this means to ignore newlines until "baseurl:"
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
@@ -33,6 +33,13 @@ exclude:
 
 # Folder Structure
 source: ./source
+
 # sass_dir: source/css
 
-
+contentful:
+  spaces:
+    - cases: # Jekyll _data folder identifier - Required
+        space: aiyxen77s4uc         # Required
+        access_token: 19fe7171bb04c2c91672bd62917606d1603fdd0dd6a9e83fd29895f279cbd1f0
+        base_path: ./source         # Optional - Defaults to Current directory
+        destination: ./source/_data/contentful/spaces # Optional - Defaults to _data/contentful/spaces

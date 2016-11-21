@@ -1,0 +1,35 @@
+---
+datacollaborative:
+- sys:
+    id: 1Udt9yjeEIWS4OgcggacOQ
+  caseStudy: Test Study
+  sector: Economic-Development
+  sharedBy:
+  - Ena
+  sharedWith:
+  - Ani
+  region: North America
+  type: Prizes & Challenges
+  dataType:
+  - Observed Personal Data
+  link: http://google.com
+  whatDataShared: DATA
+  howDataShared: Stuff
+  purpose: Hello
+- sys:
+    id: 5OXK2l37ygQa04OYCIM2kk
+  caseStudy: Test Collab
+  sector: Agriculture
+  sharedBy:
+  - Ena
+  sharedWith:
+  - Anna
+  region: North America
+  type: Trusted Intermediaries
+  dataType:
+  - Disclosed Personal Data
+  - Disclosed Non-Personal Data
+  link: http://www.google.com
+  whatDataShared: Stuff
+  howDataShared: Interwebz
+  purpose: Share stuff

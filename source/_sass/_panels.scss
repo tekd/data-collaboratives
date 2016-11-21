@@ -1,5 +1,14 @@
 .page-section {
   padding: 0;
+
+  &--gray {
+    background-color: $gray;
+    color: white;
+  }
+
+  // &--gray-darken {
+  //   background-color: red!important;
+  // }
 }
 
 .dual-panel {
