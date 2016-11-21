@@ -1,0 +1,85 @@
+---
+layout: default
+company:
+- "GovLab"
+region:
+- "USA"
+- "Europe"
+- "Asia"
+sector:
+- "Health"
+- "Environment"
+- "Consumer"
+- "Food"
+---
+
+<div class="list-page">
+
+  <div class="top-bar top-bar--yellow">
+    <a class="top-bar__logo" href="/">
+      <img src="/images/govlab-logo-white.png" alt="The GovLab">
+    </a>
+  </div>
+
+  <div class="top-section top-section--yellow">
+    <h2>All Companies</h2>
+  </div>
+
+  <div class="page-section page-section--gray">
+    <div class="row align-center">
+      <h4>Filters</h4>
+    </div>
+
+    <div class="dropdown-wrapper">
+      <div class="row large-unstack">
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="company" class="dropdown-content">
+              <option id="all">Filter by Company</option>
+              {% for item in page.company%}
+              <option id="{{ item | slugify }}">{{item}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="region" class="dropdown-content">
+              <option id="all">Filter by Region</option>
+              {% for item in page.region%}
+              <option id="{{ item | slugify }}">{{item}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="sector" class="dropdown-content">
+              <option id="all">Filter by Sector</option>
+              {% for item in page.sector%}
+              <option id="{{ item | slugify }}">{{item}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="other" class="dropdown-content">
+              <option id="all">Filter by Other</option>
+              {% for item in page.other%}
+              <option id="{{ item | slugify }}">{{item}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>

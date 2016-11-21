@@ -1,5 +1,10 @@
 .page-section {
   padding: 0;
+
+  &--gray {
+    background-color: $gray;
+    color: white;
+  }
 }
 
 .dual-panel {

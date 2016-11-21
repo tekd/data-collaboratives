@@ -5,9 +5,9 @@ layout: default
 
 
   <section class="top-section top-section--yellow">
-    {% for item in site.data.contentful.spaces.cases.datacollaborative %}
       <div class="row">
         <div class="medium-12 column">
+          {% for item in site.data.contentful.spaces.cases.datacollaborative %}
           <h2>
             {{ item.caseStudy }}
           </h2>
