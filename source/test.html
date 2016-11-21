@@ -1,0 +1,32 @@
+---
+layout: default
+
+---
+
+
+  <section class="top-section top-section--yellow">
+    {% for item in site.data.contentful.spaces.cases.datacollaborative %}
+      <div class="row">
+        <div class="medium-12 column">
+          <h2>
+            {{ item.caseStudy }}
+          </h2>
+        </div>
+      </div>
+
+      {% if item.link %}
+        <a class="button" href="{{item.link}}">Visit Homepage</a>
+      {% endif %}
+
+    {% endfor %}
+  </section>
+
+  <section class="page-section">
+    <div class="row align-center">
+      <p>
+        hello
+      </p>
+
+    </div>
+
+  </section>
