@@ -17,6 +17,22 @@ datacollaborative:
   howDataShared: Stuff
   purpose: Hello
 - sys:
+    id: 1igKBJbKcKaguKWSAcI6sa
+  caseStudy: Serafina Case Study
+  sector: Various
+  sharedBy:
+  - Ena
+  sharedWith:
+  - Christopher Wong
+  region: South Asia
+  type: Prizes & Challenges
+  dataType:
+  - Disclosed Non-Personal Data
+  link: http://twitter.com
+  whatDataShared: Tweets
+  howDataShared: Twitter
+  purpose: To expose Serafina
+- sys:
     id: 5OXK2l37ygQa04OYCIM2kk
   caseStudy: Test Collab
   sector: Agriculture

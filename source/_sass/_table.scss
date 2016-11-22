@@ -1,0 +1,24 @@
+.dropdown-wrapper {
+
+}
+
+.table-section {
+  &__table {
+    margin: 0;
+
+
+    th {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding-left: 30px;
+      @include breakpoint($large) {
+        font-size: 1.1rem;
+      }
+    }
+
+    td {
+      padding-left: 30px;
+    }
+  }
+
+
+}

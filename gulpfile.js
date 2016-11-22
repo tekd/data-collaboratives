@@ -32,6 +32,8 @@ gulp.task('scripts', function () {
 
 gulp.task('push-gh-master', shell.task(['git push origin master']));
 
+gulp.task('import', shell.task(['bundle exec jekyll contentful --rebuild']));
+
 gulp.task('push-gh-pages', function () {
   return gulp.src('_site/**/*')
     .pipe(ghPages({ force: true }));

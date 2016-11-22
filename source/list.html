@@ -33,7 +33,7 @@ sector:
     <div class="dropdown-wrapper">
       <div class="row large-unstack">
 
-        <div class="columns">
+        <!-- <div class="columns">
           <div class="select" id=''>
             <select data-filter="company" class="dropdown-content">
               <option id="all">Filter by Company</option>
@@ -42,7 +42,7 @@ sector:
               {% endfor %}
             </select>
           </div>
-        </div>
+        </div> -->
 
         <div class="columns">
           <div class="select" id=''>
@@ -78,26 +78,41 @@ sector:
         </div>
       </div>
     </div>
-
-    <div class="page-section page-section--gray-darken">
-      <table class="">
-
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Region</th>
-            <th>Sector</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-
-        <tbody>
-
-        </tbody>
-
-      </table>
-    </div>
   </div>
+
+  <div class="table-section">
+    <table class="table-section__table">
+      <thead>
+        <tr>
+          <th>Case</th>
+          <th>Region</th>
+          <th>Sector</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          {% for item in site.data.contentful.spaces.cases.datacollaborative %}
+          <td>
+            <a href="{{item.link}}">{{ item.caseStudy }}</a>
+          </td>
+          <td>
+            {{ item.region }}
+          </td>
+          <td>
+            {{ item.sector }}
+          </td>
+          <td>
+            {{ item.type }}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+
+    </table>
+  </div>
+
 
 
 
