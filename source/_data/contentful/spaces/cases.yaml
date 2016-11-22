@@ -1,33 +1,17 @@
 ---
 datacollaborative:
 - sys:
-    id: 1Udt9yjeEIWS4OgcggacOQ
-  caseStudy: Test Study
-  sector: Economic-Development
-  sharedBy:
-  - Ena
-  sharedWith:
-  - Ani
-  region: North America
-  type: Prizes & Challenges
-  dataType:
-  - Observed Personal Data
-  link: http://google.com
-  whatDataShared: DATA
-  howDataShared: Stuff
-  purpose: Hello
-- sys:
     id: 1igKBJbKcKaguKWSAcI6sa
   caseStudy: Serafina Case Study
-  sector: Various
+  sector: Food
   sharedBy:
   - Ena
   sharedWith:
   - Christopher Wong
-  region: South Asia
-  type: Prizes & Challenges
+  region: North America
+  type: Trusted Intermediaries
   dataType:
-  - Disclosed Non-Personal Data
+  - Observed Non-Personal Data
   link: http://twitter.com
   whatDataShared: Tweets
   howDataShared: Twitter
@@ -49,3 +33,19 @@ datacollaborative:
   whatDataShared: Stuff
   howDataShared: Interwebz
   purpose: Share stuff
+- sys:
+    id: 1Udt9yjeEIWS4OgcggacOQ
+  caseStudy: Test Study
+  sector: Economic-Development
+  sharedBy:
+  - Ena
+  sharedWith:
+  - Ani
+  region: North America
+  type: Prizes & Challenges
+  dataType:
+  - Observed Personal Data
+  link: http://google.com
+  whatDataShared: DATA
+  howDataShared: Stuff
+  purpose: Hello
