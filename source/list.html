@@ -1,7 +1,8 @@
 ---
 layout: default
-company:
+case:
 - "GovLab"
+- "Yelp"
 region:
 - "USA"
 - "Europe"
@@ -11,11 +12,9 @@ sector:
 - "Environment"
 - "Consumer"
 - "Food"
-other:
-- "Fun"
-- "Boring"
-- "Boring but Cool"
-- "Fun but Expensive"
+type:
+- "Trusted Intermediaries"
+- "Prizes & Challenges"
 ---
 
 <div class="list-page">
@@ -37,17 +36,6 @@ other:
 
     <div class="dropdown-wrapper">
       <div class="row large-unstack">
-
-        <!-- <div class="columns">
-          <div class="select" id=''>
-            <select data-filter="company" class="dropdown-content">
-              <option id="all">Filter by Company</option>
-              {% for item in page.company%}
-              <option id="{{ item | slugify }}">{{item}}</option>
-              {% endfor %}
-            </select>
-          </div>
-        </div> -->
 
         <div class="columns">
           <div class="select" id=''>
@@ -74,41 +62,82 @@ other:
         <div class="columns">
           <div class="select" id=''>
             <select data-filter="other" class="dropdown-content">
-              <option id="all">Filter by Other</option>
-              {% for item in page.other%}
+              <option id="all">Filter by Type</option>
+              {% for item in page.type%}
               <option id="{{ item | slugify }}">{{item}}</option>
               {% endfor %}
             </select>
           </div>
         </div>
+        <div class="close clear_filters table-sortable__control table-sortable__control--simple">
+          <i class="material-icons">close</i>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="table-section">
-    <table class="table-section__table">
-      <thead>
-        <tr>
-          <th>Case</th>
-          <th>Region</th>
-          <th>Sector</th>
-          <th>Type</th>
-        </tr>
+
+
+  <div class="table-section" id="case_data">
+    <table class="table-sortable table-section__table">
+      <thead class="cases">
+
+        <th class="table-sortable__head-cell case__title">
+          <span>Case</span>
+
+          <div class="table-sortable__control-group">
+
+            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
+
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
+
+          </div>
+
+          <!-- <form class="table-sortable__search ">
+            <input id="company__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+            <button type="submit" class=""><i class="material-icons">close</i></button>
+          </form> -->
+
+        </th>
+
+        <th class="table-sortable__head-cell case__region">
+          <span>Region</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__region"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
+        <th class="table-sortable__head-cell case__sector">
+          <span>Sector</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__sector"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
+        <th class="table-sortable__head-cell case__type">
+          <span>Type</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__type"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
       </thead>
+
+
 
       <tbody>
         <tr>
           {% for item in site.data.contentful.spaces.cases.datacollaborative %}
-          <td>
+          <td case-name="{{item.caseStudy}}" class="case">
             <a href="{{item.link}}">{{ item.caseStudy }}</a>
           </td>
-          <td>
+          <td case-region="{{item.region}}" class="region">
             {{ item.region }}
           </td>
-          <td>
+          <td case-sector="{{item.sector}}" class="sector">
             {{ item.sector }}
           </td>
-          <td>
+          <td case-type="{{item.type}}" class="type">
             {{ item.type }}
           </td>
         </tr>
@@ -117,9 +146,6 @@ other:
 
     </table>
   </div>
-
-
-
 
 
 </div>

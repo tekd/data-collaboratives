@@ -12,7 +12,11 @@
 }
 
 .dual-panel {
-  // position:relative;
+  @include breakpoint($large) {
+    position: relative;
+  }
+
+
 
   &--img-bg {
     background: url(../images/temporary.png) no-repeat center center;
@@ -64,15 +68,19 @@
   }
 
   &__second-panel {
-    height: 100%!important;
-    // width: 100%!important;
+
     background-color: $gray;
+    height: 100%!important;
     color: white;
     font-size: 1.2rem;
     text-align: left;
 
     @include breakpoint($small-only) {
       padding-bottom: 150px;
+    }
+
+    @include breakpoint($large) {
+      position: absolute;
     }
 
     &--yellow-opaque {
