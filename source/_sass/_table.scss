@@ -33,6 +33,28 @@
       padding-left: 30px;
     }
   }
+}
 
+.table-sortable {
+  &__head-cell {
+    padding: 0;
+    position: relative;
 
+    span {
+      padding: 15px 0;
+      display: inline-block;
+    }
+  }
+
+  &__control {
+    i {
+      vertical-align: middle;
+    }
+  }
+
+  &__control-group {
+    float: right;
+    margin-right: 15px;
+    color: black;
+  }
 }
