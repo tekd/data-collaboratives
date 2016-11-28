@@ -8,6 +8,10 @@
     right: 0;
     padding: 8px;
   }
+
+  .select {
+    margin-bottom: 25px;
+  }
 }
 
 .table-section {
@@ -22,7 +26,7 @@
 
     th {
       background-color: rgba(0, 0, 0, 0.8);
-      padding-left: 30px;
+      padding-left: 50px;
 
       @include breakpoint($large) {
         font-size: 1.1rem;
@@ -30,15 +34,20 @@
     }
 
     td {
-      padding-left: 30px;
+      padding-left: 50px;
     }
   }
 }
 
 .table-sortable {
+
   &__head-cell {
     padding: 0;
     position: relative;
+
+    // @include breakpoint($small-only) {
+    //   display: none;
+    // }
 
     span {
       padding: 15px 0;
@@ -49,6 +58,7 @@
   &__control {
     i {
       vertical-align: middle;
+      // padding-right: 10px;
     }
   }
 

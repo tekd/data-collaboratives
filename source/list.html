@@ -37,17 +37,6 @@ type:
     <div class="dropdown-wrapper">
       <div class="row large-unstack">
 
-        <!-- <div class="columns">
-          <div class="select" id=''>
-            <select data-filter="case" class="dropdown-content">
-              <option id="all">Filter by Company</option>
-              {% for item in page.case%}
-              <option id="{{ item | slugify }}">{{item}}</option>
-              {% endfor %}
-            </select>
-          </div>
-        </div> -->
-
         <div class="columns">
           <div class="select" id=''>
             <select data-filter="region" class="dropdown-content">
@@ -109,7 +98,6 @@ type:
             <button type="submit" class=""><i class="material-icons">close</i></button>
           </form> -->
 
-
         </th>
 
         <th class="table-sortable__head-cell case__region">
@@ -140,16 +128,16 @@ type:
       <tbody>
         <tr>
           {% for item in site.data.contentful.spaces.cases.datacollaborative %}
-          <td>
+          <td case-name="{{item.caseStudy}}" class="case">
             <a href="{{item.link}}">{{ item.caseStudy }}</a>
           </td>
-          <td>
+          <td case-region="{{item.region}}" class="region">
             {{ item.region }}
           </td>
-          <td>
+          <td case-sector="{{item.sector}}" class="sector">
             {{ item.sector }}
           </td>
-          <td>
+          <td case-type="{{item.type}}" class="type">
             {{ item.type }}
           </td>
         </tr>
