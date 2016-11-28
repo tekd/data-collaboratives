@@ -1,5 +1,13 @@
 .dropdown-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
 
+  .clear_filters {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+  }
 }
 
 .table-section {

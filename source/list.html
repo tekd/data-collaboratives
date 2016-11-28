@@ -1,7 +1,8 @@
 ---
 layout: default
-company:
+case:
 - "GovLab"
+- "Yelp"
 region:
 - "USA"
 - "Europe"
@@ -11,11 +12,9 @@ sector:
 - "Environment"
 - "Consumer"
 - "Food"
-other:
-- "Fun"
-- "Boring"
-- "Boring but Cool"
-- "Fun but Expensive"
+type:
+- "Trusted Intermediaries"
+- "Prizes & Challenges"
 ---
 
 <div class="list-page">
@@ -40,9 +39,9 @@ other:
 
         <!-- <div class="columns">
           <div class="select" id=''>
-            <select data-filter="company" class="dropdown-content">
+            <select data-filter="case" class="dropdown-content">
               <option id="all">Filter by Company</option>
-              {% for item in page.company%}
+              {% for item in page.case%}
               <option id="{{ item | slugify }}">{{item}}</option>
               {% endfor %}
             </select>
@@ -74,27 +73,59 @@ other:
         <div class="columns">
           <div class="select" id=''>
             <select data-filter="other" class="dropdown-content">
-              <option id="all">Filter by Other</option>
-              {% for item in page.other%}
+              <option id="all">Filter by Type</option>
+              {% for item in page.type%}
               <option id="{{ item | slugify }}">{{item}}</option>
               {% endfor %}
             </select>
           </div>
         </div>
+        <div class="close clear_filters table-sortable__control table-sortable__control--simple">
+          <i class="material-icons">close</i>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="table-section">
-    <table class="table-section__table">
-      <thead>
+
+
+  <div class="table-section" id="case_data">
+    <table class="table-sortable table-section__table">
+      <!-- <thead class="cases">
         <tr>
           <th>Case</th>
           <th>Region</th>
           <th>Sector</th>
           <th>Type</th>
         </tr>
-      </thead>
+      </thead> -->
+      <th class="table-sortable__head-cell">&nbsp;</th>
+        <th class="table-sortable__head-cell case__name">
+          <span>Case</span>
+
+          <div class="table-sortable__control-group">
+
+            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__name--input"><i class="material-icons">search</i></span>
+
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__name"><i class="material-icons">keyboard_arrow_down</i></span>
+
+          </div>
+
+          <form class="table-sortable__search">
+            <input id="case__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+            <button type="submit" class=""><i class="material-icons">close</i></button>
+          </form>
+
+        </th>
+
+        <th class="table-sortable__head-cell case__category">
+          <span>Region</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__category"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
+
 
       <tbody>
         <tr>
@@ -117,9 +148,6 @@ other:
 
     </table>
   </div>
-
-
-
 
 
 </div>
