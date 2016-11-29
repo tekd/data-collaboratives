@@ -4,6 +4,10 @@
   }
 }
 
+.main-menu:not(.m-active) {
+  box-shadow: none;
+}
+
 .top-section {
   &--yellow {
     background-color: $yellow;
