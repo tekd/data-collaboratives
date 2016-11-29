@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title></title>
+
+    <link rel="stylesheet" href="scripts/foundation.min.css">
+    <link rel="stylesheet" href="scripts/styleguide-v2.css">
+    <link rel="stylesheet" href="scripts/slick.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.typekit.net/mvc3cdb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r58/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="scripts/list.fuzzysearch.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="top-bar top-bar--yellow">
+    <span class="top-bar__button js-trigger-menu">menu</span>
+    <nav class="main-menu js-target-menu main-menu--left">
+      <a href="#">WHAT (Coming Soon)<br><span class="bottom-nav-text">Data Collaboratives</span></a>
+      <a href="#">WHERE (Coming Soon)<br><span class="bottom-nav-text">Data Collaboratives Explorer</span></a>
+      <a href="#">HOW (Coming Soon)<br><span class="bottom-nav-text">Designing a Data Collaborative</span></a>
+      <a href="#">MORE (Coming Soon)<br><span class="bottom-nav-text">Additional Resources</span></a>
+    </nav>
+     <!-- <a class="top-bar__logo" href="./"><img src="images/govlab-logo-white.png" alt="The GovLab"></a> -->
+    <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
+    <nav class="main-menu js-target-menu main-menu--right">
+      <a href="#">Github Repository</a>
+      <a href="./sandbox.html">Sandbox</a>
+    </nav> -->
+  </header>
+
+
+    <div class="list-page">
+
+  <div class="top-bar top-bar--yellow">
+    <a class="top-bar__logo" href="/">
+      <img src="/images/govlab-logo-white.png" alt="The GovLab">
+    </a>
+  </div>
+
+  <div class="top-section top-section--yellow">
+    <h2>All Companies</h2>
+  </div>
+
+  <div class="page-section page-section--gray">
+    <div class="row align-center">
+      <h4>Filters</h4>
+    </div>
+
+    <div class="dropdown-wrapper">
+      <div class="row large-unstack">
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="region" class="dropdown-content">
+              <option id="all">Filter by Region</option>
+              
+              <option id="usa">USA</option>
+              
+              <option id="europe">Europe</option>
+              
+              <option id="asia">Asia</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="sector" class="dropdown-content">
+              <option id="all">Filter by Sector</option>
+              
+              <option id="health">Health</option>
+              
+              <option id="environment">Environment</option>
+              
+              <option id="consumer">Consumer</option>
+              
+              <option id="food">Food</option>
+              
+            </select>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="select" id=''>
+            <select data-filter="other" class="dropdown-content">
+              <option id="all">Filter by Type</option>
+              
+              <option id="trusted-intermediaries">Trusted Intermediaries</option>
+              
+              <option id="prizes-challenges">Prizes & Challenges</option>
+              
+            </select>
+          </div>
+        </div>
+        <div class="close clear_filters table-sortable__control table-sortable__control--simple">
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="table-section" id="case_data">
+    <table class="table-sortable table-section__table">
+      <thead class="cases">
+
+        <th class="table-sortable__head-cell case__title">
+          <span>Case</span>
+
+          <div class="table-sortable__control-group">
+
+            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
+
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
+
+          </div>
+
+          <!-- <form class="table-sortable__search ">
+            <input id="company__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+            <button type="submit" class=""><i class="material-icons">close</i></button>
+          </form> -->
+
+        </th>
+
+        <th class="table-sortable__head-cell case__region">
+          <span>Region</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__region"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
+        <th class="table-sortable__head-cell case__sector">
+          <span>Sector</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__sector"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
+        <th class="table-sortable__head-cell case__type">
+          <span>Type</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__type"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
+      </thead>
+
+
+      <tbody class="list">
+        <tr>
+          
+          <td case-name="Serafina Case Study" class="case">
+            <a href="http://twitter.com">Serafina Case Study</a>
+          </td>
+          <td case-region="North America" class="region">
+            North America
+          </td>
+          <td case-sector="Food" class="sector">
+            Food
+          </td>
+          <td case-type="Trusted Intermediaries" class="type">
+            Trusted Intermediaries
+          </td>
+        </tr>
+        
+          <td case-name="Test Collab" class="case">
+            <a href="http://www.google.com">Test Collab</a>
+          </td>
+          <td case-region="North America" class="region">
+            North America
+          </td>
+          <td case-sector="Agriculture" class="sector">
+            Agriculture
+          </td>
+          <td case-type="Trusted Intermediaries" class="type">
+            Trusted Intermediaries
+          </td>
+        </tr>
+        
+          <td case-name="Test Study" class="case">
+            <a href="http://google.com">Test Study</a>
+          </td>
+          <td case-region="North America" class="region">
+            North America
+          </td>
+          <td case-sector="Economic-Development" class="sector">
+            Economic-Development
+          </td>
+          <td case-type="Prizes & Challenges" class="type">
+            Prizes & Challenges
+          </td>
+        </tr>
+        
+      </tbody>
+
+    </table>
+  </div>
+
+</div>
+
+
+    <!-- Yellow footer: -->
+<footer class='footer'>
+  <div class="row expanded">
+    <div class="footer--darken"></div>
+  </div>
+  <div class="footer__icons">
+    <a class="footer__partner-logo" href="http://thegovlab.org" tagret="_blank"><img src="images/govlab-logo-white.png" alt="The Governance Lab"></a>
+    <a class="footer__partner-logo" href="http://engineering.nyu.edu/tandon" tagret="_blank"><img src="images/partners/nyu.png" alt="NYU Tandon School of Engineering - New York University"></a>
+  </div>
+</footer>
+
+<!-- <footer class='footer'>
+  <div class="large-10 large-centered columns">
+  <div class="row">
+    <div class="footer__content footer--sections medium-4 column">
+      <h2>Sections</h2>
+
+    </div>
+    <div class="footer__content medium-4 column">
+      <h2>Lead Supporters</h2>
+      <a class="footer__partner-logo" href="https://www.macfound.org/" tagret="_blank"><img src="images/partners/macarthur-logo-white.png" alt="MacArthur Foundation"></a>
+      <a class="footer__partner-logo" href="http://knightfoundation.org/" tagret="_blank"><img src="images/partners/knight-logo-white.png" alt="Knight Foundation"></a>
+      <a class="footer__partner-logo footer__partner-logo--google" href="http://google.org/" tagret="_blank"><img src="images/partners/google-org.png" alt="Google.org"></a>
+    </div>
+    <div class="footer__content medium-4 column">
+      <h2>Based at</h2>
+      <a class="footer__partner-logo" href="http://engineering.nyu.edu/tandon" tagret="_blank"><img src="images/partners/nyu.png" alt="NYU Tandon School of Engineering - New York University"></a>
+      <a class="footer__partner-logo footer--mit" href="https://www.media.mit.edu/" tagret="_blank"><img src="images/partners/mit-logo-white.png" alt="MIT Media Lab"></a>
+    </div>
+  </div>
+</div>
+</footer> -->
+
+    <!-- <div class="copyright">
+  <div class="row">
+    <div class="large-10 large-centered columns">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="copyright__cc-badge" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+    </div>
+  </div>
+</div> -->
+
+    <div id="overlay" class="js-overlay"></div>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/three.js"></script>
+  </body>
+</html>
