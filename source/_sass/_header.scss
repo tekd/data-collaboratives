@@ -2,6 +2,14 @@
   &--yellow {
     background-color: $yellow;
   }
+
+  .bottom-nav-text {
+    font-size: .8rem;
+  }
+}
+
+.main-menu:not(.m-active) {
+  box-shadow: none;
 }
 
 .top-section {
@@ -14,17 +22,23 @@
   }
 
   &__logo {
-    padding-top: 12%;
+    // padding-top: 5%;
   }
 
   &__main-img {
     margin-top: -50px;
     width: 55%;
-    padding-bottom: 70px;
+    // padding-bottom: 70px;
     @include breakpoint($small-only) {
       width: 90%;
       // padding-top: 50px;
     }
+  }
+
+  &__sub-header {
+    margin: 0;
+    padding-bottom: 50px;
+    color: rgba(0,0,0,0.3);
   }
 }
 
