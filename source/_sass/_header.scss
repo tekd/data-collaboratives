@@ -2,6 +2,10 @@
   &--yellow {
     background-color: $yellow;
   }
+
+  .bottom-nav-text {
+    font-size: .8rem;
+  }
 }
 
 .main-menu:not(.m-active) {
