@@ -6,14 +6,14 @@ $(document).ready(function() {
         threshold: 0.4,
           multiSearch: true
       };
-
+  
   var options = {
         valueNames: [ {attr: 'case-name', name: 'case'}, {attr: 'case-region', name: 'region'}, {attr: 'case-sector', name: 'sector'}, {attr: 'case-type', name: 'type'} ]
         ,
         plugins: [ ListFuzzySearch() ]
     };
 
-  // var caseList = new List('case_data', options);
+  var caseList = new List('case_data', options);
 
 
   var searchButtons = $('.table-sortable__search').find("button[type='submit']")
