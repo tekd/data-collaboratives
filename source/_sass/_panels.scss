@@ -228,7 +228,11 @@
       padding: 20px;
     }
   }
-  &__list {
-
+  &__link {
+    text-transform: none;
+    text-align: center;
+    padding-top: 20px;
   }
+
+
 }

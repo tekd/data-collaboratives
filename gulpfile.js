@@ -35,6 +35,11 @@ gulp.task('cname', function() {
   .pipe(gulp.dest('_site'));
 });
 
+gulp.task('static', function() {
+  return gulp.src('source/static/**/*')
+  .pipe(gulp.dest('_site'));
+});
+
 gulp.task('push-gh-master', shell.task(['git push origin master']));
 
 gulp.task('import', shell.task(['bundle exec jekyll contentful --rebuild']));
@@ -49,6 +54,7 @@ gulp.task('deploy', function (callback) {
     'image',
     'cname',
     'scripts',
+    'static',
     'push-gh-master',
     'push-gh-pages',
     callback
