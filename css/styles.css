@@ -153,6 +153,15 @@
         text-align: center;
         padding: 20px 20px 50px; } }
 
+.coming-soon__text {
+  padding: 50px;
+  width: 90%;
+  font-size: 1.2rem; }
+  @media (max-width: 40em) {
+    .coming-soon__text {
+      font-size: 1rem;
+      padding: 20px; } }
+
 .footer {
   background-color: #e5c810;
   height: 500px;
