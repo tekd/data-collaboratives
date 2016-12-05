@@ -106,6 +106,8 @@
 }
 
 .divider {
+  position: relative;
+
   &--logo {
     h2 { text-align: center; }
     img {
@@ -136,12 +138,29 @@
   }
 
   &__p {
-    padding: 20px 150px 20px;
-    font-size: 1.2rem;
+    padding: 150px 150px 50px;
+    font-size: 1.7rem;
     text-align: center;
     // font-weight: 600;
     @include breakpoint($small-only) {
       padding: 20px 30px 20px;
+    }
+  }
+
+  &__img-holder {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__img {
+    margin-right: 150px;
+    padding-bottom: 50px;
+    width: 10%;
+
+    @include breakpoint($small-only) {
+      margin-right: 50px;
+      padding-top: 70px;
+      width: 20%;
     }
   }
 }
