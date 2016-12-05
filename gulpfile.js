@@ -32,7 +32,7 @@ gulp.task('scripts', function () {
 
 gulp.task('cname', function() {
   return gulp.src('source/CNAME')
-  .pipe(gulp.dest('public'));
+  .pipe(gulp.dest('_site'));
 });
 
 gulp.task('push-gh-master', shell.task(['git push origin master']));
