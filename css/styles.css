@@ -181,6 +181,10 @@
     .coming-soon__text {
       font-size: 1rem;
       padding: 20px; } }
+.coming-soon__link {
+  text-transform: none;
+  text-align: center;
+  padding-top: 20px; }
 
 .footer {
   background-color: #e5c810;
