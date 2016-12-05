@@ -100,32 +100,51 @@
     opacity: 0.9;
     color: rgba(0, 0, 0, 0.7);
     height: 100%; }
+  .dual-panel__second-panel .link {
+    text-decoration: none;
+    border-bottom: 2px solid #e5c810; }
+    .dual-panel__second-panel .link:hover {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.7); }
 .dual-panel h5 {
   margin: 0;
   padding-top: 150px;
   padding-left: 100px; }
 
-.divider--logo h2 {
-  text-align: center; }
-.divider--logo img {
-  max-width: 200px; }
-.divider--main-color-darker {
-  background-color: #d2b70f !important; }
-.divider--yellow {
-  background-color: #e5c810;
-  color: rgba(0, 0, 0, 0.7); }
-.divider__h5 {
-  padding: 20px; }
-  @media (max-width: 40em) {
-    .divider__h5 {
-      text-align: center; } }
-.divider__p {
-  padding: 20px 150px 20px;
-  font-size: 1.2rem;
-  text-align: center; }
-  @media (max-width: 40em) {
-    .divider__p {
-      padding: 20px 30px 20px; } }
+.divider {
+  position: relative; }
+  .divider--logo h2 {
+    text-align: center; }
+  .divider--logo img {
+    max-width: 200px; }
+  .divider--main-color-darker {
+    background-color: #d2b70f !important; }
+  .divider--yellow {
+    background-color: #e5c810;
+    color: rgba(0, 0, 0, 0.7); }
+  .divider__h5 {
+    padding: 20px; }
+    @media (max-width: 40em) {
+      .divider__h5 {
+        text-align: center; } }
+  .divider__p {
+    padding: 150px 150px 50px;
+    font-size: 1.7rem;
+    text-align: center; }
+    @media (max-width: 40em) {
+      .divider__p {
+        padding: 20px 30px 20px; } }
+  .divider__img-holder {
+    width: 100%;
+    text-align: right; }
+  .divider__img {
+    margin-right: 150px;
+    padding-bottom: 50px;
+    width: 10%; }
+    @media (max-width: 40em) {
+      .divider__img {
+        margin-right: 50px;
+        padding-top: 70px;
+        width: 20%; } }
 
 .grid {
   text-align: center;
@@ -157,6 +176,11 @@
   padding: 50px;
   width: 90%;
   font-size: 1.2rem; }
+  .coming-soon__text .link {
+    text-decoration: none;
+    border-bottom: 2px solid #e5c810; }
+    .coming-soon__text .link:hover {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.7); }
   @media (max-width: 40em) {
     .coming-soon__text {
       font-size: 1rem;
