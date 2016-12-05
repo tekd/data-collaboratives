@@ -95,7 +95,17 @@
       color: $gray;
       height: 100%;
     }
+
+    .link {
+      text-decoration: none;
+      border-bottom: 2px solid $yellow;
+
+      &:hover {
+        border-bottom: 2px solid $gray;
+      }
+    }
   }
+
 
   h5 {
     margin: 0;
@@ -106,6 +116,8 @@
 }
 
 .divider {
+  position: relative;
+
   &--logo {
     h2 { text-align: center; }
     img {
@@ -136,12 +148,29 @@
   }
 
   &__p {
-    padding: 20px 150px 20px;
-    font-size: 1.2rem;
+    padding: 150px 150px 50px;
+    font-size: 1.7rem;
     text-align: center;
     // font-weight: 600;
     @include breakpoint($small-only) {
       padding: 20px 30px 20px;
+    }
+  }
+
+  &__img-holder {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__img {
+    margin-right: 150px;
+    padding-bottom: 50px;
+    width: 10%;
+
+    @include breakpoint($small-only) {
+      margin-right: 50px;
+      padding-top: 70px;
+      width: 20%;
     }
   }
 }
@@ -189,6 +218,16 @@
     padding: 50px;
     width: 90%;
     font-size: 1.2rem;
+
+    .link {
+      text-decoration: none;
+      border-bottom: 2px solid $yellow;
+
+      &:hover {
+        border-bottom: 2px solid $gray;
+      }
+    }
+
     @include breakpoint($small-only) {
       font-size: 1rem;
       padding: 20px;
