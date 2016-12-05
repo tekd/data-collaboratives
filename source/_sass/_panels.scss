@@ -148,7 +148,7 @@
   }
 
   &__p {
-    padding: 150px 150px 50px;
+    padding: 100px 150px 50px;
     font-size: 1.7rem;
     text-align: center;
     // font-weight: 600;
@@ -157,20 +157,15 @@
     }
   }
 
-  &__img-holder {
-    width: 100%;
-    text-align: right;
-  }
-
   &__img {
-    margin-right: 150px;
+    width: 6%;
+    height: 6%;
     padding-bottom: 50px;
-    width: 10%;
+    // padding-top: 10px;
 
     @include breakpoint($small-only) {
-      margin-right: 50px;
-      padding-top: 70px;
-      width: 20%;
+      width: 12%;
+      padding-bottom: 50px;
     }
   }
 }
