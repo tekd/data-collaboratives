@@ -87,16 +87,16 @@ type:
 
           <div class="table-sortable__control-group">
 
+            <!-- <form class="search m-active" action="">
+              <input class="search-bar fuzzy-search" type="text" placeholder="Search for Experts" />
+              <input class="material-icons" type="submit" value="search" />
+            </form> -->
+
             <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
 
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
 
           </div>
-
-          <!-- <form class="table-sortable__search ">
-            <input id="company__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
-            <button type="submit" class=""><i class="material-icons">close</i></button>
-          </form> -->
 
         </th>
 
@@ -123,27 +123,28 @@ type:
 
       </thead>
 
+      <div id="list-id">
+        <tbody class="list">
+          <tr>
+            {% for item in site.data.contentful.spaces.cases.datacollaborative %}
+            <td case-name="{{item.caseStudy}}" class="case">
+              <a href="{{item.link}}">{{ item.caseStudy }}</a>
+            </td>
+            <td case-region="{{item.region}}" class="region">
+              {{ item.region }}
+            </td>
+            <td case-sector="{{item.sector}}" class="sector">
+              {{ item.sector }}
+            </td>
+            <td case-type="{{item.type}}" class="type">
+              {{ item.type }}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
 
-      <tbody class="list">
-        <tr>
-          {% for item in site.data.contentful.spaces.cases.datacollaborative %}
-          <td case-name="{{item.caseStudy}}" class="case">
-            <a href="{{item.link}}">{{ item.caseStudy }}</a>
-          </td>
-          <td case-region="{{item.region}}" class="region">
-            {{ item.region }}
-          </td>
-          <td case-sector="{{item.sector}}" class="sector">
-            {{ item.sector }}
-          </td>
-          <td case-type="{{item.type}}" class="type">
-            {{ item.type }}
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-
-    </table>
   </div>
 
 </div>

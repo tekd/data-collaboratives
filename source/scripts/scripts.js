@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // FUZZY SEARCH
   var fuzzyOptions = {
         searchClass: "fuzzy-search",
         location: 0,
@@ -6,7 +7,7 @@ $(document).ready(function() {
         threshold: 0.4,
           multiSearch: true
       };
-  
+
   var options = {
         valueNames: [ {attr: 'case-name', name: 'case'}, {attr: 'case-region', name: 'region'}, {attr: 'case-sector', name: 'sector'}, {attr: 'case-type', name: 'type'} ]
         ,
@@ -15,24 +16,45 @@ $(document).ready(function() {
 
   var caseList = new List('case_data', options);
 
+  function searchReset() {
+    $(".fuzzy-search").val("");
+    // clearTextSearch();
+    caseList.search();
+}
 
-  var searchButtons = $('.table-sortable__search').find("button[type='submit']")
+  // DROPDOWN FILTERS
+  var allFilters = $(".dropdown-wrapper select");
+  var searchQueries = {};
+  // allFilters.on("change", function() {
+  //     filterList();
+  // });
 
-  searchButtons.on("click", function(e) {
-      e.preventDefault();
-      if ($(this).parent().hasClass("table-sortable__search--active")) {
-          $(this).parent().removeClass("table-sortable__search--active");
-          searchReset();
-      }
+
+  // function filterList() {
+  //     allFilters.each(function(idx, selection) {
+  //         $(selection).each(function(idx, option) {
+  //             var filterSelection = $(this).attr("data-filter");
+  //             var option = $(this).children(":selected").attr("id");
+  //             searchQueries[filterSelection] = option;
+  //         });
+  //     });
+  // };
+
+  // CLEAR ALL FILTERS
+  $(".clear_filters").on("click", function() {
+      allFilters.each(function(idx,filter) {
+          $('#'+filter.id).prop('selectedIndex',0);
+      });
+      caseList.filter();
+      searchReset();
+      caseList.sort('company__name', { order: "asc" });
   });
-
 
   // SORT ICON
   var sortClickButtons = $(".table-sortable__control > i:contains('keyboard_arrow_down')");
   sortClickButtons.on("click", function() {
       $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
   });
-
 
 
 });
