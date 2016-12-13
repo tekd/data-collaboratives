@@ -20,25 +20,38 @@ $(document).ready(function() {
     $(".fuzzy-search").val("");
     // clearTextSearch();
     caseList.search();
-}
+  }
+
+  // // Filter by case title
+  //   $(".fuzzy-search").keyup(function() {
+  //       if (this.id=="case__title--input") {
+  //           var searchString = $(this).val();
+  //           companyList.fuzzySearch.search(searchString, ["case__region"]);
+  //       } else if (this.id=="case__title--input") {
+  //           var searchString = $(this).val();
+  //           companyList.fuzzySearch.search(searchString, ["case__title"]);
+  //       }
+  //   });
+
 
   // DROPDOWN FILTERS
   var allFilters = $(".dropdown-wrapper select");
   var searchQueries = {};
-  // allFilters.on("change", function() {
-  //     filterList();
-  // });
+  allFilters.on("change", function() {
+      filterList();
+  });
 
 
-  // function filterList() {
-  //     allFilters.each(function(idx, selection) {
-  //         $(selection).each(function(idx, option) {
-  //             var filterSelection = $(this).attr("data-filter");
-  //             var option = $(this).children(":selected").attr("id");
-  //             searchQueries[filterSelection] = option;
-  //         });
-  //     });
-  // };
+  function filterList() {
+      allFilters.each(function(idx, selection) {
+          $(selection).each(function(idx, option) {
+              var filterSelection = $(this).attr("data-filter");
+
+              // var option = $(this).children(":selected").attr("id");
+              // searchQueries[filterSelection] = option;
+          });
+      });
+  };
 
   // CLEAR ALL FILTERS
   $(".clear_filters").on("click", function() {
@@ -47,7 +60,7 @@ $(document).ready(function() {
       });
       caseList.filter();
       searchReset();
-      caseList.sort('company__name', { order: "asc" });
+      caseList.sort('case__title', { order: "asc" });
   });
 
   // SORT ICON
@@ -55,6 +68,5 @@ $(document).ready(function() {
   sortClickButtons.on("click", function() {
       $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
   });
-
 
 });

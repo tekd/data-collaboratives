@@ -1,8 +1,5 @@
 ---
 layout: default
-case:
-- "GovLab"
-- "Yelp"
 region:
 - "USA"
 - "Europe"
@@ -19,14 +16,14 @@ type:
 
 <div class="list-page">
 
-  <div class="top-bar top-bar--yellow">
+  <!-- <div class="top-bar top-bar--yellow">
     <a class="top-bar__logo" href="/">
       <img src="/images/govlab-logo-white.png" alt="The GovLab">
     </a>
-  </div>
+  </div> -->
 
   <div class="top-section top-section--yellow">
-    <h2>All Companies</h2>
+    <h2>All Cases</h2>
   </div>
 
   <div class="page-section page-section--gray">
@@ -37,7 +34,7 @@ type:
     <div class="dropdown-wrapper">
       <div class="row large-unstack">
 
-        <div class="columns">
+        <div class="columns ">
           <div class="select" id=''>
             <select data-filter="region" class="dropdown-content">
               <option id="all">Filter by Region</option>
@@ -76,8 +73,6 @@ type:
     </div>
   </div>
 
-
-
   <div class="table-section" id="case_data">
     <table class="table-sortable table-section__table">
       <thead class="cases">
@@ -87,12 +82,12 @@ type:
 
           <div class="table-sortable__control-group">
 
-            <!-- <form class="search m-active" action="">
-              <input class="search-bar fuzzy-search" type="text" placeholder="Search for Experts" />
-              <input class="material-icons" type="submit" value="search" />
-            </form> -->
+            <!-- <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span> -->
 
-            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
+            <form class="table-sortable__search ">
+              <input id="case__title--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+              <button type="submit" class=""><i class="material-icons">close</i></button>
+            </form>
 
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
 
