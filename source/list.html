@@ -36,6 +36,11 @@ type:
 - "Prizes & Challenges"
 - "Research Partnerships"
 - "Trusted Intermediaries"
+data-type:
+- "Disclosed Personal Data"
+- "Disclosed Non-Personal Data"
+- "Observed Personal Data"
+- "Observed Non-Personal Data"
 ---
 
 <div class="list-page">
@@ -59,9 +64,9 @@ type:
     <div class="dropdown-wrapper">
       <div class="row large-unstack">
 
-        <div class="columns ">
+        <div class="columns case__region">
           <div class="select" id=''>
-            <select data-filter="region" class="dropdown-content">
+            <select data-filter="case__region" class="dropdown-content">
               <option id="all">Filter by Region</option>
               {% for item in page.region%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -70,9 +75,9 @@ type:
           </div>
         </div>
 
-        <div class="columns">
+        <div class="columns case__sector">
           <div class="select" id=''>
-            <select data-filter="sector" class="dropdown-content">
+            <select data-filter="case__sector" class="dropdown-content">
               <option id="all">Filter by Sector</option>
               {% for item in page.sector%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -81,9 +86,9 @@ type:
           </div>
         </div>
 
-        <div class="columns">
+        <div class="columns case__type">
           <div class="select" id=''>
-            <select data-filter="other" class="dropdown-content">
+            <select data-filter="case__type" class="dropdown-content">
               <option id="all">Filter by Type</option>
               {% for item in page.type%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -91,11 +96,27 @@ type:
             </select>
           </div>
         </div>
+
+        <div class="columns case__data-type">
+          <div class="select" id=''>
+            <select data-filter="case__data-type" class="dropdown-content">
+              <option id="all">Filter by Data Type</option>
+              {% for item in page.data-type%}
+              <option id="{{ item | slugify }}">{{item}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
         <div class="close clear_filters table-sortable__control table-sortable__control--simple">
           <i class="material-icons">close</i>
         </div>
       </div>
-    </div>
+
+      </div>
+
+
+
   </div>
 
   <div class="table-section" id="case_data">
@@ -141,6 +162,13 @@ type:
           </div>
         </th>
 
+        <th class="table-sortable__head-cell case__data-type">
+          <span>Data Type</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__data-type"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
       </thead>
 
       <div id="list-id">
@@ -158,6 +186,9 @@ type:
             </td>
             <td case-type="{{item.type}}" class="case__type">
               {{ item.type }}
+            </td>
+            <td case-data-type="{{item.data-type}}" class="case__data-type">
+              {{ item.dataType }}
             </td>
           </tr>
           {% endfor %}

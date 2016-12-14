@@ -1,11 +1,13 @@
 ---
 datacollaborative:
 - sys:
-    id: 4yIgrhiDFmWkm2aM26Qsk8
-  caseStudy: Are you working, search functionality?
-  sector: Crisis Response
-  region: Sub-Saharan Africa
-  type: Prizes & Challenges
+    id: rSlNpKD56Kqi4KiUk4a2y
+  caseStudy: Awesome Collab
+  sector: Education
+  region: South Asia
+  type: Intelligence Products
+  dataType:
+  - Observed Non-Personal Data
 - sys:
     id: 1ALt0cLdUIK0uISUuE68oS
   caseStudy: Test Collab
@@ -13,30 +15,29 @@ datacollaborative:
   region: Latin America and the Caribbean
   type: Research Partnerships
 - sys:
+    id: 4yIgrhiDFmWkm2aM26Qsk8
+  caseStudy: Are you working, search functionality?
+  sector: Crisis Response
+  region: Sub-Saharan Africa
+  type: Prizes & Challenges
+- sys:
     id: 5GbhxD487ueYsYKeYoOoAc
   caseStudy: New Collaborative
   sector: Food
   region: South Asia
   type: Trusted Intermediaries
 - sys:
-    id: rSlNpKD56Kqi4KiUk4a2y
-  caseStudy: Awesome Collab
-  sector: Education
-  region: South Asia
-  type: Intelligence Products
-- sys:
-    id: 1igKBJbKcKaguKWSAcI6sa
-  caseStudy: Serafina Case Study
-  sector: Food
-  sharedBy:
-  - Ena
-  sharedWith:
-  - Christopher Wong
-  region: North America
-  type: Trusted Intermediaries
+    id: C2d8WOBTwGaOmsaqeUseI
+  caseStudy: Stuff Stuff
+  sector: Environment
+  region: Europe and Central Asia
+  type: Research Partnerships
   dataType:
-  - Observed Non-Personal Data
-  link: http://twitter.com
-  whatDataShared: Tweets
-  howDataShared: Twitter
-  purpose: To expose Serafina
+  - Disclosed Personal Data
+  - Observed Personal Data
+- sys:
+    id: 4hbDF6ak3SCmgAGkEEoC0o
+  caseStudy: Helloooo
+  sector: Development
+  region: Europe and Central Asia
+  type: Research Partnerships
