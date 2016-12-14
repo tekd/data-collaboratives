@@ -37,14 +37,11 @@ $(document).ready(function() {
       $(selection).each(function(idx, option) {
         var filterSelection = $(this).attr("data-filter");
         var option = $(this).children(":selected").attr("id");
-        // searchQueries[filterSelection] = option;
+        searchQueries[filterSelection] = option;
       });
     });
     // FILTER WITH DROPDOWNS
     caseList.filter(function(item) {
-      // debugger;
-
-      console.log(item.values()["case__sector"])
 
       // if (item.values()["case__region"] !== null && item.values()["case__data-type"] && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__region"].includes(searchQueries["case_type"])) {
       //   return true;

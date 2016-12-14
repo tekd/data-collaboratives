@@ -65,8 +65,8 @@ data-type:
       <div class="row large-unstack">
 
         <div class="columns case__region">
-          <div class="select" id=''>
-            <select data-filter="case__region" class="dropdown-content">
+          <div class="select">
+            <select data-filter="case__region" id="first" class="dropdown-content">
               <option id="all">Filter by Region</option>
               {% for item in page.region%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -76,8 +76,8 @@ data-type:
         </div>
 
         <div class="columns case__sector">
-          <div class="select" id=''>
-            <select data-filter="case__sector" class="dropdown-content">
+          <div class="select">
+            <select data-filter="case__sector" id="second" class="dropdown-content">
               <option id="all">Filter by Sector</option>
               {% for item in page.sector%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -87,8 +87,8 @@ data-type:
         </div>
 
         <div class="columns case__type">
-          <div class="select" id=''>
-            <select data-filter="case__type" class="dropdown-content">
+          <div class="select">
+            <select data-filter="case__type" id="third" class="dropdown-content">
               <option id="all">Filter by Collaborative Type</option>
               {% for item in page.type%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -98,8 +98,8 @@ data-type:
         </div>
 
         <div class="columns case__data-type">
-          <div class="select" id=''>
-            <select data-filter="case__data-type" class="dropdown-content">
+          <div class="select">
+            <select data-filter="case__data-type" id="fourth" class="dropdown-content">
               <option id="all">Filter by Data Type</option>
               {% for item in page.data-type%}
               <option id="{{ item | slugify }}">{{item}}</option>
@@ -112,10 +112,7 @@ data-type:
           <i class="material-icons">close</i>
         </div>
       </div>
-
-      </div>
-
-
+    </div>
   </div>
 
   <div class="table-section" id="case_data">
