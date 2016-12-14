@@ -116,7 +116,6 @@ data-type:
       </div>
 
 
-
   </div>
 
   <div class="table-section" id="case_data">
@@ -128,16 +127,16 @@ data-type:
 
           <div class="table-sortable__control-group">
 
-            <!-- <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span> -->
-
-            <form class="table-sortable__search ">
-              <input id="case__title--input" class="fuzzy-search" type="text" placeholder="Filter by text">
-              <!-- <button type="submit" class=""><i class="material-icons">close</i></button> -->
-            </form>
+            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
 
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
 
           </div>
+
+          <form class="table-sortable__search ">
+            <input id="company__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+            <button type="submit" class=""><i class="material-icons">close</i></button>
+          </form>
 
         </th>
 
@@ -194,7 +193,6 @@ data-type:
               {% else %}
                 {{ item.dataType }}
               {% endif %}
-              <!-- new problem introduced with multiple data-types entered, trying to add a <br> or comma -->
             </td>
           </tr>
           {% endfor %}

@@ -42,6 +42,9 @@ $(document).ready(function() {
     });
     // FILTER WITH DROPDOWNS
     caseList.filter(function(item) {
+      // debugger;
+
+      console.log(item.values()["case__sector"])
 
       // if (item.values()["case__region"] !== null && item.values()["case__data-type"] && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__region"].includes(searchQueries["case_type"])) {
       //   return true;
@@ -75,5 +78,33 @@ $(document).ready(function() {
   sortClickButtons.on("click", function() {
     $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
   });
+
+  // Table Search
+   $('.js-open-table-search').click(function (e) {
+       e.preventDefault();
+       $(this).parent().siblings('.table-sortable__search').toggleClass('table-sortable__search--active');
+   });
+
+   $(".js-open-table-search").on("click", function(e) {
+      $($(this).attr('data-target')).focus();
+   })
+
+   // Search Click Behavior
+  $('.js-trigger-search').click(function (e) {
+      e.preventDefault();
+      $(this).parent().addClass('js-active');
+      $('#overlay').addClass('js-active');
+  });
+
+// Filter by name and location
+//     $(".fuzzy-search").keyup(function() {
+//         if (this.id=="case__name--input") {
+//             var searchString = $(this).val();
+//             caseList.fuzzySearch.search(searchString, ["case__title"]);
+//         } else if (this.id=="case__location--input") {
+//             var searchString = $(this).val();
+//             caseList.fuzzySearch.search(searchString, ["case__location"]);
+//         }
+//     });
 
 });

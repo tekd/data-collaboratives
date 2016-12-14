@@ -73,4 +73,55 @@
     margin-right: 15px;
     color: white;
   }
+
+  &__control {
+    float: left;
+    padding: 15px;
+
+    > i { vertical-align: middle; }
+
+
+    &--simple { display: inline-block; }
+  }
+
+
+  &__search {
+    position: absolute;
+    top: 0;
+    right: 68px;
+    left: calc(100% - 92px);
+    display: flex;
+    overflow: hidden;
+    transition: all .3s ease;
+    max-width: 0;
+
+    &--active {
+      left: -15px;
+      // background-color: white;
+      transition: all .3s ease;
+      max-width: 100%;
+    }
+
+    input[type='text'] {
+    flex: 1;
+    margin: 0;
+    // padding: 10px 15px;
+    background-color: darken($main-color, 5);
+    color: white;
+    // @include placeholder { color: white; }
+
+    &:focus { background-color: darken($main-color, 7); }
+  }
+
+    button {
+      // padding: 15px 15px 13px;
+      border-radius: 0;
+      background-color: darken($main-color, 8);
+
+      &:hover { background-color: darken($main-color, 10); }
+
+    }
+  }
+
+
 }
