@@ -89,7 +89,7 @@ data-type:
         <div class="columns case__type">
           <div class="select" id=''>
             <select data-filter="case__type" class="dropdown-content">
-              <option id="all">Filter by Type</option>
+              <option id="all">Filter by Collaborative Type</option>
               {% for item in page.type%}
               <option id="{{ item | slugify }}">{{item}}</option>
               {% endfor %}
@@ -155,7 +155,7 @@ data-type:
         </th>
 
         <th class="table-sortable__head-cell case__type">
-          <span>Type</span>
+          <span>Collaborative Type</span>
           <div class="table-sortable__control-group">
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__type"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
