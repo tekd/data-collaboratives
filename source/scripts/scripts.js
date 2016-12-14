@@ -9,13 +9,15 @@ $(document).ready(function() {
       };
 
   var options = {
-        valueNames: [ {attr: 'case-name', name: 'case'}, {attr: 'case-region', name: 'region'}, {attr: 'case-sector', name: 'sector'}, {attr: 'case-type', name: 'type'} ]
+        valueNames: [ "case__title", "case__region", "case__sector", "case__type" ]
         ,
         plugins: [ ListFuzzySearch() ]
     };
 
   var caseList = new List('case_data', options);
 
+
+  // SEARCH RESET
   function searchReset() {
     $(".fuzzy-search").val("");
     // clearTextSearch();
@@ -36,10 +38,10 @@ $(document).ready(function() {
 
   // DROPDOWN FILTERS
   var allFilters = $(".dropdown-wrapper select");
-  var searchQueries = {};
-  allFilters.on("change", function() {
-      filterList();
-  });
+  // var searchQueries = {};
+  // allFilters.on("change", function() {
+  //     filterList();
+  // });
 
 
   function filterList() {
@@ -47,8 +49,8 @@ $(document).ready(function() {
           $(selection).each(function(idx, option) {
               var filterSelection = $(this).attr("data-filter");
 
-              // var option = $(this).children(":selected").attr("id");
-              // searchQueries[filterSelection] = option;
+              var option = $(this).children(":selected").attr("id");
+              searchQueries[filterSelection] = option;
           });
       });
   };
@@ -63,7 +65,7 @@ $(document).ready(function() {
       caseList.sort('case__title', { order: "asc" });
   });
 
-  // SORT ICON
+  // SORT ICON UP/DOWN SWITCH
   var sortClickButtons = $(".table-sortable__control > i:contains('keyboard_arrow_down')");
   sortClickButtons.on("click", function() {
       $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");

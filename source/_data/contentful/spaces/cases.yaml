@@ -1,6 +1,30 @@
 ---
 datacollaborative:
 - sys:
+    id: 4yIgrhiDFmWkm2aM26Qsk8
+  caseStudy: Are you working, search functionality?
+  sector: Crisis Response
+  region: Sub-Saharan Africa
+  type: Prizes & Challenges
+- sys:
+    id: 1ALt0cLdUIK0uISUuE68oS
+  caseStudy: Test Collab
+  sector: Environment
+  region: Latin America and the Caribbean
+  type: Research Partnerships
+- sys:
+    id: 5GbhxD487ueYsYKeYoOoAc
+  caseStudy: New Collaborative
+  sector: Food
+  region: South Asia
+  type: Trusted Intermediaries
+- sys:
+    id: rSlNpKD56Kqi4KiUk4a2y
+  caseStudy: Awesome Collab
+  sector: Education
+  region: South Asia
+  type: Intelligence Products
+- sys:
     id: 1igKBJbKcKaguKWSAcI6sa
   caseStudy: Serafina Case Study
   sector: Food
@@ -16,36 +40,3 @@ datacollaborative:
   whatDataShared: Tweets
   howDataShared: Twitter
   purpose: To expose Serafina
-- sys:
-    id: 5OXK2l37ygQa04OYCIM2kk
-  caseStudy: Test Collab
-  sector: Agriculture
-  sharedBy:
-  - Ena
-  sharedWith:
-  - Anna
-  region: North America
-  type: Trusted Intermediaries
-  dataType:
-  - Disclosed Personal Data
-  - Disclosed Non-Personal Data
-  link: http://www.google.com
-  whatDataShared: Stuff
-  howDataShared: Interwebz
-  purpose: Share stuff
-- sys:
-    id: 1Udt9yjeEIWS4OgcggacOQ
-  caseStudy: Test Study
-  sector: Economic-Development
-  sharedBy:
-  - Ena
-  sharedWith:
-  - Ani
-  region: North America
-  type: Prizes & Challenges
-  dataType:
-  - Observed Personal Data
-  link: http://google.com
-  whatDataShared: DATA
-  howDataShared: Stuff
-  purpose: Hello

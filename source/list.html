@@ -1,17 +1,41 @@
 ---
 layout: default
 region:
-- "USA"
-- "Europe"
-- "Asia"
+- "East Asia and Pacific"
+- "Europe and Central Asia"
+- "Latin America and the Caribbean"
+- "Middle East and North Africa"
+- "North America"
+- "South Asia"
+- "Sub-Saharan Africa"
 sector:
-- "Health"
+- "Agriculture"
+- "Criminal Justice"
+- "Crisis Response"
+- "Development"
+- "Digital Society"
+- "Economic-Development"
+- "Education"
 - "Environment"
-- "Consumer"
+- "Environment, Infrastructure"
 - "Food"
+- "Health"
+- "Health, Infrastructure, Environment"
+- "Humanitarian Response"
+- "Infrastructure"
+- "Infrastructure (Transportation)"
+- "Multiple"
+- "Transporation"
+- "Public Health"
+- "Telecommunications"
+- "Various"
 type:
-- "Trusted Intermediaries"
+- "Application Programming Interfaces (APIs)"
+- "Data Cooperatives and Pooling"
+- "Intelligence Products"
 - "Prizes & Challenges"
+- "Research Partnerships"
+- "Trusted Intermediaries"
 ---
 
 <div class="list-page">
@@ -21,6 +45,7 @@ type:
       <img src="/images/govlab-logo-white.png" alt="The GovLab">
     </a>
   </div> -->
+
 
   <div class="top-section top-section--yellow">
     <h2>All Cases</h2>
@@ -86,7 +111,7 @@ type:
 
             <form class="table-sortable__search ">
               <input id="case__title--input" class="fuzzy-search" type="text" placeholder="Filter by text">
-              <button type="submit" class=""><i class="material-icons">close</i></button>
+              <!-- <button type="submit" class=""><i class="material-icons">close</i></button> -->
             </form>
 
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
@@ -120,18 +145,18 @@ type:
 
       <div id="list-id">
         <tbody class="list">
-          <tr>
+          <tr class="case">
             {% for item in site.data.contentful.spaces.cases.datacollaborative %}
-            <td case-name="{{item.caseStudy}}" class="case">
+            <td case-name="{{item.caseStudy}}" class="case__title">
               <a href="{{item.link}}">{{ item.caseStudy }}</a>
             </td>
-            <td case-region="{{item.region}}" class="region">
+            <td case-region="{{item.region}}" class="case__region">
               {{ item.region }}
             </td>
-            <td case-sector="{{item.sector}}" class="sector">
+            <td case-sector="{{item.sector}}" class="case__sector">
               {{ item.sector }}
             </td>
-            <td case-type="{{item.type}}" class="type">
+            <td case-type="{{item.type}}" class="case__type">
               {{ item.type }}
             </td>
           </tr>
