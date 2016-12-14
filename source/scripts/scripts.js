@@ -21,7 +21,6 @@ $(document).ready(function() {
   // SEARCH RESET
   function searchReset() {
     $(".fuzzy-search").val("");
-    // clearTextSearch();
     caseList.search();
   }
 
@@ -44,11 +43,13 @@ $(document).ready(function() {
     // FILTER WITH DROPDOWNS
     caseList.filter(function(item) {
 
-      // if (item.values()["case__region"] !== null && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__type"].includes(searchQueries["case_type"])) {
+      // if (item.values()["case__region"] !== null && item.values()["case__data-type"] && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__region"].includes(searchQueries["case_type"])) {
       //   return true;
       // } else {
       //   return false;
       // }
+
+      //Trying to make sense of what you did below:
     })
   };
 
@@ -66,6 +67,7 @@ $(document).ready(function() {
     caseList.filter();
     searchReset();
     caseList.sort('case__title', { order: "asc" });
+    // needs to also clear dropdowns
   });
 
   // SORT ICON UP/DOWN SWITCH

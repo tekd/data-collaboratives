@@ -108,7 +108,7 @@ data-type:
           </div>
         </div>
 
-        <div class="close clear_filters table-sortable__control table-sortable__control--simple">
+        <div class="close clear_filters table-sortable__control table-sortable__control--simple table-sortable--clear-all">
           <i class="material-icons">close</i>
         </div>
       </div>
@@ -188,7 +188,13 @@ data-type:
               {{ item.type }}
             </td>
             <td case-data-type="{{item.data-type}}" class="case__data-type">
-              {{ item.dataType }}
+              {% if item.dataType.count > 1 %}
+                {{ item.dataType }}
+                <br>
+              {% else %}
+                {{ item.dataType }}
+              {% endif %}
+              <!-- new problem introduced with multiple data-types entered, trying to add a <br> or comma -->
             </td>
           </tr>
           {% endfor %}
