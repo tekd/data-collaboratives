@@ -9,11 +9,13 @@ $(document).ready(function() {
     };
 
   var options = {
-    valueNames: [ "case__title", "case__region", "case__sector", "case__type", "case__data-type" ],
+    valueNames: [ "case__title", {name: "case__region", attr: "case-region"}, {name: "case__sector", attr: "case-sector"}, {name: "case__type", attr: "case-type"}, {name: "case__data-type", attr: "case-data-type"} ],
     plugins: [ ListFuzzySearch() ]
   };
 
   var caseList = new List('case_data', options);
+
+  console.log(caseList);
 
   //SORT LIST ON DOC READY
   caseList.sort('case__title', { order: "asc" });
@@ -39,25 +41,21 @@ $(document).ready(function() {
         var option = $(this).children(":selected").attr("id");
         searchQueries[filterSelection] = option;
       });
+
     });
+    console.log(searchQueries);
     // FILTER WITH DROPDOWNS
     caseList.filter(function(item) {
-
-      // if (item.values()["case__region"] !== null && item.values()["case__data-type"] && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__region"].includes(searchQueries["case_type"])) {
-      //   return true;
-      // } else {
-      //   return false;
-      // }
-
-      //Trying to make sense of what you did below:
+      if (item.values()["case__region"] !== null && item.values()["case__data-type"] !== null && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__region"].includes(searchQueries["case__region"]) &&
+      item.values()["case__data-type"].includes(searchQueries["case__data-type"]) &&
+      item.values()["case__type"].includes(searchQueries["case__type"]) &&
+      item.values()["case__sector"].includes(searchQueries["case__sector"]) ) {
+        return true
+      } else {
+        return false
+      }
     })
   };
-
-  // if (item.values()["company__provinces"] !== null && item.values()["company__provincial-sources"] !== null && item.values()["company__other-sources"] !== null && item.values()["company__data-sectors"] !== null && item.values()["company__federal-sources"] !== null && item.values()["company__provincial-sources"].includes(searchQueries["company__provincial-sources"]) && item.values()["company__other-sources"].includes(searchQueries["company__data-sources"]) && item.values()["company__data-sectors"].includes(searchQueries["company__data-sectors"]) && item.values()["company__federal-sources"].includes(searchQueries["company__federal-sources"]) && item.values()["filter"].includes(searchQueries["company__provinces"])) {
-  //                   return true;
-  //               } else {
-  //                   return false;
-  //               }
 
   // CLEAR ALL FILTERS
   $(".clear_filters").on("click", function() {
@@ -67,7 +65,6 @@ $(document).ready(function() {
     caseList.filter();
     searchReset();
     caseList.sort('case__title', { order: "asc" });
-    // needs to also clear dropdowns
   });
 
   // SORT ICON UP/DOWN SWITCH
@@ -92,16 +89,4 @@ $(document).ready(function() {
       $(this).parent().addClass('js-active');
       $('#overlay').addClass('js-active');
   });
-
-// Filter by name and location
-//     $(".fuzzy-search").keyup(function() {
-//         if (this.id=="case__name--input") {
-//             var searchString = $(this).val();
-//             caseList.fuzzySearch.search(searchString, ["case__title"]);
-//         } else if (this.id=="case__location--input") {
-//             var searchString = $(this).val();
-//             caseList.fuzzySearch.search(searchString, ["case__location"]);
-//         }
-//     });
-
 });

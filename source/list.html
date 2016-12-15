@@ -174,22 +174,17 @@ data-type:
             <td case-name="{{item.caseStudy}}" class="case__title">
               <a href="{{item.link}}">{{ item.caseStudy }}</a>
             </td>
-            <td case-region="{{item.region}}" class="case__region">
+            <td case-region="all {{item.region | slugify }}" class="case__region">
               {{ item.region }}
             </td>
-            <td case-sector="{{item.sector}}" class="case__sector">
+            <td case-sector="all {{item.sector | slugify }}" class="case__sector">
               {{ item.sector }}
             </td>
-            <td case-type="{{item.type}}" class="case__type">
+            <td case-type="all {{item.type | slugify }}" class="case__type">
               {{ item.type }}
             </td>
-            <td case-data-type="{{item.data-type}}" class="case__data-type">
-              {% if item.dataType.count > 1 %}
-                {{ item.dataType }}
-                <br>
-              {% else %}
-                {{ item.dataType }}
-              {% endif %}
+            <td case-data-type="all {% for d in item.dataType %} {{ d | slugify }} {% endfor %}" class="case__data-type">
+              {{ item.dataType | join: ", " }}
             </td>
           </tr>
           {% endfor %}
