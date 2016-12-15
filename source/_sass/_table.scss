@@ -3,14 +3,28 @@
   margin: 0 auto;
   position: relative;
 
+  button {
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+  }
+
   .clear_filters {
-    position: absolute;
-    right: 0;
-    padding: 8px;
+    // position: absolute;
+    // right: 0;
+    // padding: 8px;
   }
 
   .select {
     margin-bottom: 25px;
+  }
+
+  &__search {
+    width: 80%;
+  }
+
+  &__search-clear {
+    display: block;
+    width: 80%;
   }
 }
 
@@ -35,6 +49,18 @@
 
     td {
       padding-left: 30px;
+    }
+  }
+
+  .case__region, .case__sector, .case__type, .case__data-type {
+    @include breakpoint($small-only) {
+      display: none;
+    }
+  }
+
+  .case__title {
+    @include breakpoint($small-only) {
+      font-size: 16px;
     }
   }
 }
@@ -83,45 +109,4 @@
 
     &--simple { display: inline-block; }
   }
-
-
-  &__search {
-    position: absolute;
-    top: 0;
-    right: 68px;
-    left: calc(100% - 92px);
-    display: flex;
-    overflow: hidden;
-    transition: all .3s ease;
-    max-width: 0;
-
-    &--active {
-      left: -15px;
-      // background-color: white;
-      transition: all .3s ease;
-      max-width: 100%;
-    }
-
-    input[type='text'] {
-    flex: 1;
-    margin: 0;
-    // padding: 10px 15px;
-    background-color: darken($main-color, 5);
-    color: white;
-    // @include placeholder { color: white; }
-
-    &:focus { background-color: darken($main-color, 7); }
-  }
-
-    button {
-      // padding: 15px 15px 13px;
-      border-radius: 0;
-      background-color: darken($main-color, 8);
-
-      &:hover { background-color: darken($main-color, 10); }
-
-    }
-  }
-
-
 }
