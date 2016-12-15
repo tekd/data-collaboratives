@@ -16,10 +16,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r58/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.3.0/list.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="scripts/list.fuzzysearch.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/listScripts.js"></script>
   </head>
 
   <body>
@@ -31,7 +31,7 @@
       <a href="#">HOW (Coming Soon)<br><span class="bottom-nav-text">Designing a Data Collaborative</span></a>
       <a href="#">MORE (Coming Soon)<br><span class="bottom-nav-text">Additional Resources</span></a>
     </nav>
-     <!-- <a class="top-bar__logo" href="./"><img src="images/govlab-logo-white.png" alt="The GovLab"></a> -->
+     <a class="top-bar__logo" href="./"><img src="images/govlab-logo-white.png" alt="The GovLab"></a>
     <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
     <nav class="main-menu js-target-menu main-menu--right">
       <a href="#">Github Repository</a>
@@ -41,15 +41,8 @@
 
 
     <div class="list-page">
-
-  <div class="top-bar top-bar--yellow">
-    <a class="top-bar__logo" href="/">
-      <img src="/images/govlab-logo-white.png" alt="The GovLab">
-    </a>
-  </div>
-
-  <div class="top-section top-section--yellow">
-    <h2>All Companies</h2>
+  <div class="top-section top-section--yellow-list-page">
+    <h2 class="top-section__list-header">All Data Collaborative Cases</h2>
   </div>
 
   <div class="page-section page-section--gray">
@@ -60,58 +53,141 @@
     <div class="dropdown-wrapper">
       <div class="row large-unstack">
 
-        <div class="columns">
-          <div class="select" id=''>
-            <select data-filter="region" class="dropdown-content">
+        <div class="columns case__region">
+          <div class="select">
+            <select data-filter="case__region" id="first" class="dropdown-content">
               <option id="all">Filter by Region</option>
               
-              <option id="usa">USA</option>
+              <option id="east-asia-and-pacific">East Asia and Pacific</option>
               
-              <option id="europe">Europe</option>
+              <option id="europe-and-central-asia">Europe and Central Asia</option>
               
-              <option id="asia">Asia</option>
+              <option id="latin-america-and-the-caribbean">Latin America and the Caribbean</option>
+              
+              <option id="middle-east-and-north-africa">Middle East and North Africa</option>
+              
+              <option id="north-america">North America</option>
+              
+              <option id="south-asia">South Asia</option>
+              
+              <option id="sub-saharan-africa">Sub-Saharan Africa</option>
               
             </select>
           </div>
         </div>
 
-        <div class="columns">
-          <div class="select" id=''>
-            <select data-filter="sector" class="dropdown-content">
+        <div class="columns case__sector">
+          <div class="select">
+            <select data-filter="case__sector" id="second" class="dropdown-content">
               <option id="all">Filter by Sector</option>
               
-              <option id="health">Health</option>
+              <option id="agriculture">Agriculture</option>
+              
+              <option id="criminal-justice">Criminal Justice</option>
+              
+              <option id="crisis-response">Crisis Response</option>
+              
+              <option id="development">Development</option>
+              
+              <option id="digital-society">Digital Society</option>
+              
+              <option id="economic-development">Economic-Development</option>
+              
+              <option id="education">Education</option>
               
               <option id="environment">Environment</option>
               
-              <option id="consumer">Consumer</option>
+              <option id="environment-infrastructure">Environment, Infrastructure</option>
               
               <option id="food">Food</option>
               
+              <option id="health">Health</option>
+              
+              <option id="health-infrastructure-environment">Health, Infrastructure, Environment</option>
+              
+              <option id="humanitarian-response">Humanitarian Response</option>
+              
+              <option id="infrastructure">Infrastructure</option>
+              
+              <option id="infrastructure-transportation">Infrastructure (Transportation)</option>
+              
+              <option id="multiple">Multiple</option>
+              
+              <option id="transporation">Transporation</option>
+              
+              <option id="public-health">Public Health</option>
+              
+              <option id="telecommunications">Telecommunications</option>
+              
+              <option id="various">Various</option>
+              
             </select>
           </div>
         </div>
 
-        <div class="columns">
-          <div class="select" id=''>
-            <select data-filter="other" class="dropdown-content">
-              <option id="all">Filter by Type</option>
+        <div class="columns case__type">
+          <div class="select">
+            <select data-filter="case__type" id="third" class="dropdown-content">
+              <option id="all">Filter by Collaborative Type</option>
               
-              <option id="trusted-intermediaries">Trusted Intermediaries</option>
+              <option id="application-programming-interfaces-apis">Application Programming Interfaces (APIs)</option>
+              
+              <option id="data-cooperatives-and-pooling">Data Cooperatives and Pooling</option>
+              
+              <option id="intelligence-products">Intelligence Products</option>
               
               <option id="prizes-challenges">Prizes & Challenges</option>
               
+              <option id="research-partnerships">Research Partnerships</option>
+              
+              <option id="trusted-intermediaries">Trusted Intermediaries</option>
+              
             </select>
           </div>
         </div>
-        <div class="close clear_filters table-sortable__control table-sortable__control--simple">
-          <i class="material-icons">close</i>
+
+        <div class="columns case__data-type">
+          <div class="select">
+            <select data-filter="case__data-type" id="fourth" class="dropdown-content">
+              <option id="all">Filter by Data Type</option>
+              
+              <option id="disclosed-personal-data">Disclosed Personal Data</option>
+              
+              <option id="disclosed-non-personal-data">Disclosed Non-Personal Data</option>
+              
+              <option id="observed-personal-data">Observed Personal Data</option>
+              
+              <option id="observed-non-personal-data">Observed Non-Personal Data</option>
+              
+            </select>
+          </div>
         </div>
+        <!-- <div class="close clear_filters table-sortable__control table-sortable__control--simple table-sortable--clear-all">
+          <button type="button" name="button">CLEAR ALL</button>
+          <i class="material-icons">close</i>
+        </div> -->
       </div>
     </div>
+    <div class="row align-center">
+      <div class="row large-unstack">
+        <!-- <div class="dropdown-wrapper__search-clear"> -->
+          <div class="columns ">
+            <form class="dropdown-wrapper__search">
+              <input id="" class="fuzzy-search" type="text" placeholder="Filter by keyword" data-sort="">
+            </form>
+          </div>
+          <div class="columns ">
+            <div class="clear_filters">
+              <button type="button" name="button">CLEAR ALL</button>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+
+
+    </div>
+
   </div>
-
-
 
   <div class="table-section" id="case_data">
     <table class="table-sortable table-section__table">
@@ -122,17 +198,15 @@
 
           <div class="table-sortable__control-group">
 
-            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
+            <!-- <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span> -->
 
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
-
           </div>
 
           <!-- <form class="table-sortable__search ">
-            <input id="company__name--input" class="fuzzy-search" type="text" placeholder="Filter by text">
+            <input id="" class="fuzzy-search" type="text" placeholder="Filter by text">
             <button type="submit" class=""><i class="material-icons">close</i></button>
           </form> -->
-
         </th>
 
         <th class="table-sortable__head-cell case__region">
@@ -150,63 +224,131 @@
         </th>
 
         <th class="table-sortable__head-cell case__type">
-          <span>Type</span>
+          <span>Collaborative Type</span>
           <div class="table-sortable__control-group">
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__type"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
         </th>
 
+        <th class="table-sortable__head-cell case__data-type">
+          <span>Data Type</span>
+          <div class="table-sortable__control-group">
+            <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__data-type"><i class="material-icons">keyboard_arrow_down</i></span>
+          </div>
+        </th>
+
       </thead>
 
-
-      <tbody class="list">
-        <tr>
+      <div id="list-id">
+        <tbody class="list">
+          <tr class="case">
+            
+            <td case-name="Awesome Collab" class="case__title">
+              <a href="">Awesome Collab</a>
+            </td>
+            <td case-region="all south-asia" class="case__region">
+              South Asia
+            </td>
+            <td case-sector="all education" class="case__sector">
+              Education
+            </td>
+            <td case-type="all intelligence-products" class="case__type">
+              Intelligence Products
+            </td>
+            <td case-data-type="all  observed-non-personal-data " class="case__data-type">
+              Observed Non-Personal Data
+            </td>
+          </tr>
           
-          <td case-name="Serafina Case Study" class="case">
-            <a href="http://twitter.com">Serafina Case Study</a>
-          </td>
-          <td case-region="North America" class="region">
-            North America
-          </td>
-          <td case-sector="Food" class="sector">
-            Food
-          </td>
-          <td case-type="Trusted Intermediaries" class="type">
-            Trusted Intermediaries
-          </td>
-        </tr>
-        
-          <td case-name="Test Collab" class="case">
-            <a href="http://www.google.com">Test Collab</a>
-          </td>
-          <td case-region="North America" class="region">
-            North America
-          </td>
-          <td case-sector="Agriculture" class="sector">
-            Agriculture
-          </td>
-          <td case-type="Trusted Intermediaries" class="type">
-            Trusted Intermediaries
-          </td>
-        </tr>
-        
-          <td case-name="Test Study" class="case">
-            <a href="http://google.com">Test Study</a>
-          </td>
-          <td case-region="North America" class="region">
-            North America
-          </td>
-          <td case-sector="Economic-Development" class="sector">
-            Economic-Development
-          </td>
-          <td case-type="Prizes & Challenges" class="type">
-            Prizes & Challenges
-          </td>
-        </tr>
-        
-      </tbody>
+            <td case-name="Test Collab" class="case__title">
+              <a href="">Test Collab</a>
+            </td>
+            <td case-region="all latin-america-and-the-caribbean" class="case__region">
+              Latin America and the Caribbean
+            </td>
+            <td case-sector="all environment" class="case__sector">
+              Environment
+            </td>
+            <td case-type="all research-partnerships" class="case__type">
+              Research Partnerships
+            </td>
+            <td case-data-type="all " class="case__data-type">
+              
+            </td>
+          </tr>
+          
+            <td case-name="Are you working, search functionality?" class="case__title">
+              <a href="">Are you working, search functionality?</a>
+            </td>
+            <td case-region="all sub-saharan-africa" class="case__region">
+              Sub-Saharan Africa
+            </td>
+            <td case-sector="all crisis-response" class="case__sector">
+              Crisis Response
+            </td>
+            <td case-type="all prizes-challenges" class="case__type">
+              Prizes & Challenges
+            </td>
+            <td case-data-type="all " class="case__data-type">
+              
+            </td>
+          </tr>
+          
+            <td case-name="New Collaborative" class="case__title">
+              <a href="">New Collaborative</a>
+            </td>
+            <td case-region="all south-asia" class="case__region">
+              South Asia
+            </td>
+            <td case-sector="all food" class="case__sector">
+              Food
+            </td>
+            <td case-type="all trusted-intermediaries" class="case__type">
+              Trusted Intermediaries
+            </td>
+            <td case-data-type="all " class="case__data-type">
+              
+            </td>
+          </tr>
+          
+            <td case-name="Stuff Stuff" class="case__title">
+              <a href="">Stuff Stuff</a>
+            </td>
+            <td case-region="all europe-and-central-asia" class="case__region">
+              Europe and Central Asia
+            </td>
+            <td case-sector="all environment" class="case__sector">
+              Environment
+            </td>
+            <td case-type="all research-partnerships" class="case__type">
+              Research Partnerships
+            </td>
+            <td case-data-type="all  disclosed-personal-data  observed-personal-data " class="case__data-type">
+              Disclosed Personal Data, Observed Personal Data
+            </td>
+          </tr>
+          
+            <td case-name="Helloooo" class="case__title">
+              <a href="">Helloooo</a>
+            </td>
+            <td case-region="all europe-and-central-asia" class="case__region">
+              Europe and Central Asia
+            </td>
+            <td case-sector="all development" class="case__sector">
+              Development
+            </td>
+            <td case-type="all research-partnerships" class="case__type">
+              Research Partnerships
+            </td>
+            <td case-data-type="all " class="case__data-type">
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
 
-    </table>
   </div>
 
 </div>

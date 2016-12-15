@@ -11,6 +11,12 @@
 
 .top-section--yellow {
   background-color: #e5c810; }
+.top-section--yellow-list-page {
+  padding: 100px 0;
+  background-color: #e5c810; }
+.top-section__list-header {
+  padding: 0;
+  margin: 0; }
 .top-section--logo {
   padding-bottom: 130px; }
 .top-section__main-img {
@@ -218,10 +224,6 @@
   width: 90%;
   margin: 0 auto;
   position: relative; }
-  .dropdown-wrapper .clear_filters {
-    position: absolute;
-    right: 0;
-    padding: 8px; }
   .dropdown-wrapper .select {
     margin-bottom: 25px; }
 
@@ -231,13 +233,23 @@
     background-color: rgba(0, 0, 0, 0.1); }
   .table-section__table th {
     background-color: rgba(0, 0, 0, 0.8);
-    padding-left: 50px; }
+    padding-left: 30px; }
     @media (min-width: 64.063em) and (max-width: 90em) {
       .table-section__table th {
         font-size: 1.1rem; } }
   .table-section__table td {
-    padding-left: 50px; }
+    padding-left: 30px; }
+@media (max-width: 40em) {
+  .table-section .case__region, .table-section .case__sector, .table-section .case__type, .table-section .case__data-type {
+    display: none; } }
+@media (max-width: 40em) {
+  .table-section .case__title {
+    font-size: 16px; } }
 
+.table-sortable--clear-all {
+  background-color: rgba(0, 0, 0, 0.1); }
+  .table-sortable--clear-all:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
 .table-sortable__head-cell {
   padding: 0;
   position: relative; }
@@ -249,7 +261,14 @@
 .table-sortable__control-group {
   float: right;
   margin-right: 15px;
-  color: black; }
+  color: white; }
+.table-sortable__control {
+  float: left;
+  padding: 15px; }
+  .table-sortable__control > i {
+    vertical-align: middle; }
+  .table-sortable__control--simple {
+    display: inline-block; }
 
 .material-icons {
   font-family: 'Material Icons';
