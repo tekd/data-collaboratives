@@ -69,20 +69,11 @@ $(document).ready(function() {
     $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
   });
 
-  // Table Search
-   $('.js-open-table-search').click(function (e) {
-       e.preventDefault();
-       $(this).parent().siblings('.table-sortable__search').toggleClass('table-sortable__search--active');
-   });
-
-   $(".js-open-table-search").on("click", function(e) {
-      $($(this).attr('data-target')).focus();
-   })
-
-   // Search Click Behavior
-  $('.js-trigger-search').click(function (e) {
-      e.preventDefault();
-      $(this).parent().addClass('js-active');
-      $('#overlay').addClass('js-active');
+  
+  $(".fuzzy-search").keyup(function() {
+    $($(this).attr('data-target')).focus();
+    var searchString = $(this).val();
+    caseList.search(searchString);
   });
+
 });
