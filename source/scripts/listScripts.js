@@ -15,8 +15,6 @@ $(document).ready(function() {
 
   var caseList = new List('case_data', options);
 
-  console.log(caseList);
-
   //SORT LIST ON DOC READY
   caseList.sort('case__title', { order: "asc" });
 
@@ -41,9 +39,7 @@ $(document).ready(function() {
         var option = $(this).children(":selected").attr("id");
         searchQueries[filterSelection] = option;
       });
-
     });
-    console.log(searchQueries);
     // FILTER WITH DROPDOWNS
     caseList.filter(function(item) {
       if (item.values()["case__region"] !== null && item.values()["case__data-type"] !== null && item.values()["case__type"] !== null && item.values()["case__sector"] !== null && item.values()["case__region"].includes(searchQueries["case__region"]) &&
