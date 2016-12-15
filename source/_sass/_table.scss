@@ -3,15 +3,29 @@
   margin: 0 auto;
   position: relative;
 
+  button {
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+  }
+
   .clear_filters {
-    position: absolute;
-    right: 0;
-    padding: 8px;
+    // position: absolute;
+    // right: 0;
+    // padding: 8px;
   }
 
   .select {
     margin-bottom: 25px;
   }
+
+  // &__search {
+  //   width: 80%;
+  // }
+
+  // &__search-clear {
+  //   display: inline-block;
+  //   width: 100%;
+  // }
 }
 
 .table-section {
@@ -26,7 +40,7 @@
 
     th {
       background-color: rgba(0, 0, 0, 0.8);
-      padding-left: 50px;
+      padding-left: 30px;
 
       @include breakpoint($large) {
         font-size: 1.1rem;
@@ -34,12 +48,30 @@
     }
 
     td {
-      padding-left: 50px;
+      padding-left: 30px;
+    }
+  }
+
+  .case__region, .case__sector, .case__type, .case__data-type {
+    @include breakpoint($small-only) {
+      display: none;
+    }
+  }
+
+  .case__title {
+    @include breakpoint($small-only) {
+      font-size: 16px;
     }
   }
 }
 
 .table-sortable {
+  &--clear-all {
+    background-color: rgba(0, 0, 0, 0.1);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
 
   &__head-cell {
     padding: 0;
@@ -65,6 +97,16 @@
   &__control-group {
     float: right;
     margin-right: 15px;
-    color: black;
+    color: white;
+  }
+
+  &__control {
+    float: left;
+    padding: 15px;
+
+    > i { vertical-align: middle; }
+
+
+    &--simple { display: inline-block; }
   }
 }

@@ -17,6 +17,19 @@
     background-color: $yellow;
   }
 
+  &--yellow-list-page {
+    padding: 100px 0;
+    background-color: $yellow;
+  }
+
+  &__list-header {
+    padding: 0;
+    margin: 0;
+    @include breakpoint($small-only) {
+      
+    }
+  }
+
   &--logo {
     padding-bottom: 130px;
   }
