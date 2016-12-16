@@ -5,7 +5,10 @@
   &__header {
     // margin-bottom: -57px;
     // padding-bottom: 200px!important;
-    height: 310px;
+    height: 305px;
+    @include breakpoint($small-only) {
+      height: 330px;
+    }
 
     &__title {
       padding-top: 50px;
@@ -17,10 +20,10 @@
     }
 
     &__sub-title {
-      padding-top: 10px;
+      padding-top: 5px;
       padding-bottom: 50px;
-      font-size: 1.2rem!important;
-      font-weight: 400;
+      font-size: 1.3rem!important;
+      font-weight: 400!important;
       margin-top: 0;
 
     }
@@ -31,11 +34,26 @@
       padding-left: 40px;
       padding-right: 40px;
       font-weight: bold;
-      // bottom: 0;
-
       margin-bottom: -50px;
       position: relative;
       z-index: 1;
+
+      &:hover {
+        background-color: darken($yellow, 7);
+      }
     }
+  }
+
+  &--info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &--top {
+      // background-color: rgba(0,0,0,0.1);
+    }
+  }
+
+  &--purpose {
+    background-color: rgba(0,0,0,0.1);
+    padding-bottom: 50px;
   }
 }
