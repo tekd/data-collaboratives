@@ -19,6 +19,9 @@
 }
 
 .top-section {
+  margin-top: -50px;
+
+
   &--yellow {
     background-color: $yellow;
   }
@@ -46,6 +49,7 @@
   }
 
   &__logo {
+    padding-top: 50px;
     // padding-top: 5%;
   }
 
