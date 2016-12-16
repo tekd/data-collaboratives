@@ -19,6 +19,11 @@
       }
     }
 
+    &__shared {
+      font-size: 2rem!important;
+      font-weight: 400;
+    }
+
     &__sub-title {
       padding-top: 5px;
       padding-bottom: 50px;
@@ -47,13 +52,23 @@
   &--info {
     padding-top: 50px;
     padding-bottom: 50px;
-    &--top {
-      // background-color: rgba(0,0,0,0.1);
-    }
   }
 
   &--purpose {
     background-color: rgba(0,0,0,0.1);
     padding-bottom: 50px;
+  }
+
+  &--more-info {
+    padding-top: 50px;
+    background-color: rgba(0,0,0,0.8);
+    // background-color: $gray;
+    color: white;
+
+    &__img {
+      width: 70%;
+      margin-left: 150px;
+      padding-bottom: 20px;
+    }
   }
 }
