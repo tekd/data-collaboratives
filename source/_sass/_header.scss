@@ -1,10 +1,16 @@
 .top-bar {
-  &--yellow {
-    background-color: $yellow;
+  &--transparent {
+    background-color: transparent;
   }
 
   .bottom-nav-text {
     font-size: .8rem;
+  }
+
+  &__logo {
+    img {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -17,7 +23,12 @@
     background-color: $yellow;
   }
 
+  &--gray {
+    background-color: $gray;
+  }
+
   &--yellow-list-page {
+    margin-top: -50px;
     padding: 100px 0;
     background-color: $yellow;
   }
@@ -26,7 +37,7 @@
     padding: 0;
     margin: 0;
     @include breakpoint($small-only) {
-      
+
     }
   }
 
