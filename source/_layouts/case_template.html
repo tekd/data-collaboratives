@@ -60,9 +60,11 @@ layout: default
         <p>
           Data Type: <strong>{{page.dataType | join: ", "}}</strong>
         </p>
-        <p>
-          Type of Data Collaborative: <strong>{{page.type | join: ", "}}</strong>
-        </p>
+        {% if page.type %}
+          <p>
+            Type of Data Collaborative: <strong>{{page.type | join: ", "}}</strong>
+          </p>
+        {% endif %}
       </div>
       <div class="column small-12 column medium-6">
         <img class="case-page--more-info__img" src="images/icosa-alpha.png" alt="" />

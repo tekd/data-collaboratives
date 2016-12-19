@@ -50,9 +50,3 @@ page_gen:
     name: 'caseStudy'
     dir: 'cases'
     # extension: 'html'
-
-# page_gen:
-#   - data: 'member'
-#     template: 'profile'
-#     name: 'full_name'
-    # dir: './source'
