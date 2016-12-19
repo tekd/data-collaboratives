@@ -14,7 +14,7 @@ datacollaborative:
   - Intelligence Product
   dataType:
   - Disclosed Personal Data
-  url: https://www.23andme.com/research/
+  link: https://www.23andme.com/research/
   whatDataShared: 23andMe shares its database of anonymized genetic data from more
     than 650,000 customers who decide to participate on the online medical studies.
     The ResearchKit app, developed in partnership with Apple, allows participants
