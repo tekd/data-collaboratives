@@ -43,3 +43,10 @@ contentful:
         access_token: 19fe7171bb04c2c91672bd62917606d1603fdd0dd6a9e83fd29895f279cbd1f0
         base_path: ./source         # Optional - Defaults to Current directory
         destination: ./source/_data/contentful/spaces # Optional - Defaults to _data/contentful/spaces
+
+page_gen:
+  - data: 'cases.datacollaborative'
+    template: 'case_template'
+    name: 'caseStudy'
+    dir: 'cases'
+    # extension: 'html'
