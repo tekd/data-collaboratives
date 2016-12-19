@@ -1,0 +1,74 @@
+---
+layout: default
+
+---
+
+<div class="case-page">
+
+  <div class="top-section top-section--gray case-page__header">
+    <h1 class="case-page__header__title">{{page.caseStudy}}</h1>
+    <!-- <h1 class="case-page__header__shared">Shared by 23andMe</h1> -->
+    <h2 class="case-page__header__sub-title">{{page.sector | join: ", "}}</h2>
+
+    <a class="button case-page__header--button" href="{{page.url}}">Go to website</a>
+  </div>
+
+  <div class="page-section case-page--info">
+    <div class="row align-center case-page--info--top">
+      <div class="small-12 column medium-6 ">
+        <h4>The Data</h4>
+        <p>
+          {{page.whatDataShared}}
+        </p>
+      </div>
+      <div class="small-12 column medium-6 ">
+        <h4>How the data was shared</h4>
+        <p>
+          {{page.howDataShared}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section case-page--purpose">
+    <div class="row">
+      <div class="column">
+        <h4>Purpose of Data Shared</h4>
+        <p>
+           {{page.purpose}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section case-page--more-info">
+    <div class="row">
+      <div class="column small-12 column medium-6 ">
+        <!-- <h4>More Info</h4> -->
+        <p>
+          Shared by: <strong>{{page.sharedBy}}</strong>
+        </p>
+        <p>
+          Shared with: <strong>{{page.sharedWith | join: ", "}}</strong>
+        </p>
+        <p>
+          Region: <strong>{{page.region}}</strong>
+        </p>
+        <p>
+          Sector: <strong>{{page.sector}}</strong>
+        </p>
+        <p>
+          Data Type: <strong>{{page.dataType | join: ", "}}</strong>
+        </p>
+        <p>
+          Type of Data Collaborative: <strong>{{page.type | join: ", "}}</strong>
+        </p>
+      </div>
+      <div class="column small-12 column medium-6">
+        <img class="case-page--more-info__img" src="images/icosa-alpha.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+
+</div>
