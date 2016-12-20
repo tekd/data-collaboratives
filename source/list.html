@@ -186,11 +186,11 @@ data-type:
             <td case-region="all {{item.region | slugify }}" class="case__region">
               {{ item.region }}
             </td>
-            <td case-sector="all {{item.sector | slugify }}" class="case__sector">
-              {{ item.sector }}
+            <td case-sector="all {% for d in item.sector %} {{ d | slugify }} {% endfor %}" class="case__sector">
+              {{ item.sector | join: ", "  }}
             </td>
-            <td case-type="all {{item.type | slugify }}" class="case__type">
-              {{ item.type }}
+            <td case-type="all {% for d in item.collaborativeType %} {{ d | slugify }} {% endfor %}" class="case__type">
+              {{ item.collaborativeType  | join: ", " }}
             </td>
             <td case-data-type="all {% for d in item.dataType %} {{ d | slugify }} {% endfor %}" class="case__data-type">
               {{ item.dataType | join: ", " }}
