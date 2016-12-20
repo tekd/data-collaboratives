@@ -120,16 +120,12 @@ data-type:
           </div>
         <!-- </div> -->
       </div>
-
-
     </div>
-
   </div>
 
   <div class="table-section" id="case_data">
     <table class="table-sortable table-section__table">
       <thead class="cases">
-
         <th class="table-sortable__head-cell case__title">
           <span>Case</span>
 
@@ -173,7 +169,6 @@ data-type:
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__data-type"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
         </th>
-
       </thead>
 
       <div id="list-id">
@@ -187,7 +182,7 @@ data-type:
               {{ item.region }}
             </td>
             <td case-sector="all {% for d in item.sector %} {{ d | slugify }} {% endfor %}" class="case__sector">
-              {{ item.sector | join: ", "  }}
+              {{ item.sector | join: ", " }}
             </td>
             <td case-type="all {% for d in item.collaborativeType %} {{ d | slugify }} {% endfor %}" class="case__type">
               {{ item.collaborativeType  | join: ", " }}
@@ -200,7 +195,5 @@ data-type:
         </tbody>
       </table>
     </div>
-
   </div>
-
 </div>
