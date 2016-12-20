@@ -181,7 +181,7 @@ data-type:
           <tr class="case">
             {% for item in site.data.contentful.spaces.cases.datacollaborative %}
             <td case-name="{{item.caseStudy}}" class="case__title">
-              <a href="{{item.link}}">{{ item.caseStudy }}</a>
+              <a href="/cases/{{item.caseStudy | slugify }}.html">{{ item.caseStudy }}</a>
             </td>
             <td case-region="all {{item.region | slugify }}" class="case__region">
               {{ item.region }}
