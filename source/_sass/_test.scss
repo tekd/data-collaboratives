@@ -17,7 +17,7 @@
     transform: translate(-50%, -50%);
 }
 .slide {
-  height: 100vh;
+  
   padding: 0;
   // background: $main-color;
   text-align: center;
@@ -26,11 +26,17 @@
   transition: all 1s ease-out;
   &__image-container {
     padding: 0;
-    height: 100vh;
+    width: 100%;
+    @include breakpoint($small-only)  {
+      height: 50vh;
+    }
   }
   &__text-container {
+    @include breakpoint($small-only)  {
+      padding:10px;
+    }
     padding: 6rem;
-    height: 100vh;
+    
   }
   h2 {
     color: $gray;
@@ -93,9 +99,10 @@
 }
 
 #slide03 {
+  height: 100vh;
   padding-top: 30vh;
   // border: solid purple 10px;
-  height: 100vh;
+  
    background-color: #FFF;
    &__logo { 
     width: 4rem;
