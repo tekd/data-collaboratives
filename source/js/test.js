@@ -37,13 +37,14 @@
   $('.slide').each(function() {
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this.children[0],
-      triggerHook: 0.9,
+      // triggerHook: .9
+      offset: -200
     })
     .setClassToggle(this, 'fade-in') // add class to slide01
     .addIndicators({
       name: 'fade scene',
       colorTrigger: 'black',
-      colorStart: '#75C695',
+      colorStart: 'green',
       colorEnd: 'red'
     }) // this requires a plugin
     .addTo(controller);
