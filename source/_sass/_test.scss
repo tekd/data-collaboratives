@@ -60,6 +60,57 @@
     transform: translateY(0);
 }
 
+#toc {
+  background: $main-color;
+  ul {
+    list-style: none;
+    text-align: left;
+    color: $gray;
+    padding-left: 0;
+    p {
+
+    }
+    .subitem { padding-left: 2rem;}
+
+  }
+}
+
+@mixin toc-markers($marker) {
+  &:before {
+    background-repeat: no-repeat;
+    content: $marker;
+    font-size: 15rem;
+    position: absolute;
+    top: 0;
+    opacity: .2;
+    color: $gray;
+    @include breakpoint($small-only)  {
+      position: relative;
+      font-size: 4rem;
+      top: 4rem;
+      left: 7rem;
+    }
+    @include breakpoint($medium)  {
+      position: relative;
+      font-size: 8rem;
+      top: 11rem;
+      left: 7rem;
+    }
+  }
+}
+#toc__1 {
+  @include toc-markers("1");
+}
+#toc__2 {
+  @include toc-markers("2");
+}
+#toc__3 {
+  @include toc-markers("3");
+}
+#toc__4 {
+  @include toc-markers("4");
+}
+
 #slide01 {
   // border: solid black 10px;
   background: $main-color;
