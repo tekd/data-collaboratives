@@ -37,8 +37,8 @@
   $('.slide').each(function() {
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this.children[0],
-      // triggerHook: .9
-      offset: -200
+      triggerHook: .9
+      // offset: -200
     })
     .setClassToggle(this, 'fade-in') // add class to slide01
     .addIndicators({
@@ -48,6 +48,23 @@
       colorEnd: 'red'
     }) // this requires a plugin
     .addTo(controller);
+  });
+
+// PREVIOUS/NEXT
+
+  $("#next").click(function(e){
+    e.preventDefault();
+    targetSlide = $(this).parent().attr("data-marker") + 1;
+    TweenMax.to(window, 0.5, {scrollTo:{y:$("#slide" + targetSlide).offset().top}});
+  });
+
+  $("#prev").click(function(e){
+    e.preventDefault();
+    if(section > 1){
+      section--;
+      TweenMax.to(window, 0.5, {scrollTo:{y:$("#div" + section).offset().top}});
+    }
+    
   });
 
 });
