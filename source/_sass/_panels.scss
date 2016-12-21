@@ -38,7 +38,7 @@
 .video-bg {
   position: relative;
   overflow: hidden;
-  
+
   &__video {
     position: absolute;
     mix-blend-mode: screen;
@@ -53,8 +53,6 @@
   @include breakpoint($large) {
     position: relative;
   }
-
-
 
   &--img-bg {
     background: url(../images/temporary.png) no-repeat center center;
