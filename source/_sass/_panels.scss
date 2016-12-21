@@ -17,6 +17,38 @@
   }
 }
 
+.divider--long {
+  padding: 60px 0;
+  h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: none;
+    margin-top: 10px;
+    font-weight: 400;
+    opacity: .6;
+  }
+}
+
+.video-bg {
+  position: relative;
+  overflow: hidden;
+  
+  &__video {
+    position: absolute;
+    mix-blend-mode: screen;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: .15;
+  }
+}
+
 .dual-panel {
   @include breakpoint($large) {
     position: relative;
