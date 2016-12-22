@@ -5,12 +5,24 @@ layout: default
 
 <div class="case-page">
 
-  <div class="top-section top-section--gray case-page__header">
-    <h1 class="case-page__header__title">{{page.caseStudy}}</h1>
-    <!-- <h1 class="case-page__header__shared">Shared by 23andMe</h1> -->
-    <h2 class="case-page__header__sub-title">{{page.sector | join: ", "}}</h2>
+  <div class="top-section case-page__header" style="background-image: url('/images/54t5rivyaii-taduuda.jpg')">
+    <hgroup>
+      <h1><span>{{page.caseStudy}}</span></h1>
+      <h2>
+        {% if page.dataType %}
+          {% for item in page.dataType %}
+            <span>{{ item }}</span>
+          {% endfor %}
+        {% endif %}
 
-    <a class="button case-page__header--button" href="{{page.link}}">Go to website</a>
+        {% if page.sector %}
+          {% for item in page.sector %}
+            <span>{{ item }}</span>
+          {% endfor %}
+        {% endif %}
+      </h2>
+    </hgroup>
+    <div class="case-page__header--button"><a class="button" href="{{page.link}}">Go to website</a></div>
   </div>
 
   <div class="page-section case-page--info">
@@ -32,48 +44,66 @@ layout: default
 
   <div class="page-section case-page--purpose">
     <div class="row">
-      <div class="column">
+      <div class="column large-6">
         {% if page.purpose %}
           <h4>Purpose of Data Shared</h4>
           <p>{{ page.purpose }}</p>
         {% endif %}
       </div>
-    </div>
-  </div>
-
-  <div class="page-section case-page--more-info">
-    <div class="row">
-      <div class="column small-12 column medium-6 ">
-        <!-- <h4>More Info</h4> -->
+      <div class="column large-6">
         {% if page.sharedBy %}
-          <p>Shared by: <strong>{{ page.sharedBy }}</strong></p>
+        <div class="share-panel">
+          <h5>Shared by</h5>
+          {% for item in page.sharedBy %}
+            <a href="#" class="share-panel__item">{{item}}</a>
+          {% endfor %}
+        </div>
         {% endif %}
-
         {% if page.sharedWith %}
-          <p>Shared with: <strong>{{page.sharedWith | join: ", "}}</strong></p>
+        <div class="share-panel">
+          <h5>Shared by</h5>
+          {% for item in page.sharedWith %}
+            <a href="#" class="share-panel__item">{{item}}</a>
+          {% endfor %}
+        </div>
         {% endif %}
-
-        {% if page.region %}
-          <p>Region: <strong>{{ page.region }}</strong></p>
-        {% endif %}
-
-        {% if page.sector %}
-          <p>Sector: <strong>{{page.sector}}</strong></p>
-        {% endif %}
-
-        {% if page.dataType %}
-          <p>Data Type: <strong>{{page.dataType | join: ", "}}</strong></p>
-        {% endif %}
-
-        {% if page.type %}
-          <p>Type of Data Collaborative: <strong>{{page.type | join: ", "}}</strong></p>
-        {% endif %}
-      </div>
-      <div class="column small-12 column medium-6">
-        <img class="case-page--more-info__img" src="/images/icosa-alpha.png" alt="" />
       </div>
     </div>
   </div>
 
+  <div class="page-section page-section--black regions">
+    <div class="row align-center">
+      <div class="large-8 column">
+        <h3>Region: {{ page.region }}</h3>
 
+        {% assign map_region = page.region %}
+
+        {% if map_region == 'Worldwide' %}
+          <div class="regions__map regions--worldwide">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'North America' %}
+          <div class="regions__map regions--north-america">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'Latin America and the Caribbean' %}
+          <div class="regions__map regions--latin-america">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'East Asia and Pacific' or map_region == 'South Asia' %}
+          <div class="regions__map regions--asia">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'Sub-Saharan Africa' or map_region == 'Middle East and North Africa' %}
+          <div class="regions__map regions--africa">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'Europe and Central Asia' %}
+          <div class="regions__map regions--europe">
+            {% include map.html %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
