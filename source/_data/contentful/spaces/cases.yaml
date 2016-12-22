@@ -90,6 +90,7 @@ resources:
     N., . . . Meissner, F.
   title: 'Big Data and Positive Social Change in the Developing World: A White Paper
     for Practitioners and Researchers'
+  publication: false information
   pubDate: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 Z
   url: https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf
   shortDescription: A white paper describing the potential of big data, and corporate

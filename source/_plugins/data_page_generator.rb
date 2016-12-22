@@ -1,7 +1,6 @@
 # Generate pages from individual records in yml files
 # (c) 2014-2016 Adolfo Villafiorita
 # Distributed under the conditions of the MIT License
-
 module Jekyll
 
   module Sanitizer
@@ -69,6 +68,7 @@ module Jekyll
       # data contains the specification of the data for which we want to generate
       # the pages (look at the README file for its specification)
       data = site.config['page_gen']
+
       if data
         data.each do |data_spec|
           template = data_spec['template'] || data_spec['data']
@@ -87,8 +87,10 @@ module Jekyll
                 records = records[level]
               end
             end
-            records.each do |record|
-              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
+            unless records.nil?
+              records.each do |record|
+                site.pages << DataPage.new(site, site.source, index_files, dir, record, name, template, extension)
+              end
             end
           else
             puts "error. could not find template #{template}" if not site.layouts.key? template
