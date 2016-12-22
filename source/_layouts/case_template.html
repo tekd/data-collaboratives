@@ -43,7 +43,7 @@ layout: default
   </div>
 
   <div class="page-section case-page--purpose">
-    <div class="row">
+    <div class="row large-unstack">
       <div class="column large-6">
         {% if page.purpose %}
           <h4>Purpose of Data Shared</h4>
@@ -61,7 +61,7 @@ layout: default
         {% endif %}
         {% if page.sharedWith %}
         <div class="share-panel">
-          <h5>Shared by</h5>
+          <h5>Shared with</h5>
           {% for item in page.sharedWith %}
             <a href="#" class="share-panel__item">{{item}}</a>
           {% endfor %}
