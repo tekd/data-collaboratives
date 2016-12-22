@@ -21,17 +21,17 @@ $(document).ready(function () {
     });
 
     // Modal Click Behavior
-    $('.js-open-modal').click(function () {
-        $('.js-target-modal').addClass('js-active');
-        $('#overlay').addClass('js-active');
-        $('body').addClass('js-body-modal-active');
-    });
+    // $('.js-open-modal').click(function () {
+    //     $('.js-target-modal').addClass('js-active');
+    //     $('#overlay').addClass('js-active');
+    //     $('body').addClass('js-body-modal-active');
+    // });
 
-    $('.js-close-modal').click(function () {
-        $('.js-target-modal').removeClass('js-active');
-        $('#overlay').removeClass('js-active');
-        $('body').removeClass('js-body-modal-active');
-    });
+    // $('.js-close-modal').click(function () {
+    //     $('.js-target-modal').removeClass('js-active');
+    //     $('#overlay').removeClass('js-active');
+    //     $('body').removeClass('js-body-modal-active');
+    // });
 
     // Sticky Click Behavior
     $('.js-close-sticky').click(function () {
@@ -51,11 +51,11 @@ $(document).ready(function () {
         $('#overlay').addClass('js-active');
     });
 
-    // General Click Behavior for Overlay
-    $('#overlay').click(function () {
-        $('.js-active').removeClass('js-active');
-        $('.js-active-menu').removeClass('js-active-menu');
-    });
+    // // General Click Behavior for Overlay
+    // $('#overlay').click(function () {
+    //     $('.js-active').removeClass('js-active');
+    //     $('.js-active-menu').removeClass('js-active-menu');
+    // });
 
     // Slider
     $('.slider').slick({

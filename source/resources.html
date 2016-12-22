@@ -1,0 +1,61 @@
+---
+layout: default
+title: Resources | Data Collaboratives
+---
+
+<div class="resources-page">
+  <div class="top-section top-section--yellow-list-page">
+    <h2 class="top-section__list-header">Resources</h2>
+  </div>
+  
+  {% assign resources = site.data.contentful.spaces.cases.resources %}
+
+
+  <div class="page-section results-section">
+    <div class="row expanded">
+      <div class="columns results-container">
+        {% for resource in resources %}
+        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+          <h3 class="result-item__name">{{resource.title}}</h3>
+          <p class="result-item__authors">
+            {{resource.authors}}
+          </p>
+
+          <!-- Publication -->
+          <div class="result-item__taxonomy result-item__taxonomy--publication">
+            <span class="result-item__taxonomy__key">Publication</span>
+              <p>{{resource.publication}}</p>
+            </span>
+          </div>
+
+          <!-- Publication Date -->
+          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+            <span class="result-item__taxonomy__key">Publication Date</span>
+            <span class="result-item__taxonomy__value">
+              <p class="result-item__tag">{{resource.pubDate | date: "%Y" }}</p>
+            </span>
+          </div>
+
+          <!-- Resource type -->
+          <div class="result-item__taxonomy result-item__taxonomy--type">
+            <span class="result-item__taxonomy__key">Type</span>
+            <span class="result-item__taxonomy__value">
+              {% for resource_type in resource.type %}
+                <p class="result-item__tag">{{resource_type}}</p>
+              {% endfor %}
+            </span>
+          </div>
+
+          <!-- Short Description -->
+          <div class="result-item__short-description">
+            <p>{{resource.shortDescription }}</p>
+          </div>
+
+          {% include resource-modal.html %}
+
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

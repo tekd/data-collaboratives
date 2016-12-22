@@ -1,0 +1,48 @@
+<div class="modal js-target-modal">
+    <header class="modal__header modal__header--yellow">
+        <i class="modal__close material-icons js-close-modal">close</i>
+        <h1 class="modal__title">{{resource.title}}</h1>
+    </header>
+    <section class="modal__content">
+        <h3><a href="{{resource.url}}" title="{{resource.title}}">{{resource.title}}</a></h3>
+        <p class="result-item__authors">
+          {{resource.authors}}
+        </p>
+
+        <!-- Publication -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication">
+          <span class="result-item__taxonomy__key">Publication</span>
+            <p>{{resource.publication}}</p>
+          </span>
+        </div>
+
+        <!-- Publication Date -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+          <span class="result-item__taxonomy__key">Publication Date</span>
+          <span class="result-item__taxonomy__value">
+            <p class="result-item__tag">{{resource.pubDate | date: "%Y" }}</p>
+          </span>
+        </div>
+
+        <!-- Resource type -->
+        <div class="result-item__taxonomy result-item__taxonomy--type">
+          <span class="result-item__taxonomy__key">Type</span>
+          <span class="result-item__taxonomy__value">
+            {% for resource_type in resource.type %}
+              <p class="result-item__tag">{{resource_type}}</p>
+            {% endfor %}
+          </span>
+        </div>
+
+        <!-- Short Description -->
+        {% if resource.annotation == "" %}
+        <div class="result-item__short-description">
+          <p>{{resource.shortDescription }}</p>
+        </div>
+        {% endif %}
+        <p>{{resource.annotation}}</p>
+    </section>
+    <footer class="modal__controls">
+        <a class="button js-close-modal" href="#">OK</a>
+    </footer>
+</div>

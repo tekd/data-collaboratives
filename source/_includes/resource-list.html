@@ -1,0 +1,81 @@
+{% assign resources = site.data.contentful.spaces.cases.resources %}
+
+
+<div class="page-section results-section">
+  <div class="row expanded">
+    <div class="columns results-container">
+      {% for resource in resources %}
+      <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+        <h3 class="result-item__name"><a href="{{resource.url}}" title="{{resource.title}}">{{resource.title}}</a></h3>
+        <p class="result-item__authors">
+          {{resource.authors}}
+        </p>
+
+        <!-- Publication -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication">
+          <span class="result-item__taxonomy__key">Publication</span>
+            <p>{{resource.publication}}</p>
+          </span>
+        </div>
+
+        <!-- Publication Date -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+          <span class="result-item__taxonomy__key">Publication Date</span>
+          <span class="result-item__taxonomy__value">
+            <a class="result-item__tag">{{resource.pubDate | date: "%Y" }}</a>
+          </span>
+        </div>
+
+        <!-- Resource type -->
+        <div class="result-item__taxonomy result-item__taxonomy--type">
+          <span class="result-item__taxonomy__key">Type</span>
+          <span class="result-item__taxonomy__value">
+            {% for resource_type in resource.type %}
+              <a class="result-item__tag">{{resource_type}}</a>
+            {% endfor %}
+          </span>
+        </div>
+
+        <!-- Short Description -->
+        <div class="result-item__short-description">
+          <p>{{resource.shortDescription }}</p>
+        </div>
+        <!-- <span class="button js-open-modal">Open Modal</span> -->
+
+        <div class="modal js-target-modal">
+            <header class="modal__header">
+                <i class="modal__close material-icons js-close-modal">close</i>
+                <h1 class="modal__title">Modal title with a deceny number of characters</h1>
+            </header>
+            <section class="modal__content">
+                <h2>Title for modal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit veniam veritatis voluptatem perferendis nulla? Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
+                <h3>Title for modal</h3>
+                <p>Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
+                <h4>Title for modal</h4>
+                <form action="">
+                    <input type="text" placeholder="Sample form">
+                    <input type="text" placeholder="Sample form">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
+                </form>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit veniam veritatis voluptatem perferendis nulla?</p>
+                <h3>Title for modal</h3>
+                <p>Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
+                <h4>Title for modal</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit ve
+                </p><h3>Title for modal</h3>
+                <p>Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
+                <h4>Title for modal</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit ve
+            </p></section>
+            <footer class="modal__controls">
+                <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a>
+            </footer>
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
