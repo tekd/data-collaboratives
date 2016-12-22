@@ -16,7 +16,7 @@ title: Resources | Data Collaboratives
       <div class="columns results-container">
         {% for resource in resources %}
         <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name"><a href="{{resource.url}}" title="{{resource.title}}">{{resource.title}}</a></h3>
+          <h3 class="result-item__name">{{resource.title}}</h3>
           <p class="result-item__authors">
             {{resource.authors}}
           </p>
@@ -32,7 +32,7 @@ title: Resources | Data Collaboratives
           <div class="result-item__taxonomy result-item__taxonomy--publication-date">
             <span class="result-item__taxonomy__key">Publication Date</span>
             <span class="result-item__taxonomy__value">
-              <a class="result-item__tag">{{resource.pubDate | date: "%Y" }}</a>
+              <p class="result-item__tag">{{resource.pubDate | date: "%Y" }}</p>
             </span>
           </div>
 
@@ -41,7 +41,7 @@ title: Resources | Data Collaboratives
             <span class="result-item__taxonomy__key">Type</span>
             <span class="result-item__taxonomy__value">
               {% for resource_type in resource.type %}
-                <a class="result-item__tag">{{resource_type}}</a>
+                <p class="result-item__tag">{{resource_type}}</p>
               {% endfor %}
             </span>
           </div>
@@ -52,7 +52,7 @@ title: Resources | Data Collaboratives
           </div>
 
           {% include resource-modal.html %}
-          
+
         </div>
         {% endfor %}
       </div>

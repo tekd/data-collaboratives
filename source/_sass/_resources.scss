@@ -100,6 +100,7 @@
       padding: 3px 8px;
       margin-bottom: 3px;
       margin-top: -1px;
+      opacity: .7;
     }
   }
 
@@ -108,16 +109,16 @@
     text-transform: uppercase;
     display: inline-block;
     padding: 3px 8px;
-    background-color: rgba(black, .1);
+    // background-color: rgba(black, .1);
     margin-bottom: 3px;
     opacity: .7;
 
     &:empty { display: none; }
 
-    &:hover {
-      opacity: 1;
-      text-decoration: none;
-    }
+    // &:hover {
+    //   opacity: 1;
+    //   text-decoration: none;
+    // }
 
 
 
@@ -141,4 +142,12 @@
   .modal__header--yellow {
     background-color: $main-color;
   }
+}
+
+.js-active {
+  overflow-y: scroll;
+}
+
+#overlay {
+  overflow-y: scroll;
 }

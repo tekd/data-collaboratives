@@ -4,7 +4,7 @@
         <h1 class="modal__title">{{resource.title}}</h1>
     </header>
     <section class="modal__content">
-        <h3>{{resource.title}}</h3>
+        <h3><a href="{{resource.url}}" title="{{resource.title}}">{{resource.title}}</a></h3>
         <p class="result-item__authors">
           {{resource.authors}}
         </p>
@@ -20,7 +20,7 @@
         <div class="result-item__taxonomy result-item__taxonomy--publication-date">
           <span class="result-item__taxonomy__key">Publication Date</span>
           <span class="result-item__taxonomy__value">
-            <a class="result-item__tag">{{resource.pubDate | date: "%Y" }}</a>
+            <p class="result-item__tag">{{resource.pubDate | date: "%Y" }}</p>
           </span>
         </div>
 
@@ -29,13 +29,13 @@
           <span class="result-item__taxonomy__key">Type</span>
           <span class="result-item__taxonomy__value">
             {% for resource_type in resource.type %}
-              <a class="result-item__tag">{{resource_type}}</a>
+              <p class="result-item__tag">{{resource_type}}</p>
             {% endfor %}
           </span>
         </div>
 
         <!-- Short Description -->
-        {% if !resource.annotation %}
+        {% if resource.annotation == "" %}
         <div class="result-item__short-description">
           <p>{{resource.shortDescription }}</p>
         </div>

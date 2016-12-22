@@ -51,11 +51,11 @@ $(document).ready(function () {
         $('#overlay').addClass('js-active');
     });
 
-    // General Click Behavior for Overlay
-    $('#overlay').click(function () {
-        $('.js-active').removeClass('js-active');
-        $('.js-active-menu').removeClass('js-active-menu');
-    });
+    // // General Click Behavior for Overlay
+    // $('#overlay').click(function () {
+    //     $('.js-active').removeClass('js-active');
+    //     $('.js-active-menu').removeClass('js-active-menu');
+    // });
 
     // Slider
     $('.slider').slick({
