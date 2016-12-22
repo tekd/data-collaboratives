@@ -8,8 +8,19 @@ layout: default
   <div class="top-section case-page__header" style="background-image: url('/images/54t5rivyaii-taduuda.jpg')">
     <hgroup>
       <h1><span>{{page.caseStudy}}</span></h1>
-      <!-- <h1 class="case-page__header__shared">Shared by 23andMe</h1> -->
-      <h2><span>{{page.sector | join: ", "}}</span></h2>
+      <h2>
+        {% if page.dataType %}
+          {% for item in page.dataType %}
+            <span>{{ item }}</span>
+          {% endfor %}
+        {% endif %}
+
+        {% if page.sector %}
+          {% for item in page.sector %}
+            <span>{{ item }}</span>
+          {% endfor %}
+        {% endif %}
+      </h2>
   </hgroup>
     <div class="case-page__header--button"><a class="button" href="{{page.link}}">Go to website</a></div>
   </div>
@@ -33,11 +44,14 @@ layout: default
 
   <div class="page-section case-page--purpose">
     <div class="row">
-      <div class="column">
+      <div class="column large-6">
         {% if page.purpose %}
           <h4>Purpose of Data Shared</h4>
           <p>{{ page.purpose }}</p>
         {% endif %}
+      </div>
+      <div class="column large-6">
+        /////
       </div>
     </div>
   </div>
@@ -66,8 +80,8 @@ layout: default
           <p>Data Type: <strong>{{page.dataType | join: ", "}}</strong></p>
         {% endif %}
 
-        {% if page.type %}
-          <p>Type of Data Collaborative: <strong>{{page.type | join: ", "}}</strong></p>
+        {% if page.collaborativeType %}
+          <p>Type of Data Collaborative: <strong>{{page.collaborativeType | join: ", "}}</strong></p>
         {% endif %}
       </div>
       <div class="column small-12 column medium-6">
