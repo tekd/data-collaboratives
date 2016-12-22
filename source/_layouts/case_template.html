@@ -71,39 +71,39 @@ layout: default
     </div>
   </div>
 
-  <div class="page-section case-page--more-info">
-    <div class="row">
-      <div class="column small-12 column medium-6 ">
-        <!-- <h4>More Info</h4> -->
-        {% if page.sharedBy %}
-          <p>Shared by: <strong>{{ page.sharedBy }}</strong></p>
-        {% endif %}
+  <div class="page-section page-section--black regions">
+    <div class="row align-center">
+      <div class="large-8 column">
+        <h3>Region: {{ page.region }}</h3>
 
-        {% if page.sharedWith %}
-          <p>Shared with: <strong>{{page.sharedWith | join: ", "}}</strong></p>
-        {% endif %}
+        {% assign map_region = page.region %}
 
-        {% if page.region %}
-          <p>Region: <strong>{{ page.region }}</strong></p>
+        {% if map_region == 'Worldwide' %}
+          <div class="regions__map regions--worldwide">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'North America' %}
+          <div class="regions__map regions--north-america">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'Latin America and the Caribbean' %}
+          <div class="regions__map regions--latin-america">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'East Asia and Pacific' or map_region == 'South Asia' %}
+          <div class="regions__map regions--asia">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'Sub-Saharan Africa' or map_region == 'Middle East and North Africa' %}
+          <div class="regions__map regions--africa">
+            {% include map.html %}
+          </div>
+        {% elsif map_region == 'Europe and Central Asia' %}
+          <div class="regions__map regions--europe">
+            {% include map.html %}
+          </div>
         {% endif %}
-
-        {% if page.sector %}
-          <p>Sector: <strong>{{page.sector}}</strong></p>
-        {% endif %}
-
-        {% if page.dataType %}
-          <p>Data Type: <strong>{{page.dataType | join: ", "}}</strong></p>
-        {% endif %}
-
-        {% if page.collaborativeType %}
-          <p>Type of Data Collaborative: <strong>{{page.collaborativeType | join: ", "}}</strong></p>
-        {% endif %}
-      </div>
-      <div class="column small-12 column medium-6">
-        <img class="case-page--more-info__img" src="/images/icosa-alpha.png" alt="" />
       </div>
     </div>
   </div>
-
-
 </div>
