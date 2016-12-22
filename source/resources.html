@@ -1,0 +1,28 @@
+---
+layout: default
+title: Resources | Data Collaboratives
+---
+
+<div class="resources-page">
+  <div class="top-section top-section--yellow-list-page">
+    <h2 class="top-section__list-header">Resources</h2>
+  </div>
+
+  <!-- <div class="page-section">
+    {% for item in site.data.contentful.spaces.cases.resources %}
+        <div class="row">
+            <div class="column large-12">
+              <h4>Title: {{ item.title }}</h4>
+              <p>Authors: {{ item.authors }}</p>
+              <p>Publication: {{ item.publication }}</p>
+              <p>Publication Date: {{ item.pubDate | date: "%Y" }}</p> 
+              <p>Type: {{ item.type }}</p> 
+              <p>URL: {{ item.url }}</p> 
+              <p>Short Description: {{ item.shortDescription }}</p> 
+              <p>Annotation: {{ item.annotation }}</p> 
+            </div>
+        </div>
+    {% endfor %}
+  </div> -->
+  {% include resource-list.html %}
+</div>
