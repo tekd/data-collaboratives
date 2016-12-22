@@ -21,7 +21,7 @@ layout: default
           {% endfor %}
         {% endif %}
       </h2>
-  </hgroup>
+    </hgroup>
     <div class="case-page__header--button"><a class="button" href="{{page.link}}">Go to website</a></div>
   </div>
 
@@ -51,7 +51,22 @@ layout: default
         {% endif %}
       </div>
       <div class="column large-6">
-        /////
+        {% if page.sharedBy %}
+        <div class="share-panel">
+          <h5>Shared by</h5>
+          {% for item in page.sharedBy %}
+            <a href="#" class="share-panel__item">{{item}}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if page.sharedWith %}
+        <div class="share-panel">
+          <h5>Shared by</h5>
+          {% for item in page.sharedWith %}
+            <a href="#" class="share-panel__item">{{item}}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </div>
   </div>
