@@ -22,19 +22,22 @@
     //   opacity: .9;
     // }
 
-    h1, h2, h3 { 
-      margin: 0; 
+    h1, h2, h3 {
+      margin: 0;
 
       span {
         display: inline-block;
-        
+
       }
     }
 
     h1 {
-      font-size: 3.4rem;      
+      font-size: 3.4rem;
       font-weight: 300;
       margin-bottom: 20px;
+      @include breakpoint($small-only) {
+        font-size: 1.7rem;
+      }
 
       span {
         padding: 10px 30px;
@@ -46,11 +49,18 @@
       font-size: 1.2rem;
       font-weight: 400;
       color: white;
+      @include breakpoint($small-only) {
+        font-size: 1rem;
+      }
 
-      span { 
-        border: 1px solid white; 
+      span {
+        border: 1px solid white;
         padding: 7px 17px;
         background-color: rgba(black, .1);
+        @include breakpoint($small-only) {
+          background-color: rgba(black, .2);
+          padding-top: 7px;
+        }
       }
     }
 
@@ -76,21 +86,21 @@
         &:hover { background-color: darken($yellow, 7); }
       }
 
-      
+
     }
   }
 
   .share-panel {
     padding-top: 45px;
-    
-    h5 { 
-      margin: 0 0 15px 0; 
+
+    h5 {
+      margin: 0 0 15px 0;
       color: rgba(black, .4);
       text-transform: none;
     }
 
     &__item {
-      border: 1px solid rgba(black, .3); 
+      border: 1px solid rgba(black, .3);
       padding: 7px 20px;
       margin-bottom: 5px;
       font-size: 1.2rem;
@@ -173,5 +183,3 @@
     fill-opacity: 1;
   }
 }
-
-
