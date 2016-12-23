@@ -44,19 +44,6 @@ gulp.task('push-gh-master', shell.task(['git push origin master']));
 
 gulp.task('contentful', shell.task(['bundle exec jekyll contentful --rebuild']));
 
-gulp.task('data-transfer', function() {
-  return gulp.src('source/_data/contentful/spaces/*')
-  .pipe(gulp.dest('source/_data'));
-});
-
-// gulp.task('import', function (callback) {
-//   runSequence(
-//     'contentful',
-//     'data-transfer',
-//     callback
-//   );
-// });
-
 gulp.task('push-gh-pages', function () {
   return gulp.src('_site/**/*')
     .pipe(ghPages({ force: true }));
