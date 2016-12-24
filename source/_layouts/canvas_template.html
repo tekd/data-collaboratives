@@ -1,0 +1,49 @@
+---
+layout: default
+
+---
+
+<div class="canvas-page">
+
+  <div class="top-section top-section--yellow">
+    <h1>{{ page.phaseTitle }}</h1>
+  </div>
+  <div class="page-section">
+    <div class="row align-center">
+      <div class="large-12 column">
+        {{ page.phaseDescription | markdownify }}
+      </div>
+    </div>
+  </div>
+
+  {% for phaseStep in page.phaseSteps %}
+  <div class="page-section">
+    <div class="row">
+      <div class="large-12 column">
+        <h3>{{ phaseStep.stepTitle | markdownify }}</h3>
+
+          <h4>Discussion</h4>
+          {{ phaseStep.discussion | markdownify }}
+
+          <h4>Questions</h4>
+          {{ phaseStep.questions | markdownify}}
+
+
+          <h4>Enablers</h4>
+          {{ phaseStep.enablers | markdownify}}
+
+
+          <h4>Resources</h4>
+          {{ phaseStep.resources | markdownify }}
+
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- Adding links to each phase of the canvas -->
+ {% assign canvas = site.data.contentful.spaces.cases.canvasPhases %}
+   {% for phase in canvas %}
+    <span><a href="{{phase.phaseTitle | slugify }}.html"> {{ phase.phaseTitle }}</a></span> 
+  {% endfor %}
+</div>

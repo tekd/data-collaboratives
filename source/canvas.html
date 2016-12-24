@@ -1,0 +1,20 @@
+---
+layout: default
+
+---
+
+<div class="canvas-page">
+
+  <div class="top-section top-section--yellow">
+    <h1>Canvas</h1>
+  </div>
+
+  {% assign canvas = site.data.contentful.spaces.cases.canvasPhases %}
+
+  <ul>
+  {% for phase in canvas %}
+    <li><a href="canvas/{{phase.phaseTitle | slugify }}.html"> {{ phase.phaseTitle }}</a></li>
+  {% endfor %}
+  </ul>
+
+</div>

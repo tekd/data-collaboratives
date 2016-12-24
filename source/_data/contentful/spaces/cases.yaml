@@ -90,7 +90,6 @@ resources:
     N., . . . Meissner, F.
   title: 'Big Data and Positive Social Change in the Developing World: A White Paper
     for Practitioners and Researchers'
-  publication: false information
   pubDate: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 Z
   url: https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf
   shortDescription: A white paper describing the potential of big data, and corporate
@@ -139,6 +138,132 @@ resources:
     - Data mining of biomedical databases makes it easier for individuals with political, social, or economic agendas to generate ostensibly scientific but misleading research findings for the purpose of manipulating public opinion and swaying policymakers.
   type:
   - Journal Article
+canvasSteps:
+- sys:
+    id: 4qgOOMrb72kmCOESgQWMCA
+  stepTitle: __Step 2:__ Define the value proposition of the data collaborative
+  discussion: Research and practice in data collaboratives point to a number of societal
+    benefits arising from the cross-sector sharing of data. After clearly defining
+    the problem that a data collaborative will serve to address, organizers should
+    look to gain specificity on the specific benefit a data collaborative could offer.
+  questions: |
+    What is the intended societal benefit of the data collaborative:
+    - Accurate, real-time monitoring of situations?
+    - Agile governance in policy making and public service delivery?
+    - Evidence-based problem solving and decision making?
+    - Improved anticipatory mechanisms for problems and opportunities?
+    - Wider variety of problem solvers working collaboratively to solve complex problems?
+  examples: |
+    [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+    [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+    [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
+  resources: |
+    [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
+
+    [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
+
+    [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
+- sys:
+    id: 4RTzlCVrugKGeGsseIAIsi
+  stepTitle: __Step 4:__ Data Supply
+  discussion: 'In many ways, data collaboratives are means for filling gaps in existing
+    institutional data supplies. In order to fill such gaps, organizers should conduct
+    an upfront audit of both the existing internal data supply and the potential supply
+    of data existing in other sectors. Such an audit can help inform and prioritize
+    outreach to external data holders and ensure that newly accessible datasets are
+    well-positioned for filling the most important data gaps. '
+  questions: |
+    - Internal: Conduct due diligence research and a data audit
+      1. What data currently exists that will be useful in addressing the problem?
+      2. What are the data gaps that slow progress toward addressing the problem?
+
+    - External: Map the potential supply side based on identified gaps
+      1. What data do you already have (develop a data inventory)?
+      2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?
+- sys:
+    id: 1ZgIPV6IvGQYmmogW6Yyio
+  stepTitle: '__Step 3:__ Expertise: Data Science and Organizational Competency'
+  discussion: "Cross-sector data sharing requires not only the bringing together or
+    \ndiverse datasets, but also collaboration between people and organizations with
+    different skills and institutional norms. An upfront understanding of how human
+    and institutional capacity and cultures either do or do not mesh can help to define
+    optimal roles and responsibilities and identify capacity gaps that need to be
+    filled (through additional partnerships or other mechanisms)."
+  questions: "- Internal\n\n  1. Evaluate and review internal capacity \n  2. Build
+    high-level internal support\n  3. Identify internal data literacy and human capital
+    \n  4. Collect and share examples of how other organizations have leveraged data\n\n-
+    External \n  1. Which entities could provide additional competencies (data science
+    and otherwise)?\n"
+  examples: |+
+    - [World Bank Skillfinder](http://www.thegovlab.org/static/files/smarterstate/skillfinder.pdf) – an internal expert and talent network
+
+
+  resources: |-
+    - [Network of Innovators](http://networkofinnovators.org) skill-sharing platform
+    - [A Comprehensive Review of Skills Required for Data Scientist Jobs](http://www.dataversity.net/comprehensive-review-skills-required-data-scientist-jobs/)
+    - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
+- sys:
+    id: 24I8V51vBSsquokqCE6Gkg
+  stepTitle: __Step 1:__ Define the problem to be solved
+  discussion: Gaining a clear sense of the problem you are seeking to solve is an
+    essential first step in establishing a successful data collaborative. While defining
+    the problem space might seem like a straightforward proposition, achieving the
+    level of precision needed a well-targeted data collaborative requires an in-depth
+    assessment of the problem space.
+  questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
+    Articulate why it matters\n4. Note any assumptions\n5. Explore current work to
+    address the problem (internally and externally)"
+  enablers: "\n"
+  resources: |-
+    - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
+    - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
+    - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+events:
+- sys:
+    id: 1WVwEt6aeo4ko2wiAQ4Gae
+  eventName: European Foundation Centre Conference
+  url: http://www.efc.be/aga/2017-warsaw/
+  eventLocation:
+    :lat: 52.2296756
+    :lon: 21.012228700000037
+  eventDate: !ruby/object:DateTime 2017-05-31 00:00:00.000000000 Z
+  conferenceType:
+  - Conference
+  eventDescription: The 2017 EFC AGA and Conference will focus on the theme of ‘courage
+    for solidarity’ and specifically how philanthropy should be involved in fostering,
+    supporting and promoting it. It will offer a unique opportunity for delegates
+    from around the world to reflect on their own work, learn from their peers, and
+    discover how, by finding the courage to re-embrace solidarity, they can help shape
+    a brighter future.
+- sys:
+    id: uF3uaikYV2gWsckO8wYO2
+  eventName: United Nations World Data Forum
+  url: http://undataforum.org
+  eventLocation:
+    :lat: -33.9248685
+    :lon: 18.424055299999964
+  eventDate: !ruby/object:DateTime 2017-01-15 00:00:00.000000000 Z
+  conferenceType:
+  - Forum
+  eventDescription: |-
+    The first UN World Data Forum will be hosted by Statistics South Africa from 15 to 18 January 2017, with support from the Statistics Division of the UN Department of Economic and Social Affairs, under the guidance of the United Nations Statistical Commission and the High-level Group for Partnership, Coordination and Capacity-Building for Statistics for the 2030 Agenda for Sustainable Development.
+
+    It will be an opportunity for data and statistics experts from around the world to:
+
+    - __JOIN__ together in this unique event with governments, businesses, civil society and the scientific and academic communities.
+    - __EXPLORE__ innovative ways to apply data and statistics to measure global progress and inform evidence-based policy decisions on the 2030 Agenda for Sustainable Development.
+    - __CONTRIBUTE__ to important discussions, data labs and interactive platforms aimed at improving the use of data for sustainable development.
+    - __LAUNCH__ new initiatives and solutions that will deliver better data for all.
+- sys:
+    id: 4X1Y2OGmzSMC8ukquQCm8S
+  eventName: 'Accelerating Data Collaboratives: A Workshop on Cross-Sector Data Sharing
+    for Public Problem-Solving'
+  eventLocation:
+    :lat: 38.9071923
+    :lon: -77.03687070000001
+  eventDate: !ruby/object:DateTime 2017-05-01 00:00:00.000000000 Z
+  sessionType:
+  - Workshop
 datacollaborative:
 - sys:
     id: 3riF1HxE2Iw2YwyoyCYWQ6
@@ -208,3 +333,101 @@ datacollaborative:
     innovation in drug therapy. By combining data, the AMP portal can find new drug
     targets, and reduces wasteful repetition of testing found when companies work
     in-silo.
+canvasPhases:
+- sys:
+    id: 6pBkSIqXTi0GGkoIkCyYuY
+  phaseTitle: 'Phase 1: Demand'
+  phaseDescription: 'Establishing an effective data collaborative requires a detailed,
+    upfront understanding of the demand side of the initiative: i.e., an in-depth
+    understanding of the problem to be addressed and the opportunity provided by cross-sector
+    data sharing. '
+  phaseSteps:
+  - sys:
+      id: 24I8V51vBSsquokqCE6Gkg
+    stepTitle: __Step 1:__ Define the problem to be solved
+    discussion: Gaining a clear sense of the problem you are seeking to solve is an
+      essential first step in establishing a successful data collaborative. While
+      defining the problem space might seem like a straightforward proposition, achieving
+      the level of precision needed a well-targeted data collaborative requires an
+      in-depth assessment of the problem space.
+    questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
+      Articulate why it matters\n4. Note any assumptions\n5. Explore current work
+      to address the problem (internally and externally)"
+    enablers: "\n"
+    resources: |-
+      - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
+      - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
+      - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+  - sys:
+      id: 4qgOOMrb72kmCOESgQWMCA
+    stepTitle: __Step 2:__ Define the value proposition of the data collaborative
+    discussion: Research and practice in data collaboratives point to a number of
+      societal benefits arising from the cross-sector sharing of data. After clearly
+      defining the problem that a data collaborative will serve to address, organizers
+      should look to gain specificity on the specific benefit a data collaborative
+      could offer.
+    questions: |
+      What is the intended societal benefit of the data collaborative:
+      - Accurate, real-time monitoring of situations?
+      - Agile governance in policy making and public service delivery?
+      - Evidence-based problem solving and decision making?
+      - Improved anticipatory mechanisms for problems and opportunities?
+      - Wider variety of problem solvers working collaboratively to solve complex problems?
+    examples: |
+      [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+      [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+      [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
+    resources: |
+      [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
+
+      [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
+
+      [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
+- sys:
+    id: NjeB5YTNKK4GCM80AMUqK
+  phaseTitle: 'Phase 2: Supply'
+  phaseDescription: Once the demand side of the equation is well understood and articulated,
+    the supply of data and expertise (i.e., human capital) should be explored in order
+    to determine how the supply can address the demand (or if there is not a match
+    between supply and demand and, therefore, a data collaborative would unconducive
+    to the issue at hand).
+  phaseSteps:
+  - sys:
+      id: 1ZgIPV6IvGQYmmogW6Yyio
+    stepTitle: '__Step 3:__ Expertise: Data Science and Organizational Competency'
+    discussion: "Cross-sector data sharing requires not only the bringing together
+      or \ndiverse datasets, but also collaboration between people and organizations
+      with different skills and institutional norms. An upfront understanding of how
+      human and institutional capacity and cultures either do or do not mesh can help
+      to define optimal roles and responsibilities and identify capacity gaps that
+      need to be filled (through additional partnerships or other mechanisms)."
+    questions: "- Internal\n\n  1. Evaluate and review internal capacity \n  2. Build
+      high-level internal support\n  3. Identify internal data literacy and human
+      capital \n  4. Collect and share examples of how other organizations have leveraged
+      data\n\n- External \n  1. Which entities could provide additional competencies
+      (data science and otherwise)?\n"
+    examples: |+
+      - [World Bank Skillfinder](http://www.thegovlab.org/static/files/smarterstate/skillfinder.pdf) – an internal expert and talent network
+
+
+    resources: |-
+      - [Network of Innovators](http://networkofinnovators.org) skill-sharing platform
+      - [A Comprehensive Review of Skills Required for Data Scientist Jobs](http://www.dataversity.net/comprehensive-review-skills-required-data-scientist-jobs/)
+      - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
+  - sys:
+      id: 4RTzlCVrugKGeGsseIAIsi
+    stepTitle: __Step 4:__ Data Supply
+    discussion: 'In many ways, data collaboratives are means for filling gaps in existing
+      institutional data supplies. In order to fill such gaps, organizers should conduct
+      an upfront audit of both the existing internal data supply and the potential
+      supply of data existing in other sectors. Such an audit can help inform and
+      prioritize outreach to external data holders and ensure that newly accessible
+      datasets are well-positioned for filling the most important data gaps. '
+    questions: |
+      - Internal: Conduct due diligence research and a data audit
+        1. What data currently exists that will be useful in addressing the problem?
+        2. What are the data gaps that slow progress toward addressing the problem?
+
+      - External: Map the potential supply side based on identified gaps
+        1. What data do you already have (develop a data inventory)?
+        2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?
