@@ -50,3 +50,8 @@ page_gen:
     name: 'caseStudy'
     dir: 'cases'
     # extension: 'html'
+  - data: 'contentful.spaces.cases.canvasPhases'
+    template: 'canvas_template'
+    name: 'phaseTitle'
+    dir: 'canvas'
+
