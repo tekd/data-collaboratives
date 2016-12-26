@@ -1,90 +1,6 @@
 ---
 resources:
 - sys:
-    id: UNpj0WvDEaYwO6MgoQk62
-  authors: Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
-  title: Enabling Humanitarian Use of Mobile Phone Data
-  publication: The Brookings Institution, Issues in Technology Innovation
-  pubDate: !ruby/object:DateTime 2014-11-20 00:00:00.000000000 Z
-  url: https://www.brookings.edu/research/enabling-humanitarian-use-of-mobile-phone-data/
-  shortDescription: An issues paper from the Brookings Institution on leveraging the
-    benefits of mobile phone data for humanitarian use while minimizing risks to privacy
-  annotation: |-
-    Using Ebola as a case study, the authors describe the value of using private telecom data for uncovering “valuable insights into understanding the spread of infectious diseases as well as strategies into micro-target outreach and driving update of health-seeking behavior.”
-
-    The authors highlight the absence of a common legal and standards framework for “sharing mobile phone data in privacy-conscientious ways” and recommend “engaging companies, NGOs, researchers, privacy experts, and governments to agree on a set of best practices for new privacy-conscientious metadata sharing models.”
-  type:
-  - Issues Paper
-- sys:
-    id: 5pntSuj8Ry6wCUYwg8EgK8
-  authors: Matthew Brack and Tito Castillo
-  title: 'Data Sharing for Public Health: Key Lessons from Other Sectors'
-  publication: Chatham House, Centre on Global Health Security
-  pubDate: !ruby/object:DateTime 2015-01-20 00:00:00.000000000 Z
-  url: https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf
-  shortDescription: A Chatham House report describing the need for data sharing and
-    collaboration for global public health emergencies and potential lessons learned
-    from the commercial sector
-  annotation: |-
-    The Chatham House report provides an overview on public health surveillance data sharing, highlighting the benefits and challenges of shared health data and the complexity in adapting technical solutions from other sectors for public health.
-
-    The report describes data sharing processes from several perspectives, including in-depth case studies of actual data sharing in practice at the individual, organizational and sector levels. Among the key lessons for public health data sharing, the report strongly highlights the need to harness momentum for action and maintain collaborative engagement: “Successful data sharing communities are highly collaborative. Collaboration holds the key to producing and abiding by community standards, and building and maintaining productive networks, and is by definition the essence of data sharing itself. Time should be invested in establishing and sustaining collaboration with all stakeholders concerned with public health surveillance data sharing.”
-
-    Examples of data collaboratives include H3Africa (a collaboration between NIH and Wellcome Trust) and NHS England’s care.data programme.
-  type:
-  - Report
-- sys:
-    id: 4zV3aOBy5OeQ0GGgMO6w6W
-  authors: " Silja M. Eckartz, Wout J. Hofman, Anne Fleur Van Veenstra "
-  title: A Decision Model for Data Sharing
-  publication: " Lecture Notes in Computer Science (LNCS)"
-  pubDate: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 Z
-  url: http://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21
-  shortDescription: A paper proposing a decision model for data sharing arrangements
-    aimed at addressing identified risks and challenges
-  annotation: "This paper proposes a decision model for data sharing of public and
-    private data based on literature review and three case studies in the logistics
-    sector.\n\nThe authors identify five categories of the barriers to data sharing
-    and offer a decision model for identifying potential interventions to overcome
-    each barrier:\n\n- Ownership. Possible interventions likely require improving
-    trust among those who own the data through, for example, involvement and support
-    from higher management\n- Privacy. Interventions include “anonymization by filtering
-    of sensitive information and aggregation of data,” and access control mechanisms
-    built around identity management and regulated access.  \n- Economic. Interventions
-    include a model where data is shared only with a few trusted organizations, and
-    yield management mechanisms to ensure negative financial consequences are avoided.\n-
-    Data quality. Interventions include identifying additional data sources that could
-    improve the completeness of datasets, and efforts to improve metadata.\n- Technical.
-    Interventions include making data available in structured formats and publishing
-    data according to widely agreed upon data standards.\n"
-  type:
-  - Paper
-- sys:
-    id: 5keTOijCHS4m8iC4ekMMug
-  authors: Ansell, C. and Gash, A
-  title: Collaborative Governance in Theory and Practice
-  publication: Journal of Public Administration Research and  Theory
-  pubDate: !ruby/object:DateTime 2016-08-20 00:00:00.000000000 Z
-  url: http://jpart.oxfordjournals.org/content/18/4/543.short
-  shortDescription: A journal article describing the emerging practice of public-private
-    partnerships, particularly those built around data sharing
-  annotation: "This article describes collaborative arrangements that include public
-    and private organizations working together and proposes a model for understanding
-    an emergent form of public-private interaction informed by 137 diverse cases of
-    collaborative governance.\n\nThe article suggests factors significant to successful
-    partnering processes and outcomes include:\n\n- Shared understanding of challenges,\n-
-    Trust building processes,\n- The importance of recognizing seemingly modest progress,
-    and\n- Strong indicators of commitment to the partnership’s aspirations and process.
-    \n\nThe authors provide a ‘’contingency theory model’’ that specifies relationships
-    between different variables that influence outcomes of collaborative governance
-    initiatives. Three “core contingencies’’ for successful collaborative governance
-    initiatives identified by the authors are:\n\n- Time (e.g., decision making time
-    afforded to the collaboration);\n- Interdependence (e.g., a high degree of interdependence
-    can mitigate negative effects of low trust); and\n- Trust (e.g. a higher level
-    of trust indicates a higher probability of success).\n"
-  type:
-  - Journal Article
-- sys:
     id: 6SfmUm0iXKM48OUMIa48oS
   authors: Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman,
     N., . . . Meissner, F.
@@ -113,13 +29,63 @@ resources:
     - Storage and computing capacity; and
     - Externally validating data sources for comparison and verification.
   type:
-  - White Paper
+  - Report
+  theme:
+  - Risks and Challenges
+  - Data Responsibility
+- sys:
+    id: UNpj0WvDEaYwO6MgoQk62
+  authors: Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
+  title: Enabling Humanitarian Use of Mobile Phone Data
+  publication: The Brookings Institution, Issues in Technology Innovation
+  pubDate: !ruby/object:DateTime 2014-11-20 00:00:00.000000000 Z
+  url: https://www.brookings.edu/research/enabling-humanitarian-use-of-mobile-phone-data/
+  shortDescription: An issues paper from the Brookings Institution on leveraging the
+    benefits of mobile phone data for humanitarian use while minimizing risks to privacy
+  annotation: |-
+    Using Ebola as a case study, the authors describe the value of using private telecom data for uncovering “valuable insights into understanding the spread of infectious diseases as well as strategies into micro-target outreach and driving update of health-seeking behavior.”
+
+    The authors highlight the absence of a common legal and standards framework for “sharing mobile phone data in privacy-conscientious ways” and recommend “engaging companies, NGOs, researchers, privacy experts, and governments to agree on a set of best practices for new privacy-conscientious metadata sharing models.”
+  type:
+  - Report
+  theme:
+  - General
+  - Benefits
+  - In Practice
+- sys:
+    id: 5keTOijCHS4m8iC4ekMMug
+  authors: Ansell, C. and Gash, A
+  title: Collaborative Governance in Theory and Practice
+  publication: Journal of Public Administration Research and  Theory
+  pubDate: !ruby/object:DateTime 2016-08-20 00:00:00.000000000 Z
+  url: http://jpart.oxfordjournals.org/content/18/4/543.short
+  shortDescription: A journal article describing the emerging practice of public-private
+    partnerships, particularly those built around data sharing
+  annotation: "This article describes collaborative arrangements that include public
+    and private organizations working together and proposes a model for understanding
+    an emergent form of public-private interaction informed by 137 diverse cases of
+    collaborative governance.\n\nThe article suggests factors significant to successful
+    partnering processes and outcomes include:\n\n- Shared understanding of challenges,\n-
+    Trust building processes,\n- The importance of recognizing seemingly modest progress,
+    and\n- Strong indicators of commitment to the partnership’s aspirations and process.
+    \n\nThe authors provide a ‘’contingency theory model’’ that specifies relationships
+    between different variables that influence outcomes of collaborative governance
+    initiatives. Three “core contingencies’’ for successful collaborative governance
+    initiatives identified by the authors are:\n\n- Time (e.g., decision making time
+    afforded to the collaboration);\n- Interdependence (e.g., a high degree of interdependence
+    can mitigate negative effects of low trust); and\n- Trust (e.g. a higher level
+    of trust indicates a higher probability of success).\n"
+  type:
+  - Journal Article
+  theme:
+  - General
+  - In Practice
 - sys:
     id: 45Xi7ZIoMUcCqEUs0Iy0k
   authors: Sharona Hoffman, Andy Podgurski
   title: 'The Use and Misuse of Biomedical Data: Is Bigger Really Better?'
   publication: American Journal of Law & Medicine 497
-  pubDate: !ruby/object:DateTime 2013-01-01 00:00:00.000000000 Z
+  pubDate: !ruby/object:DateTime 2013-01-20 00:00:00.000000000 Z
   url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2235267
   shortDescription: My name is Max. My world is fire. And blood. Once, I was a cop;
     a road warrior searching for a righteous cause. As the world fell, each of us
@@ -138,6 +104,61 @@ resources:
     - Data mining of biomedical databases makes it easier for individuals with political, social, or economic agendas to generate ostensibly scientific but misleading research findings for the purpose of manipulating public opinion and swaying policymakers.
   type:
   - Journal Article
+  theme:
+  - General
+  - Risks and Challenges
+  - Data Responsibility
+- sys:
+    id: 5pntSuj8Ry6wCUYwg8EgK8
+  authors: Matthew Brack and Tito Castillo
+  title: 'Data Sharing for Public Health: Key Lessons from Other Sectors'
+  publication: Chatham House, Centre on Global Health Security
+  pubDate: !ruby/object:DateTime 2015-01-20 00:00:00.000000000 Z
+  url: https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf
+  shortDescription: A Chatham House report describing the need for data sharing and
+    collaboration for global public health emergencies and potential lessons learned
+    from the commercial sector
+  annotation: |-
+    The Chatham House report provides an overview on public health surveillance data sharing, highlighting the benefits and challenges of shared health data and the complexity in adapting technical solutions from other sectors for public health.
+
+    The report describes data sharing processes from several perspectives, including in-depth case studies of actual data sharing in practice at the individual, organizational and sector levels. Among the key lessons for public health data sharing, the report strongly highlights the need to harness momentum for action and maintain collaborative engagement: “Successful data sharing communities are highly collaborative. Collaboration holds the key to producing and abiding by community standards, and building and maintaining productive networks, and is by definition the essence of data sharing itself. Time should be invested in establishing and sustaining collaboration with all stakeholders concerned with public health surveillance data sharing.”
+
+    Examples of data collaboratives include H3Africa (a collaboration between NIH and Wellcome Trust) and NHS England’s care.data programme.
+  type:
+  - Report
+  theme:
+  - General
+- sys:
+    id: 4zV3aOBy5OeQ0GGgMO6w6W
+  authors: " Silja M. Eckartz, Wout J. Hofman, Anne Fleur Van Veenstra "
+  title: A Decision Model for Data Sharing
+  publication: " Lecture Notes in Computer Science (LNCS)"
+  pubDate: !ruby/object:DateTime 2014-01-20 00:00:00.000000000 Z
+  url: http://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21
+  shortDescription: A paper proposing a decision model for data sharing arrangements
+    aimed at addressing identified risks and challenges
+  annotation: "This paper proposes a decision model for data sharing of public and
+    private data based on literature review and three case studies in the logistics
+    sector.\n\nThe authors identify five categories of the barriers to data sharing
+    and offer a decision model for identifying potential interventions to overcome
+    each barrier:\n\n- Ownership. Possible interventions likely require improving
+    trust among those who own the data through, for example, involvement and support
+    from higher management\n- Privacy. Interventions include “anonymization by filtering
+    of sensitive information and aggregation of data,” and access control mechanisms
+    built around identity management and regulated access.  \n- Economic. Interventions
+    include a model where data is shared only with a few trusted organizations, and
+    yield management mechanisms to ensure negative financial consequences are avoided.\n-
+    Data quality. Interventions include identifying additional data sources that could
+    improve the completeness of datasets, and efforts to improve metadata.\n- Technical.
+    Interventions include making data available in structured formats and publishing
+    data according to widely agreed upon data standards.\n"
+  type:
+  - Paper
+  theme:
+  - General
+  - Benefits
+  - Incentives
+  - Data Responsibility
 canvasSteps:
 - sys:
     id: 4qgOOMrb72kmCOESgQWMCA
@@ -181,6 +202,22 @@ canvasSteps:
       1. What data do you already have (develop a data inventory)?
       2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?
 - sys:
+    id: 24I8V51vBSsquokqCE6Gkg
+  stepTitle: __Step 1:__ Define the problem to be solved
+  discussion: Gaining a clear sense of the problem you are seeking to solve is an
+    essential first step in establishing a successful data collaborative. While defining
+    the problem space might seem like a straightforward proposition, achieving the
+    level of precision needed a well-targeted data collaborative requires an in-depth
+    assessment of the problem space.
+  questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
+    Articulate why it matters\n4. Note any assumptions\n5. Explore current work to
+    address the problem (internally and externally)"
+  enablers: "\n"
+  resources: |-
+    - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
+    - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
+    - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+- sys:
     id: 1ZgIPV6IvGQYmmogW6Yyio
   stepTitle: '__Step 3:__ Expertise: Data Science and Organizational Competency'
   discussion: "Cross-sector data sharing requires not only the bringing together or
@@ -202,22 +239,104 @@ canvasSteps:
     - [Network of Innovators](http://networkofinnovators.org) skill-sharing platform
     - [A Comprehensive Review of Skills Required for Data Scientist Jobs](http://www.dataversity.net/comprehensive-review-skills-required-data-scientist-jobs/)
     - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
+canvasPhases:
 - sys:
-    id: 24I8V51vBSsquokqCE6Gkg
-  stepTitle: __Step 1:__ Define the problem to be solved
-  discussion: Gaining a clear sense of the problem you are seeking to solve is an
-    essential first step in establishing a successful data collaborative. While defining
-    the problem space might seem like a straightforward proposition, achieving the
-    level of precision needed a well-targeted data collaborative requires an in-depth
-    assessment of the problem space.
-  questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
-    Articulate why it matters\n4. Note any assumptions\n5. Explore current work to
-    address the problem (internally and externally)"
-  enablers: "\n"
-  resources: |-
-    - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
-    - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
-    - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+    id: NjeB5YTNKK4GCM80AMUqK
+  phaseTitle: 'Phase 2: Supply'
+  phaseDescription: Once the demand side of the equation is well understood and articulated,
+    the supply of data and expertise (i.e., human capital) should be explored in order
+    to determine how the supply can address the demand (or if there is not a match
+    between supply and demand and, therefore, a data collaborative would unconducive
+    to the issue at hand).
+  phaseSteps:
+  - sys:
+      id: 1ZgIPV6IvGQYmmogW6Yyio
+    stepTitle: '__Step 3:__ Expertise: Data Science and Organizational Competency'
+    discussion: "Cross-sector data sharing requires not only the bringing together
+      or \ndiverse datasets, but also collaboration between people and organizations
+      with different skills and institutional norms. An upfront understanding of how
+      human and institutional capacity and cultures either do or do not mesh can help
+      to define optimal roles and responsibilities and identify capacity gaps that
+      need to be filled (through additional partnerships or other mechanisms)."
+    questions: "- Internal\n\n  1. Evaluate and review internal capacity \n  2. Build
+      high-level internal support\n  3. Identify internal data literacy and human
+      capital \n  4. Collect and share examples of how other organizations have leveraged
+      data\n\n- External \n  1. Which entities could provide additional competencies
+      (data science and otherwise)?\n"
+    examples: |+
+      - [World Bank Skillfinder](http://www.thegovlab.org/static/files/smarterstate/skillfinder.pdf) – an internal expert and talent network
+
+
+    resources: |-
+      - [Network of Innovators](http://networkofinnovators.org) skill-sharing platform
+      - [A Comprehensive Review of Skills Required for Data Scientist Jobs](http://www.dataversity.net/comprehensive-review-skills-required-data-scientist-jobs/)
+      - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
+  - sys:
+      id: 4RTzlCVrugKGeGsseIAIsi
+    stepTitle: __Step 4:__ Data Supply
+    discussion: 'In many ways, data collaboratives are means for filling gaps in existing
+      institutional data supplies. In order to fill such gaps, organizers should conduct
+      an upfront audit of both the existing internal data supply and the potential
+      supply of data existing in other sectors. Such an audit can help inform and
+      prioritize outreach to external data holders and ensure that newly accessible
+      datasets are well-positioned for filling the most important data gaps. '
+    questions: |
+      - Internal: Conduct due diligence research and a data audit
+        1. What data currently exists that will be useful in addressing the problem?
+        2. What are the data gaps that slow progress toward addressing the problem?
+
+      - External: Map the potential supply side based on identified gaps
+        1. What data do you already have (develop a data inventory)?
+        2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?
+- sys:
+    id: 6pBkSIqXTi0GGkoIkCyYuY
+  phaseTitle: 'Phase 1: Demand'
+  phaseDescription: 'Establishing an effective data collaborative requires a detailed,
+    upfront understanding of the demand side of the initiative: i.e., an in-depth
+    understanding of the problem to be addressed and the opportunity provided by cross-sector
+    data sharing. '
+  phaseSteps:
+  - sys:
+      id: 24I8V51vBSsquokqCE6Gkg
+    stepTitle: __Step 1:__ Define the problem to be solved
+    discussion: Gaining a clear sense of the problem you are seeking to solve is an
+      essential first step in establishing a successful data collaborative. While
+      defining the problem space might seem like a straightforward proposition, achieving
+      the level of precision needed a well-targeted data collaborative requires an
+      in-depth assessment of the problem space.
+    questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
+      Articulate why it matters\n4. Note any assumptions\n5. Explore current work
+      to address the problem (internally and externally)"
+    enablers: "\n"
+    resources: |-
+      - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
+      - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
+      - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+  - sys:
+      id: 4qgOOMrb72kmCOESgQWMCA
+    stepTitle: __Step 2:__ Define the value proposition of the data collaborative
+    discussion: Research and practice in data collaboratives point to a number of
+      societal benefits arising from the cross-sector sharing of data. After clearly
+      defining the problem that a data collaborative will serve to address, organizers
+      should look to gain specificity on the specific benefit a data collaborative
+      could offer.
+    questions: |
+      What is the intended societal benefit of the data collaborative:
+      - Accurate, real-time monitoring of situations?
+      - Agile governance in policy making and public service delivery?
+      - Evidence-based problem solving and decision making?
+      - Improved anticipatory mechanisms for problems and opportunities?
+      - Wider variety of problem solvers working collaboratively to solve complex problems?
+    examples: |
+      [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+      [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+      [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
+    resources: |
+      [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
+
+      [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
+
+      [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
 events:
 - sys:
     id: 1WVwEt6aeo4ko2wiAQ4Gae
@@ -333,101 +452,3 @@ datacollaborative:
     innovation in drug therapy. By combining data, the AMP portal can find new drug
     targets, and reduces wasteful repetition of testing found when companies work
     in-silo.
-canvasPhases:
-- sys:
-    id: 6pBkSIqXTi0GGkoIkCyYuY
-  phaseTitle: 'Phase 1: Demand'
-  phaseDescription: 'Establishing an effective data collaborative requires a detailed,
-    upfront understanding of the demand side of the initiative: i.e., an in-depth
-    understanding of the problem to be addressed and the opportunity provided by cross-sector
-    data sharing. '
-  phaseSteps:
-  - sys:
-      id: 24I8V51vBSsquokqCE6Gkg
-    stepTitle: __Step 1:__ Define the problem to be solved
-    discussion: Gaining a clear sense of the problem you are seeking to solve is an
-      essential first step in establishing a successful data collaborative. While
-      defining the problem space might seem like a straightforward proposition, achieving
-      the level of precision needed a well-targeted data collaborative requires an
-      in-depth assessment of the problem space.
-    questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
-      Articulate why it matters\n4. Note any assumptions\n5. Explore current work
-      to address the problem (internally and externally)"
-    enablers: "\n"
-    resources: |-
-      - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
-      - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
-      - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
-  - sys:
-      id: 4qgOOMrb72kmCOESgQWMCA
-    stepTitle: __Step 2:__ Define the value proposition of the data collaborative
-    discussion: Research and practice in data collaboratives point to a number of
-      societal benefits arising from the cross-sector sharing of data. After clearly
-      defining the problem that a data collaborative will serve to address, organizers
-      should look to gain specificity on the specific benefit a data collaborative
-      could offer.
-    questions: |
-      What is the intended societal benefit of the data collaborative:
-      - Accurate, real-time monitoring of situations?
-      - Agile governance in policy making and public service delivery?
-      - Evidence-based problem solving and decision making?
-      - Improved anticipatory mechanisms for problems and opportunities?
-      - Wider variety of problem solvers working collaboratively to solve complex problems?
-    examples: |
-      [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
-      [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
-      [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
-    resources: |
-      [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
-
-      [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
-
-      [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
-- sys:
-    id: NjeB5YTNKK4GCM80AMUqK
-  phaseTitle: 'Phase 2: Supply'
-  phaseDescription: Once the demand side of the equation is well understood and articulated,
-    the supply of data and expertise (i.e., human capital) should be explored in order
-    to determine how the supply can address the demand (or if there is not a match
-    between supply and demand and, therefore, a data collaborative would unconducive
-    to the issue at hand).
-  phaseSteps:
-  - sys:
-      id: 1ZgIPV6IvGQYmmogW6Yyio
-    stepTitle: '__Step 3:__ Expertise: Data Science and Organizational Competency'
-    discussion: "Cross-sector data sharing requires not only the bringing together
-      or \ndiverse datasets, but also collaboration between people and organizations
-      with different skills and institutional norms. An upfront understanding of how
-      human and institutional capacity and cultures either do or do not mesh can help
-      to define optimal roles and responsibilities and identify capacity gaps that
-      need to be filled (through additional partnerships or other mechanisms)."
-    questions: "- Internal\n\n  1. Evaluate and review internal capacity \n  2. Build
-      high-level internal support\n  3. Identify internal data literacy and human
-      capital \n  4. Collect and share examples of how other organizations have leveraged
-      data\n\n- External \n  1. Which entities could provide additional competencies
-      (data science and otherwise)?\n"
-    examples: |+
-      - [World Bank Skillfinder](http://www.thegovlab.org/static/files/smarterstate/skillfinder.pdf) – an internal expert and talent network
-
-
-    resources: |-
-      - [Network of Innovators](http://networkofinnovators.org) skill-sharing platform
-      - [A Comprehensive Review of Skills Required for Data Scientist Jobs](http://www.dataversity.net/comprehensive-review-skills-required-data-scientist-jobs/)
-      - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
-  - sys:
-      id: 4RTzlCVrugKGeGsseIAIsi
-    stepTitle: __Step 4:__ Data Supply
-    discussion: 'In many ways, data collaboratives are means for filling gaps in existing
-      institutional data supplies. In order to fill such gaps, organizers should conduct
-      an upfront audit of both the existing internal data supply and the potential
-      supply of data existing in other sectors. Such an audit can help inform and
-      prioritize outreach to external data holders and ensure that newly accessible
-      datasets are well-positioned for filling the most important data gaps. '
-    questions: |
-      - Internal: Conduct due diligence research and a data audit
-        1. What data currently exists that will be useful in addressing the problem?
-        2. What are the data gaps that slow progress toward addressing the problem?
-
-      - External: Map the potential supply side based on identified gaps
-        1. What data do you already have (develop a data inventory)?
-        2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?

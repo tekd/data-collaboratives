@@ -46,6 +46,17 @@ title: Resources | Data Collaboratives
             </span>
           </div>
 
+          <!-- Resource type -->
+          <div class="result-item__taxonomy result-item__taxonomy--type">
+            <span class="result-item__taxonomy__key">Themes</span>
+            <span class="result-item__taxonomy__value">
+              {% for resource_theme in resource.theme %}
+                <p class="result-item__tag">{{resource_theme}}</p>
+              {% endfor %}
+            </span>
+          </div>
+
+
           <!-- Short Description -->
           <div class="result-item__short-description">
             <p>{{resource.shortDescription }}</p>
