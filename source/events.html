@@ -1,0 +1,27 @@
+---
+layout: default
+title: Events| Data Collaboratives
+---
+
+<div class="events-page">
+  <div class="top-section top-section--yellow-list-page">
+    <h2 class="top-section__list-header">Events</h2>
+  </div>
+
+  <div class="page-section">
+    {% assign events = site.data.contentful.spaces.cases.events %}
+    {% for event in events %}
+    <div class="row">
+      <div class="columns">
+        <h4>{{event.eventName}}</h4>
+        <p>Date: {{event.eventDate | date: "%A, %B %d, %Y" }}</p>
+        <p>URL: {{event.url}}</p>
+        <p>Location: {{event.eventLocation[":lat"]}}, {{event.eventLocation[":lon"]}}</p>
+        <h1>{{event.eventLocation.address}}</h1>
+        <p>Type: {{event.conferenceType}}</p>
+        <p>Description: {{event.eventDescription | markdownify }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
