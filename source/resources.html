@@ -8,64 +8,114 @@ title: Resources | Data Collaboratives
     <h2 class="top-section__list-header">Resources</h2>
   </div>
   
-  {% assign resources = site.data.contentful.spaces.cases.resources %}
+  <div class="page-section page-section--gray">
+    <div class="row align-center">
+      <h4>Filters</h4>
+    </div>
 
+    <!-- create dropdown arrays from contentful-->
+    {% assign type_list = "" | split: "" %}
+    {% assign theme_list = "" | split: "" %}
+
+    {% for item in site.data.contentful.spaces.cases.resources %}
+        {% assign type_name = item.type %}
+        {% assign type_list = type_list | push: type_name %}
+      {% for theme in item.theme %}
+        {% assign theme_name = theme %}
+        {% assign theme_list = theme_list | push: theme_name %}
+      {% endfor %}
+    {% endfor %}
+
+    {% assign type_list = type_list | uniq %}
+    {% assign theme_list = theme_list | uniq %}
+
+    <div class="dropdown-wrapper">
+      <div class="row large-unstack align-spaced">
+        <div class="large-offset-1 columns resource-type">
+          <div class="select">
+            <select data-filter="resource-type" id="first" class="dropdown-content">
+              <option id="all">Filter by Type</option>
+              {% for t in type_list %}
+                <option id="{{ t | join: ' ' | slugify }}">{{ t }}</option>
+              {% endfor %}
+              </select>
+          </div>
+        </div>
+        <div class="columns resource-theme">
+          <div class="select">
+            <select data-filter="resource-theme" id="first" class="dropdown-content">
+              <option id="all">Filter by Theme</option>
+              {% for theme in theme_list %}
+              <option id="{{ theme | join: '' | slugify }}">{{theme}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        <div class="columns clear_filters">
+          <button type="button" name="button">CLEAR ALL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% assign resources = site.data.contentful.spaces.cases.resources %}
 
   <div class="page-section results-section">
     <div class="row expanded">
-      <div class="columns results-container">
-        {% for resource in resources %}
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">{{resource.title}}</h3>
-          <p class="result-item__authors">
-            {{resource.authors}}
-          </p>
+      <div id="resources" class="columns results-container">
+        <div class="list">
+          {% for resource in resources %}
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">{{resource.title}}</h3>
+            <p class="result-item__authors">
+              {{resource.authors}}
+            </p>
 
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p>{{resource.publication}}</p>
-            </span>
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p>{{resource.publication}}</p>
+              </span>
+            </div>
+
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">{{resource.pubDate | date: "%Y" }}</p>
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                {% for resource_type in resource.type %}
+                  <p class="result-item__tag resource-type" data-type="all {{resource_type | slugify}}">{{resource_type}}</p>
+                {% endfor %}
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all {% for resource_theme in resource.theme %} {{resource_theme | slugify }} {%endfor%}">
+                {% for resource_theme in resource.theme %}
+                  <p class="result-item__tag">{{resource_theme}}</p>
+                {% endfor %}
+              </span>
+            </div>
+
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>{{resource.shortDescription }}</p>
+            </div>
+
+            {% include resource-modal.html %}
+
           </div>
-
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">{{resource.pubDate | date: "%Y" }}</p>
-            </span>
-          </div>
-
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              {% for resource_type in resource.type %}
-                <p class="result-item__tag">{{resource_type}}</p>
-              {% endfor %}
-            </span>
-          </div>
-
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Themes</span>
-            <span class="result-item__taxonomy__value">
-              {% for resource_theme in resource.theme %}
-                <p class="result-item__tag">{{resource_theme}}</p>
-              {% endfor %}
-            </span>
-          </div>
-
-
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>{{resource.shortDescription }}</p>
-          </div>
-
-          {% include resource-modal.html %}
-
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>
