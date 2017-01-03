@@ -33,31 +33,31 @@ title: Resources | Data Collaboratives
 
 
   <div class="dropdown-wrapper">
-    <div class="row large-unstack">
+    <div class="row large-unstack align-spaced">
 
-      <div class="columns case__region">
+      <div class="large-offset-1 columns resource-type">
         <div class="select">
-          <select data-filter="case__region" id="first" class="dropdown-content">
+          <select data-filter="resource-type" id="first" class="dropdown-content">
             <option id="all">Filter by Type</option>
             {% for t in type_list %}
-              <option id="{{ t }}">{{ t }}</option>
+              <option id="{{ t | join: ' ' | slugify }}">{{ t }}</option>
             {% endfor %}
             </select>
         </div>
       </div>
 
-      <div class="columns case__region">
+      <div class="columns resource-theme">
         <div class="select">
-          <select data-filter="case__region" id="first" class="dropdown-content">
+          <select data-filter="resource-theme" id="first" class="dropdown-content">
             <option id="all">Filter by Theme</option>
             {% for theme in theme_list %}
-            <option id="{{ theme  }}">{{theme}}</option>
+            <option id="{{ theme | join: '' | slugify }}">{{theme}}</option>
             {% endfor %}
           </select>
         </div>
       </div>
 
-      <div class=" columns clear_filters">
+      <div class="columns clear_filters">
         <button type="button" name="button">CLEAR ALL</button>
       </div>
 
@@ -99,7 +99,7 @@ title: Resources | Data Collaboratives
               <span class="result-item__taxonomy__key">Type</span>
               <span class="result-item__taxonomy__value">
                 {% for resource_type in resource.type %}
-                  <p class="result-item__tag resource-type" data-type="{{resource_type | slugify}}">{{resource_type}}</p>
+                  <p class="result-item__tag resource-type" data-type="all {{resource_type | slugify}}">{{resource_type}}</p>
                 {% endfor %}
               </span>
             </div>
@@ -107,7 +107,7 @@ title: Resources | Data Collaboratives
             <!-- Resource type -->
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Themes</span>
-              <span class="result-item__taxonomy__value resource-theme" data-theme="{% for resource_theme in resource.theme %} {{resource_theme | slugify }} {%endfor%}">
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all {% for resource_theme in resource.theme %} {{resource_theme | slugify }} {%endfor%}">
                 {% for resource_theme in resource.theme %}
                   <p class="result-item__tag">{{resource_theme}}</p>
                 {% endfor %}
