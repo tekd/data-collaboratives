@@ -8,65 +8,57 @@ title: Resources | Data Collaboratives
     <h2 class="top-section__list-header">Resources</h2>
   </div>
   
+  <div class="page-section page-section--gray">
+    <div class="row align-center">
+      <h4>Filters</h4>
+    </div>
 
+    <!-- create dropdown arrays from contentful-->
+    {% assign type_list = "" | split: "" %}
+    {% assign theme_list = "" | split: "" %}
 
-<div class="page-section page-section--gray">
-  <div class="row align-center">
-    <h4>Filters</h4>
-  </div>
-
-  <!-- create dropdown arrays from contentful-->
-  {% assign type_list = "" | split: "" %}
-  {% assign theme_list = "" | split: "" %}
-
-  {% for item in site.data.contentful.spaces.cases.resources %}
-      {% assign type_name = item.type %}
-      {% assign type_list = type_list | push: type_name %}
-    {% for theme in item.theme %}
-      {% assign theme_name = theme %}
-      {% assign theme_list = theme_list | push: theme_name %}
+    {% for item in site.data.contentful.spaces.cases.resources %}
+        {% assign type_name = item.type %}
+        {% assign type_list = type_list | push: type_name %}
+      {% for theme in item.theme %}
+        {% assign theme_name = theme %}
+        {% assign theme_list = theme_list | push: theme_name %}
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
 
-  {% assign type_list = type_list | uniq %}
-  {% assign theme_list = theme_list | uniq %}
+    {% assign type_list = type_list | uniq %}
+    {% assign theme_list = theme_list | uniq %}
 
-
-  <div class="dropdown-wrapper">
-    <div class="row large-unstack align-spaced">
-
-      <div class="large-offset-1 columns resource-type">
-        <div class="select">
-          <select data-filter="resource-type" id="first" class="dropdown-content">
-            <option id="all">Filter by Type</option>
-            {% for t in type_list %}
-              <option id="{{ t | join: ' ' | slugify }}">{{ t }}</option>
-            {% endfor %}
+    <div class="dropdown-wrapper">
+      <div class="row large-unstack align-spaced">
+        <div class="large-offset-1 columns resource-type">
+          <div class="select">
+            <select data-filter="resource-type" id="first" class="dropdown-content">
+              <option id="all">Filter by Type</option>
+              {% for t in type_list %}
+                <option id="{{ t | join: ' ' | slugify }}">{{ t }}</option>
+              {% endfor %}
+              </select>
+          </div>
+        </div>
+        <div class="columns resource-theme">
+          <div class="select">
+            <select data-filter="resource-theme" id="first" class="dropdown-content">
+              <option id="all">Filter by Theme</option>
+              {% for theme in theme_list %}
+              <option id="{{ theme | join: '' | slugify }}">{{theme}}</option>
+              {% endfor %}
             </select>
+          </div>
+        </div>
+        <div class="columns clear_filters">
+          <button type="button" name="button">CLEAR ALL</button>
         </div>
       </div>
-
-      <div class="columns resource-theme">
-        <div class="select">
-          <select data-filter="resource-theme" id="first" class="dropdown-content">
-            <option id="all">Filter by Theme</option>
-            {% for theme in theme_list %}
-            <option id="{{ theme | join: '' | slugify }}">{{theme}}</option>
-            {% endfor %}
-          </select>
-        </div>
-      </div>
-
-      <div class="columns clear_filters">
-        <button type="button" name="button">CLEAR ALL</button>
-      </div>
-
     </div>
   </div>
-</div>
 
   {% assign resources = site.data.contentful.spaces.cases.resources %}
-
 
   <div class="page-section results-section">
     <div class="row expanded">
@@ -113,7 +105,6 @@ title: Resources | Data Collaboratives
                 {% endfor %}
               </span>
             </div>
-
 
             <!-- Short Description -->
             <div class="result-item__short-description">
