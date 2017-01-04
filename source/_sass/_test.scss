@@ -249,4 +249,11 @@
     opacity: 0.2;
 }
 
-
+.nav-markers {
+  bottom: 0;
+  position: fixed;
+  a .material-icons {
+    color: rgba($gray,0.5);
+    font-size: 2rem;
+  }
+}
