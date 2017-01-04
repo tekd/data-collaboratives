@@ -12,7 +12,7 @@
   .addTo(controller);
 
   var pinFirstSlideScene = new ScrollMagic.Scene({
-    triggerElement: '#slide01',
+    triggerElement: '#slide02',
     triggerHook: 0.4
   })
   .setPin('#intro', {pushFollowers: false})
@@ -52,13 +52,25 @@
 
 // PREVIOUS/NEXT
 
-  $("#next").click(function(e){
+  $('.next').on('click', function(e){
+    debugger
     e.preventDefault();
-    targetSlide = $(this).parent().attr("data-marker") + 1;
-    TweenMax.to(window, 0.5, {scrollTo:{y:$("#slide" + targetSlide).offset().top}});
+    targetSlide = parseInt($(this).parent().attr("data-marker")) + 1;
+    console.log($(this).parent().attr("data-marker"))
+    console.log($("#slide0" + targetSlide));
+    TweenMax.to(window, 0.5, {scrollTo:{y:$("#slide0" + targetSlide).offset().top}});
   });
 
-  $("#prev").click(function(e){
+  $('body').on('click','.next', function(e){
+    e.preventDefault();
+    debugger
+    targetSlide = parseInt($(this).parent().attr("data-marker")) + 1;
+    console.log($(this).parent().attr("data-marker"))
+    console.log($("#slide0" + targetSlide));
+    TweenMax.to(window, 0.5, {scrollTo:{y:$("#slide0" + targetSlide).offset().top}});
+  });
+
+  $(".prev").click(function(e){
     e.preventDefault();
     if(section > 1){
       section--;
