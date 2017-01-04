@@ -34,6 +34,34 @@ resources:
   - Risks and Challenges
   - Data Responsibility
 - sys:
+    id: 45Xi7ZIoMUcCqEUs0Iy0k
+  authors: Sharona Hoffman, Andy Podgurski
+  title: 'The Use and Misuse of Biomedical Data: Is Bigger Really Better?'
+  publication: American Journal of Law & Medicine 497
+  pubDate: !ruby/object:DateTime 2013-01-20 00:00:00.000000000 Z
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2235267
+  shortDescription: My name is Max. My world is fire. And blood. Once, I was a cop;
+    a road warrior searching for a righteous cause. As the world fell, each of us
+    in our own way was broken. It was hard to know who was more crazy. Me... or everyone
+    else.
+  annotation: |-
+    This journal article explores the benefits and, in particular, the risks related to large-scale biomedical databases bringing together health information from a diversity of sources across sectors. Some data collaboratives examined in the piece include:
+    - __MedMining__ – a company that extracts EHR data, de-identifies it, and offers it to researchers. The data sets that MedMining delivers to its customers include ‘lab results, vital signs, medications, procedures, diagnoses, lifestyle data, and detailed costs’ from inpatient and outpatient facilities.
+    - __Explorys__ has formed a large healthcare database derived from financial, administrative, and medical records. It has partnered with major healthcare organizations such as the Cleveland Clinic Foundation and Summa Health System to aggregate and standardize health information from ten million patients and over thirty billion clinical events.
+
+    Hoffman and Podgurski note that biomedical databases populated have many potential uses, with those likely to benefit including: “researchers, regulators, public health officials, commercial entities, lawyers,” as well as “healthcare providers who conduct quality assessment and improvement activities,” regulatory monitoring entities like the FDA, and “litigants in tort cases to develop evidence concerning causation and harm.”
+
+    They argue, however, that risks arise based on:
+    - The data contained in biomedical databases is surprisingly likely to be incorrect or incomplete;
+    - Systemic biases, arising from both the nature of the data and the preconceptions of investigators are serious threats the validity of research results, especially in answering causal questions;
+    - Data mining of biomedical databases makes it easier for individuals with political, social, or economic agendas to generate ostensibly scientific but misleading research findings for the purpose of manipulating public opinion and swaying policymakers.
+  type:
+  - Journal Article
+  theme:
+  - General
+  - Risks and Challenges
+  - Data Responsibility
+- sys:
     id: UNpj0WvDEaYwO6MgoQk62
   authors: Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
   title: Enabling Humanitarian Use of Mobile Phone Data
@@ -80,34 +108,6 @@ resources:
   theme:
   - General
   - In Practice
-- sys:
-    id: 45Xi7ZIoMUcCqEUs0Iy0k
-  authors: Sharona Hoffman, Andy Podgurski
-  title: 'The Use and Misuse of Biomedical Data: Is Bigger Really Better?'
-  publication: American Journal of Law & Medicine 497
-  pubDate: !ruby/object:DateTime 2013-01-20 00:00:00.000000000 Z
-  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2235267
-  shortDescription: My name is Max. My world is fire. And blood. Once, I was a cop;
-    a road warrior searching for a righteous cause. As the world fell, each of us
-    in our own way was broken. It was hard to know who was more crazy. Me... or everyone
-    else.
-  annotation: |-
-    This journal article explores the benefits and, in particular, the risks related to large-scale biomedical databases bringing together health information from a diversity of sources across sectors. Some data collaboratives examined in the piece include:
-    - __MedMining__ – a company that extracts EHR data, de-identifies it, and offers it to researchers. The data sets that MedMining delivers to its customers include ‘lab results, vital signs, medications, procedures, diagnoses, lifestyle data, and detailed costs’ from inpatient and outpatient facilities.
-    - __Explorys__ has formed a large healthcare database derived from financial, administrative, and medical records. It has partnered with major healthcare organizations such as the Cleveland Clinic Foundation and Summa Health System to aggregate and standardize health information from ten million patients and over thirty billion clinical events.
-
-    Hoffman and Podgurski note that biomedical databases populated have many potential uses, with those likely to benefit including: “researchers, regulators, public health officials, commercial entities, lawyers,” as well as “healthcare providers who conduct quality assessment and improvement activities,” regulatory monitoring entities like the FDA, and “litigants in tort cases to develop evidence concerning causation and harm.”
-
-    They argue, however, that risks arise based on:
-    - The data contained in biomedical databases is surprisingly likely to be incorrect or incomplete;
-    - Systemic biases, arising from both the nature of the data and the preconceptions of investigators are serious threats the validity of research results, especially in answering causal questions;
-    - Data mining of biomedical databases makes it easier for individuals with political, social, or economic agendas to generate ostensibly scientific but misleading research findings for the purpose of manipulating public opinion and swaying policymakers.
-  type:
-  - Journal Article
-  theme:
-  - General
-  - Risks and Challenges
-  - Data Responsibility
 - sys:
     id: 5pntSuj8Ry6wCUYwg8EgK8
   authors: Matthew Brack and Tito Castillo
@@ -161,30 +161,6 @@ resources:
   - Data Responsibility
 canvasSteps:
 - sys:
-    id: 4qgOOMrb72kmCOESgQWMCA
-  stepTitle: __Step 2:__ Define the value proposition of the data collaborative
-  discussion: Research and practice in data collaboratives point to a number of societal
-    benefits arising from the cross-sector sharing of data. After clearly defining
-    the problem that a data collaborative will serve to address, organizers should
-    look to gain specificity on the specific benefit a data collaborative could offer.
-  questions: |
-    What is the intended societal benefit of the data collaborative:
-    - Accurate, real-time monitoring of situations?
-    - Agile governance in policy making and public service delivery?
-    - Evidence-based problem solving and decision making?
-    - Improved anticipatory mechanisms for problems and opportunities?
-    - Wider variety of problem solvers working collaboratively to solve complex problems?
-  examples: |
-    [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
-    [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
-    [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
-  resources: |
-    [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
-
-    [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
-
-    [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
-- sys:
     id: 4RTzlCVrugKGeGsseIAIsi
   stepTitle: __Step 4:__ Data Supply
   discussion: 'In many ways, data collaboratives are means for filling gaps in existing
@@ -202,21 +178,47 @@ canvasSteps:
       1. What data do you already have (develop a data inventory)?
       2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?
 - sys:
-    id: 24I8V51vBSsquokqCE6Gkg
-  stepTitle: __Step 1:__ Define the problem to be solved
-  discussion: Gaining a clear sense of the problem you are seeking to solve is an
-    essential first step in establishing a successful data collaborative. While defining
-    the problem space might seem like a straightforward proposition, achieving the
-    level of precision needed a well-targeted data collaborative requires an in-depth
-    assessment of the problem space.
-  questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
-    Articulate why it matters\n4. Note any assumptions\n5. Explore current work to
-    address the problem (internally and externally)"
-  enablers: "\n"
-  resources: |-
-    - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
-    - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
-    - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+    id: 4qgOOMrb72kmCOESgQWMCA
+  stepTitle: __Step 2:__ Define the value proposition of the data collaborative
+  discussion: Research and practice in data collaboratives point to a number of societal
+    benefits arising from the cross-sector sharing of data. After clearly defining
+    the problem that a data collaborative will serve to address, organizers should
+    look to gain specificity on the specific benefit a data collaborative could offer.
+  questions: |
+    What is the intended societal benefit of the data collaborative:
+    - Accurate, real-time monitoring of situations?
+    - Agile governance in policy making and public service delivery?
+    - Evidence-based problem solving and decision making?
+    - Improved anticipatory mechanisms for problems and opportunities?
+    - Wider variety of problem solvers working collaboratively to solve complex problems?
+  examples: |
+    [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+
+    [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+
+    [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
+  enablers: |-
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+  resources: |
+    [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
+
+    [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
+
+    [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
 - sys:
     id: 1ZgIPV6IvGQYmmogW6Yyio
   stepTitle: '__Step 3:__ Expertise: Data Science and Organizational Competency'
@@ -239,7 +241,187 @@ canvasSteps:
     - [Network of Innovators](http://networkofinnovators.org) skill-sharing platform
     - [A Comprehensive Review of Skills Required for Data Scientist Jobs](http://www.dataversity.net/comprehensive-review-skills-required-data-scientist-jobs/)
     - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
+- sys:
+    id: 24I8V51vBSsquokqCE6Gkg
+  stepTitle: __Step 1:__ Define the problem to be solved - TEST
+  discussion: Gaining a clear sense of the problem you are seeking to solve is an
+    essential first step in establishing a successful data collaborative. While defining
+    the problem space might seem like a straightforward proposition, achieving the
+    level of precision needed a well-targeted data collaborative requires an in-depth
+    assessment of the problem space.
+  questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
+    Articulate why it matters\n4. Note any assumptions\n5. Explore current work to
+    address the problem (internally and externally)"
+  examples: |-
+    - [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+
+    - [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+
+    - Trusted Intermediary: South Africa-based telecom MTN makes anonymized call records available to researchers through a trusted intermediary, Real Impacts Analytics — a data analytics firm that provides guided and predictive analytics solutions.
+    - Prizes or Challenges: In Ivory Coast and Senegal, Orange Telecom hosted a global challenge that allowed researchers to use anonymized, aggregated data to help solve various development problems, including those related to transportation, health, and agriculture.
+
+    - Research Partnership: Yelp shares its data on neighborhood businesses with 30 universities for researchers to build tools and discover meaningful value in the data. Using shared data on Yelp businesses in the San Francisco Bay Area, an academic research team from U.C. Berkeley used a probabilistic model for natural language processing to detect subtopics across a dataset of over 200,000 Yelp business reviews. Their research uncovered correlations between positive ratings and service quality, giving business owners evidence for improving their services.
+  enablers: |2-
+
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+  resources: |-
+    - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
+    - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
+    - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+datacollaborative:
+- sys:
+    id: 655oS0dVeMsU2gSK4aYWQg
+  caseStudy: Accelerating Medicines Partnership (AMP)
+  sector:
+  - Health
+  sharedBy:
+  - Ten biopharmaceutical companies
+  sharedWith:
+  - National Institutes of Health
+  - U.S. Food and Drug Administration
+  region: North America
+  collaborativeType:
+  - Data Pooling
+  dataType:
+  - Disclosed Personal Data
+  link: https://www.nih.gov/research-training/accelerating-medicines-partnership-amp
+  whatDataShared: AMP partners focus on four diseases—Alzheimer's disease, type 2
+    diabetes mellitus, rheumatoid arthritis, and systemic lupus erythematosus--and
+    share genomic and molecular data to accelerate research into disease treatmeant.
+  howDataShared: All AMP partners have agreed to make the AMP data and analyses publicly
+    accessible to the broad biomedical community through an online portal. AMP governs
+    their projects through steering committees for each of the three disease areas,
+    with representation from all partners. The steering committees are managed by
+    the Foundation of the National Institute of Health (FNIH) under the direction
+    of an AMP Executive Committee comprised of representatives from NIH, participating
+    industry leaders, FDA, and non-profit organizations.
+  purpose: The AMP initiative combines public-private expertise and pooled data to
+    reduce the time and cost of developing biomarkers for disease treatment. The project
+    attempts to overcome fragmentation in the pharmaceutical industry and improve
+    innovation in drug therapy. By combining data, the AMP portal can find new drug
+    targets, and reduces wasteful repetition of testing found when companies work
+    in-silo.
+- sys:
+    id: 3riF1HxE2Iw2YwyoyCYWQ6
+  caseStudy: 23andMe Patient-Centric Research Portal
+  sector:
+  - Health
+  sharedBy:
+  - 23andMe
+  sharedWith:
+  - Selected partners
+  region: Worldwide
+  collaborativeType:
+  - Intelligence Product
+  - Research Partnerships
+  dataType:
+  - Disclosed Personal Data
+  dataKind:
+  - Registration Records
+  dataSource:
+  - Health System Registers
+  link: https://www.23andme.com/research/
+  whatDataShared: 23andMe shares its database of anonymized genetic data from more
+    than 650,000 customers who decide to participate on the online medical studies.
+    The ResearchKit app, developed in partnership with Apple, allows participants
+    to integrate their genetic data  with large-scale medical studies.
+  howDataShared: Medical studies initiated by partner institutions, like the Mount
+    Sinai Asthma Health and Stanford Medicine's MyHeart Counts projects, can access
+    23andMe research services through a new ResearchKit App, through which customers
+    can choose to share data. Customers of 23andMe's services can also choose to participate
+    in other surveys to aid medical research, and provide data to 23andMe's industry,
+    academic and non-profit partners.
+  purpose: The data collaborative allows research partners to quickly run queries
+    on more than 1,000 diseases, conditions, and traits so that they can identify
+    new associations between genetic markers using the 23andMe data. A single customer
+    who chooses to opt into research contributes to over 230 studies on a variety
+    of health topics. This effectively accelerates medical research, leading to significant
+    discoveries in a fraction of the cost and time.
 canvasPhases:
+- sys:
+    id: 6pBkSIqXTi0GGkoIkCyYuY
+  phaseTitle: 'Phase 1: Demand'
+  phaseDescription: 'Establishing an effective data collaborative requires a detailed,
+    upfront understanding of the demand side of the initiative: i.e., an in-depth
+    understanding of the problem to be addressed and the opportunity provided by cross-sector
+    data sharing. '
+  phaseSteps:
+  - sys:
+      id: 24I8V51vBSsquokqCE6Gkg
+    stepTitle: __Step 1:__ Define the problem to be solved - TEST
+    discussion: Gaining a clear sense of the problem you are seeking to solve is an
+      essential first step in establishing a successful data collaborative. While
+      defining the problem space might seem like a straightforward proposition, achieving
+      the level of precision needed a well-targeted data collaborative requires an
+      in-depth assessment of the problem space.
+    questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
+      Articulate why it matters\n4. Note any assumptions\n5. Explore current work
+      to address the problem (internally and externally)"
+    examples: |-
+      - [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+
+      - [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+
+      - Trusted Intermediary: South Africa-based telecom MTN makes anonymized call records available to researchers through a trusted intermediary, Real Impacts Analytics — a data analytics firm that provides guided and predictive analytics solutions.
+      - Prizes or Challenges: In Ivory Coast and Senegal, Orange Telecom hosted a global challenge that allowed researchers to use anonymized, aggregated data to help solve various development problems, including those related to transportation, health, and agriculture.
+
+      - Research Partnership: Yelp shares its data on neighborhood businesses with 30 universities for researchers to build tools and discover meaningful value in the data. Using shared data on Yelp businesses in the San Francisco Bay Area, an academic research team from U.C. Berkeley used a probabilistic model for natural language processing to detect subtopics across a dataset of over 200,000 Yelp business reviews. Their research uncovered correlations between positive ratings and service quality, giving business owners evidence for improving their services.
+    enablers: |2-
+
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+    resources: |-
+      - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
+      - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
+      - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
+  - sys:
+      id: 4qgOOMrb72kmCOESgQWMCA
+    stepTitle: __Step 2:__ Define the value proposition of the data collaborative
+    discussion: Research and practice in data collaboratives point to a number of
+      societal benefits arising from the cross-sector sharing of data. After clearly
+      defining the problem that a data collaborative will serve to address, organizers
+      should look to gain specificity on the specific benefit a data collaborative
+      could offer.
+    questions: |
+      What is the intended societal benefit of the data collaborative:
+      - Accurate, real-time monitoring of situations?
+      - Agile governance in policy making and public service delivery?
+      - Evidence-based problem solving and decision making?
+      - Improved anticipatory mechanisms for problems and opportunities?
+      - Wider variety of problem solvers working collaboratively to solve complex problems?
+    examples: |
+      [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+
+      [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+
+      [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
+    enablers: |-
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+    resources: |
+      [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
+
+      [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
+
+      [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
 - sys:
     id: NjeB5YTNKK4GCM80AMUqK
   phaseTitle: 'Phase 2: Supply'
@@ -288,55 +470,6 @@ canvasPhases:
       - External: Map the potential supply side based on identified gaps
         1. What data do you already have (develop a data inventory)?
         2. Which entities (whether private, governmental or nongovernmental) possess and could provide the needed data?
-- sys:
-    id: 6pBkSIqXTi0GGkoIkCyYuY
-  phaseTitle: 'Phase 1: Demand'
-  phaseDescription: 'Establishing an effective data collaborative requires a detailed,
-    upfront understanding of the demand side of the initiative: i.e., an in-depth
-    understanding of the problem to be addressed and the opportunity provided by cross-sector
-    data sharing. '
-  phaseSteps:
-  - sys:
-      id: 24I8V51vBSsquokqCE6Gkg
-    stepTitle: __Step 1:__ Define the problem to be solved
-    discussion: Gaining a clear sense of the problem you are seeking to solve is an
-      essential first step in establishing a successful data collaborative. While
-      defining the problem space might seem like a straightforward proposition, achieving
-      the level of precision needed a well-targeted data collaborative requires an
-      in-depth assessment of the problem space.
-    questions: "1. Describe issue to be addressed\n2. Identify the beneficiaries \n3.
-      Articulate why it matters\n4. Note any assumptions\n5. Explore current work
-      to address the problem (internally and externally)"
-    enablers: "\n"
-    resources: |-
-      - [Problem Definition Worksheet – Knowledge Co-Creation Portal, Multi-Stakeholder Partnerships](http://www.mspguide.org/tool/problem-definition-worksheet)
-      - [Community Toolbox – Defining and Analyzing the Problem](http://ctb.ku.edu/en/table-of-contents/analyze/analyze-community-problems-and-solutions/define-analyze-problem/main)
-      - [GovLab Public Problem Solving Canvas](http://canvas.govlabacademy.org/)
-  - sys:
-      id: 4qgOOMrb72kmCOESgQWMCA
-    stepTitle: __Step 2:__ Define the value proposition of the data collaborative
-    discussion: Research and practice in data collaboratives point to a number of
-      societal benefits arising from the cross-sector sharing of data. After clearly
-      defining the problem that a data collaborative will serve to address, organizers
-      should look to gain specificity on the specific benefit a data collaborative
-      could offer.
-    questions: |
-      What is the intended societal benefit of the data collaborative:
-      - Accurate, real-time monitoring of situations?
-      - Agile governance in policy making and public service delivery?
-      - Evidence-based problem solving and decision making?
-      - Improved anticipatory mechanisms for problems and opportunities?
-      - Wider variety of problem solvers working collaboratively to solve complex problems?
-    examples: |
-      [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
-      [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
-      [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
-    resources: |
-      [Data Collaboratives: Sharing Public Data in Private Hands for Social Good](http://www.forbes.com/sites/bethsimonenoveck/2015/09/24/private-data-sharing-for-public-good/#499f139365bb)
-
-      [4 Steps To Building A Compelling Value Proposition](http://www.forbes.com/sites/michaelskok/2013/06/14/4-steps-to-building-a-compelling-value-proposition/#12ba9c7e1f2c)
-
-      [Useful Value Proposition Examples (and How to Create a Good One)](http://conversionxl.com/value-proposition-examples-how-to-create/)
 events:
 - sys:
     id: 1WVwEt6aeo4ko2wiAQ4Gae
@@ -383,72 +516,3 @@ events:
   eventDate: !ruby/object:DateTime 2017-05-01 00:00:00.000000000 Z
   sessionType:
   - Workshop
-datacollaborative:
-- sys:
-    id: 3riF1HxE2Iw2YwyoyCYWQ6
-  caseStudy: 23andMe Patient-Centric Research Portal
-  sector:
-  - Health
-  sharedBy:
-  - 23andMe
-  sharedWith:
-  - Selected partners
-  region: Worldwide
-  collaborativeType:
-  - Intelligence Product
-  - Research Partnerships
-  dataType:
-  - Disclosed Personal Data
-  dataKind:
-  - Registration Records
-  dataSource:
-  - Health System Registers
-  link: https://www.23andme.com/research/
-  whatDataShared: 23andMe shares its database of anonymized genetic data from more
-    than 650,000 customers who decide to participate on the online medical studies.
-    The ResearchKit app, developed in partnership with Apple, allows participants
-    to integrate their genetic data  with large-scale medical studies.
-  howDataShared: Medical studies initiated by partner institutions, like the Mount
-    Sinai Asthma Health and Stanford Medicine's MyHeart Counts projects, can access
-    23andMe research services through a new ResearchKit App, through which customers
-    can choose to share data. Customers of 23andMe's services can also choose to participate
-    in other surveys to aid medical research, and provide data to 23andMe's industry,
-    academic and non-profit partners.
-  purpose: The data collaborative allows research partners to quickly run queries
-    on more than 1,000 diseases, conditions, and traits so that they can identify
-    new associations between genetic markers using the 23andMe data. A single customer
-    who chooses to opt into research contributes to over 230 studies on a variety
-    of health topics. This effectively accelerates medical research, leading to significant
-    discoveries in a fraction of the cost and time.
-- sys:
-    id: 655oS0dVeMsU2gSK4aYWQg
-  caseStudy: Accelerating Medicines Partnership (AMP)
-  sector:
-  - Health
-  sharedBy:
-  - Ten biopharmaceutical companies
-  sharedWith:
-  - National Institutes of Health
-  - U.S. Food and Drug Administration
-  region: North America
-  collaborativeType:
-  - Data Pooling
-  dataType:
-  - Disclosed Personal Data
-  link: https://www.nih.gov/research-training/accelerating-medicines-partnership-amp
-  whatDataShared: AMP partners focus on four diseases—Alzheimer's disease, type 2
-    diabetes mellitus, rheumatoid arthritis, and systemic lupus erythematosus--and
-    share genomic and molecular data to accelerate research into disease treatmeant.
-  howDataShared: All AMP partners have agreed to make the AMP data and analyses publicly
-    accessible to the broad biomedical community through an online portal. AMP governs
-    their projects through steering committees for each of the three disease areas,
-    with representation from all partners. The steering committees are managed by
-    the Foundation of the National Institute of Health (FNIH) under the direction
-    of an AMP Executive Committee comprised of representatives from NIH, participating
-    industry leaders, FDA, and non-profit organizations.
-  purpose: The AMP initiative combines public-private expertise and pooled data to
-    reduce the time and cost of developing biomarkers for disease treatment. The project
-    attempts to overcome fragmentation in the pharmaceutical industry and improve
-    innovation in drug therapy. By combining data, the AMP portal can find new drug
-    targets, and reduces wasteful repetition of testing found when companies work
-    in-silo.
