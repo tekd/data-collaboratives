@@ -193,9 +193,23 @@ canvasSteps:
     - Wider variety of problem solvers working collaboratively to solve complex problems?
   examples: |
     [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+
     [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+
     [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
   enablers: |-
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
+    - Designing the data collaborative based on the intended audience or beneficiary
     - Designing the data collaborative based on the intended audience or beneficiary
     - Designing the data collaborative based on the intended audience or beneficiary
     - Designing the data collaborative based on the intended audience or beneficiary
@@ -382,9 +396,23 @@ canvasPhases:
       - Wider variety of problem solvers working collaboratively to solve complex problems?
     examples: |
       [Telefónica’s Smart Steps](http://dynamicinsights.telefonica.com/488/smart-steps-2) – an intelligence product enabling organizations to use fully anonymized and aggregated mobile network data to measure and compare the movements of crowds – has generated deeper insights about the link between human movement and the spread of infectious diseases.
+
       [The Namibia National Vector-borne Diseases Control Programme (NVDCP)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927223/) used CDR data from telecommunications provider MTC Namibia, in combination with national surveillance data and satellite imagery, in order to analyze movement patterns for over a million people and map areas of malaria prevalence and risk. The results of the study helped the NVDCP in Namibia improve their targeting of malaria interventions to communities most at risk.
+
       [Grameenphone](http://www.ehs.unu.edu/article/read/press-note-new-project-uses-mobile-data-to-understand-climate), the leading telecommunications provider in Bangladesh, shares its mobile call data records to understand climate impacts by mapping population flows before and after extreme weather events. The Mobile Data, Environmental Extremes and Population (MDEEP) Project is a partnership between the United Nations University Institute for Environment and Human Security (UNU-EHS), the International Centre for Climate Change and Development (ICCCAD), Flowminder.org, and Telenor Group.
     enablers: |-
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
+      - Designing the data collaborative based on the intended audience or beneficiary
       - Designing the data collaborative based on the intended audience or beneficiary
       - Designing the data collaborative based on the intended audience or beneficiary
       - Designing the data collaborative based on the intended audience or beneficiary
