@@ -45,50 +45,338 @@
     <h2 class="top-section__list-header">Resources</h2>
   </div>
   
-  
+  <div class="page-section page-section--gray">
+    <div class="row align-center">
+      <h4>Filters</h4>
+    </div>
 
+    <!-- create dropdown arrays from contentful-->
+    
+    
+
+    
+
+    
+    
+
+    <div class="dropdown-wrapper">
+      <div class="row large-unstack align-spaced">
+        <div class="large-offset-1 columns resource-type">
+          <div class="select">
+            <select data-filter="resource-type" id="first" class="dropdown-content">
+              <option id="all">Filter by Type</option>
+              
+                <option id="report">Report</option>
+              
+                <option id="journal-article">Journal Article</option>
+              
+                <option id="paper">Paper</option>
+              
+              </select>
+          </div>
+        </div>
+        <div class="columns resource-theme">
+          <div class="select">
+            <select data-filter="resource-theme" id="first" class="dropdown-content">
+              <option id="all">Filter by Theme</option>
+              
+              <option id="risks-and-challenges">Risks and Challenges</option>
+              
+              <option id="data-responsibility">Data Responsibility</option>
+              
+              <option id="general">General</option>
+              
+              <option id="benefits">Benefits</option>
+              
+              <option id="in-practice">In Practice</option>
+              
+              <option id="incentives">Incentives</option>
+              
+            </select>
+          </div>
+        </div>
+        <div class="columns clear_filters">
+          <button type="button" name="button">CLEAR ALL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 
   <div class="page-section results-section">
     <div class="row expanded">
-      <div class="columns results-container">
+      <div id="resources" class="columns results-container">
+        <div class="list">
+          
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h3>
+            <p class="result-item__authors">
+              Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
+            </p>
+
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p></p>
+              </span>
+            </div>
+
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">2014</p>
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-type="all report">Report</p>
+                
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  risks-and-challenges  data-responsibility ">
+                
+                  <p class="result-item__tag">Risks and Challenges</p>
+                
+                  <p class="result-item__tag">Data Responsibility</p>
+                
+              </span>
+            </div>
+
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>A white paper describing the potential of big data, and corporate data in particular, to positively benefit development efforts</p>
+            </div>
+
+            <div class="modal js-target-modal">
+    <header class="modal__header modal__header--yellow">
+        <i class="modal__close material-icons js-close-modal">close</i>
+        <h1 class="modal__title">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h1>
+    </header>
+    <section class="modal__content">
+        <h3><a href="https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf" title="Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</a></h3>
+        <p class="result-item__authors">
+          Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
+        </p>
+
+        <!-- Publication -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication">
+          <span class="result-item__taxonomy__key">Publication</span>
+            <p></p>
+          </span>
+        </div>
+
+        <!-- Publication Date -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+          <span class="result-item__taxonomy__key">Publication Date</span>
+          <span class="result-item__taxonomy__value">
+            <p class="result-item__tag">2014</p>
+          </span>
+        </div>
+
+        <!-- Resource type -->
+        <div class="result-item__taxonomy result-item__taxonomy--type">
+          <span class="result-item__taxonomy__key">Type</span>
+          <span class="result-item__taxonomy__value">
+            
+              <p class="result-item__tag">Report</p>
+            
+          </span>
+        </div>
+
+        <!-- Short Description -->
         
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">Enabling Humanitarian Use of Mobile Phone Data</h3>
-          <p class="result-item__authors">
-            Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
-          </p>
+        <p>This white paper, produced by “a group of activists, researchers and data experts” explores the potential of big data to improve development outcomes and spur positive social change in low- and middle-income countries. Using examples, the authors discuss four areas in which the use of big data can impact development efforts:
 
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p>The Brookings Institution, Issues in Technology Innovation</p>
-            </span>
+- Advocating and facilitating by “opening[ing] up new public spaces for discussion and awareness building;
+- Describing and predicting through the detection of “new correlations and the surfac[ing] of new questions;
+- Facilitating information exchange through “multiple feedback loops which feed into both research and action,” and
+- Promoting accountability and transparency, especially as a byproduct of crowdsourcing efforts aimed at “aggregat[ing] and analyz[ing] information in real time.
+
+The authors argue that in order to maximize the potential of big data’s use in development, “there is a case to be made for building a data commons for private/public data, and for setting up new and more appropriate ethical guidelines.”
+
+They also identify a number of challenges, especially when leveraging data made accessible from a number of sources, including private sector entities, such as:
+
+- Lack of general data literacy;
+- Lack of open learning environments and repositories;
+- Lack of resources, capacity and access;
+- Challenges of sensitivity and risk perception with regard to using data;
+- Storage and computing capacity; and
+- Externally validating data sources for comparison and verification.</p>
+    </section>
+    <footer class="modal__controls">
+        <a class="button js-close-modal" href="#">OK</a>
+    </footer>
+</div>
+
           </div>
+          
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">The Use and Misuse of Biomedical Data: Is Bigger Really Better?</h3>
+            <p class="result-item__authors">
+              Sharona Hoffman, Andy Podgurski
+            </p>
 
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">2014</p>
-            </span>
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p>American Journal of Law & Medicine 497</p>
+              </span>
+            </div>
+
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">2013</p>
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
+                
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general  risks-and-challenges  data-responsibility ">
+                
+                  <p class="result-item__tag">General</p>
+                
+                  <p class="result-item__tag">Risks and Challenges</p>
+                
+                  <p class="result-item__tag">Data Responsibility</p>
+                
+              </span>
+            </div>
+
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>My name is Max. My world is fire. And blood. Once, I was a cop; a road warrior searching for a righteous cause. As the world fell, each of us in our own way was broken. It was hard to know who was more crazy. Me... or everyone else.</p>
+            </div>
+
+            <div class="modal js-target-modal">
+    <header class="modal__header modal__header--yellow">
+        <i class="modal__close material-icons js-close-modal">close</i>
+        <h1 class="modal__title">The Use and Misuse of Biomedical Data: Is Bigger Really Better?</h1>
+    </header>
+    <section class="modal__content">
+        <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2235267" title="The Use and Misuse of Biomedical Data: Is Bigger Really Better?">The Use and Misuse of Biomedical Data: Is Bigger Really Better?</a></h3>
+        <p class="result-item__authors">
+          Sharona Hoffman, Andy Podgurski
+        </p>
+
+        <!-- Publication -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication">
+          <span class="result-item__taxonomy__key">Publication</span>
+            <p>American Journal of Law & Medicine 497</p>
+          </span>
+        </div>
+
+        <!-- Publication Date -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+          <span class="result-item__taxonomy__key">Publication Date</span>
+          <span class="result-item__taxonomy__value">
+            <p class="result-item__tag">2013</p>
+          </span>
+        </div>
+
+        <!-- Resource type -->
+        <div class="result-item__taxonomy result-item__taxonomy--type">
+          <span class="result-item__taxonomy__key">Type</span>
+          <span class="result-item__taxonomy__value">
+            
+              <p class="result-item__tag">Journal Article</p>
+            
+          </span>
+        </div>
+
+        <!-- Short Description -->
+        
+        <p>This journal article explores the benefits and, in particular, the risks related to large-scale biomedical databases bringing together health information from a diversity of sources across sectors. Some data collaboratives examined in the piece include:
+- __MedMining__ – a company that extracts EHR data, de-identifies it, and offers it to researchers. The data sets that MedMining delivers to its customers include ‘lab results, vital signs, medications, procedures, diagnoses, lifestyle data, and detailed costs’ from inpatient and outpatient facilities.
+- __Explorys__ has formed a large healthcare database derived from financial, administrative, and medical records. It has partnered with major healthcare organizations such as the Cleveland Clinic Foundation and Summa Health System to aggregate and standardize health information from ten million patients and over thirty billion clinical events.
+
+Hoffman and Podgurski note that biomedical databases populated have many potential uses, with those likely to benefit including: “researchers, regulators, public health officials, commercial entities, lawyers,” as well as “healthcare providers who conduct quality assessment and improvement activities,” regulatory monitoring entities like the FDA, and “litigants in tort cases to develop evidence concerning causation and harm.”
+
+They argue, however, that risks arise based on:
+- The data contained in biomedical databases is surprisingly likely to be incorrect or incomplete;
+- Systemic biases, arising from both the nature of the data and the preconceptions of investigators are serious threats the validity of research results, especially in answering causal questions;
+- Data mining of biomedical databases makes it easier for individuals with political, social, or economic agendas to generate ostensibly scientific but misleading research findings for the purpose of manipulating public opinion and swaying policymakers.</p>
+    </section>
+    <footer class="modal__controls">
+        <a class="button js-close-modal" href="#">OK</a>
+    </footer>
+</div>
+
           </div>
+          
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">Enabling Humanitarian Use of Mobile Phone Data</h3>
+            <p class="result-item__authors">
+              Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
+            </p>
 
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag">Issues Paper</p>
-              
-            </span>
-          </div>
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p>The Brookings Institution, Issues in Technology Innovation</p>
+              </span>
+            </div>
 
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>An issues paper from the Brookings Institution on leveraging the benefits of mobile phone data for humanitarian use while minimizing risks to privacy</p>
-          </div>
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">2014</p>
+              </span>
+            </div>
 
-          <div class="modal js-target-modal">
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-type="all report">Report</p>
+                
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general  benefits  in-practice ">
+                
+                  <p class="result-item__tag">General</p>
+                
+                  <p class="result-item__tag">Benefits</p>
+                
+                  <p class="result-item__tag">In Practice</p>
+                
+              </span>
+            </div>
+
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>An issues paper from the Brookings Institution on leveraging the benefits of mobile phone data for humanitarian use while minimizing risks to privacy</p>
+            </div>
+
+            <div class="modal js-target-modal">
     <header class="modal__header modal__header--yellow">
         <i class="modal__close material-icons js-close-modal">close</i>
         <h1 class="modal__title">Enabling Humanitarian Use of Mobile Phone Data</h1>
@@ -119,7 +407,7 @@
           <span class="result-item__taxonomy__key">Type</span>
           <span class="result-item__taxonomy__value">
             
-              <p class="result-item__tag">Issues Paper</p>
+              <p class="result-item__tag">Report</p>
             
           </span>
         </div>
@@ -135,224 +423,57 @@ The authors highlight the absence of a common legal and standards framework for 
     </footer>
 </div>
 
-        </div>
-        
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">Data Sharing for Public Health: Key Lessons from Other Sectors</h3>
-          <p class="result-item__authors">
-            Matthew Brack and Tito Castillo
-          </p>
-
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p>Chatham House, Centre on Global Health Security</p>
-            </span>
           </div>
+          
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">Collaborative Governance in Theory and Practice</h3>
+            <p class="result-item__authors">
+              Ansell, C. and Gash, A
+            </p>
 
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">2015</p>
-            </span>
-          </div>
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p>Journal of Public Administration Research and  Theory</p>
+              </span>
+            </div>
 
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag">Report</p>
-              
-            </span>
-          </div>
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">2016</p>
+              </span>
+            </div>
 
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>A Chatham House report describing the need for data sharing and collaboration for global public health emergencies and potential lessons learned from the commercial sector</p>
-          </div>
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-type="all journal-article">Journal Article</p>
+                
+              </span>
+            </div>
 
-          <div class="modal js-target-modal">
-    <header class="modal__header modal__header--yellow">
-        <i class="modal__close material-icons js-close-modal">close</i>
-        <h1 class="modal__title">Data Sharing for Public Health: Key Lessons from Other Sectors</h1>
-    </header>
-    <section class="modal__content">
-        <h3><a href="https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf" title="Data Sharing for Public Health: Key Lessons from Other Sectors">Data Sharing for Public Health: Key Lessons from Other Sectors</a></h3>
-        <p class="result-item__authors">
-          Matthew Brack and Tito Castillo
-        </p>
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general  in-practice ">
+                
+                  <p class="result-item__tag">General</p>
+                
+                  <p class="result-item__tag">In Practice</p>
+                
+              </span>
+            </div>
 
-        <!-- Publication -->
-        <div class="result-item__taxonomy result-item__taxonomy--publication">
-          <span class="result-item__taxonomy__key">Publication</span>
-            <p>Chatham House, Centre on Global Health Security</p>
-          </span>
-        </div>
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>A journal article describing the emerging practice of public-private partnerships, particularly those built around data sharing</p>
+            </div>
 
-        <!-- Publication Date -->
-        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-          <span class="result-item__taxonomy__key">Publication Date</span>
-          <span class="result-item__taxonomy__value">
-            <p class="result-item__tag">2015</p>
-          </span>
-        </div>
-
-        <!-- Resource type -->
-        <div class="result-item__taxonomy result-item__taxonomy--type">
-          <span class="result-item__taxonomy__key">Type</span>
-          <span class="result-item__taxonomy__value">
-            
-              <p class="result-item__tag">Report</p>
-            
-          </span>
-        </div>
-
-        <!-- Short Description -->
-        
-        <p>The Chatham House report provides an overview on public health surveillance data sharing, highlighting the benefits and challenges of shared health data and the complexity in adapting technical solutions from other sectors for public health.
-
-The report describes data sharing processes from several perspectives, including in-depth case studies of actual data sharing in practice at the individual, organizational and sector levels. Among the key lessons for public health data sharing, the report strongly highlights the need to harness momentum for action and maintain collaborative engagement: “Successful data sharing communities are highly collaborative. Collaboration holds the key to producing and abiding by community standards, and building and maintaining productive networks, and is by definition the essence of data sharing itself. Time should be invested in establishing and sustaining collaboration with all stakeholders concerned with public health surveillance data sharing.”
-
-Examples of data collaboratives include H3Africa (a collaboration between NIH and Wellcome Trust) and NHS England’s care.data programme.</p>
-    </section>
-    <footer class="modal__controls">
-        <a class="button js-close-modal" href="#">OK</a>
-    </footer>
-</div>
-
-        </div>
-        
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">A Decision Model for Data Sharing</h3>
-          <p class="result-item__authors">
-             Silja M. Eckartz, Wout J. Hofman, Anne Fleur Van Veenstra 
-          </p>
-
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p> Lecture Notes in Computer Science (LNCS)</p>
-            </span>
-          </div>
-
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">2014</p>
-            </span>
-          </div>
-
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag">Paper</p>
-              
-            </span>
-          </div>
-
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>A paper proposing a decision model for data sharing arrangements aimed at addressing identified risks and challenges</p>
-          </div>
-
-          <div class="modal js-target-modal">
-    <header class="modal__header modal__header--yellow">
-        <i class="modal__close material-icons js-close-modal">close</i>
-        <h1 class="modal__title">A Decision Model for Data Sharing</h1>
-    </header>
-    <section class="modal__content">
-        <h3><a href="http://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21" title="A Decision Model for Data Sharing">A Decision Model for Data Sharing</a></h3>
-        <p class="result-item__authors">
-           Silja M. Eckartz, Wout J. Hofman, Anne Fleur Van Veenstra 
-        </p>
-
-        <!-- Publication -->
-        <div class="result-item__taxonomy result-item__taxonomy--publication">
-          <span class="result-item__taxonomy__key">Publication</span>
-            <p> Lecture Notes in Computer Science (LNCS)</p>
-          </span>
-        </div>
-
-        <!-- Publication Date -->
-        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-          <span class="result-item__taxonomy__key">Publication Date</span>
-          <span class="result-item__taxonomy__value">
-            <p class="result-item__tag">2014</p>
-          </span>
-        </div>
-
-        <!-- Resource type -->
-        <div class="result-item__taxonomy result-item__taxonomy--type">
-          <span class="result-item__taxonomy__key">Type</span>
-          <span class="result-item__taxonomy__value">
-            
-              <p class="result-item__tag">Paper</p>
-            
-          </span>
-        </div>
-
-        <!-- Short Description -->
-        
-        <p>This paper proposes a decision model for data sharing of public and private data based on literature review and three case studies in the logistics sector.
-
-The authors identify five categories of the barriers to data sharing and offer a decision model for identifying potential interventions to overcome each barrier:
-
-- Ownership. Possible interventions likely require improving trust among those who own the data through, for example, involvement and support from higher management
-- Privacy. Interventions include “anonymization by filtering of sensitive information and aggregation of data,” and access control mechanisms built around identity management and regulated access.  
-- Economic. Interventions include a model where data is shared only with a few trusted organizations, and yield management mechanisms to ensure negative financial consequences are avoided.
-- Data quality. Interventions include identifying additional data sources that could improve the completeness of datasets, and efforts to improve metadata.
-- Technical. Interventions include making data available in structured formats and publishing data according to widely agreed upon data standards.
-</p>
-    </section>
-    <footer class="modal__controls">
-        <a class="button js-close-modal" href="#">OK</a>
-    </footer>
-</div>
-
-        </div>
-        
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">Collaborative Governance in Theory and Practice</h3>
-          <p class="result-item__authors">
-            Ansell, C. and Gash, A
-          </p>
-
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p>Journal of Public Administration Research and  Theory</p>
-            </span>
-          </div>
-
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">2016</p>
-            </span>
-          </div>
-
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag">Journal Article</p>
-              
-            </span>
-          </div>
-
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>A journal article describing the emerging practice of public-private partnerships, particularly those built around data sharing</p>
-          </div>
-
-          <div class="modal js-target-modal">
+            <div class="modal js-target-modal">
     <header class="modal__header modal__header--yellow">
         <i class="modal__close material-icons js-close-modal">close</i>
         <h1 class="modal__title">Collaborative Governance in Theory and Practice</h1>
@@ -411,59 +532,172 @@ The authors provide a ‘’contingency theory model’’ that specifies relati
     </footer>
 </div>
 
-        </div>
-        
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h3>
-          <p class="result-item__authors">
-            Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
-          </p>
-
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p>false information</p>
-            </span>
           </div>
+          
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">Data Sharing for Public Health: Key Lessons from Other Sectors</h3>
+            <p class="result-item__authors">
+              Matthew Brack and Tito Castillo
+            </p>
 
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">2014</p>
-            </span>
-          </div>
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p>Chatham House, Centre on Global Health Security</p>
+              </span>
+            </div>
 
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag">White Paper</p>
-              
-            </span>
-          </div>
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">2015</p>
+              </span>
+            </div>
 
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>A white paper describing the potential of big data, and corporate data in particular, to positively benefit development efforts</p>
-          </div>
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-type="all report">Report</p>
+                
+              </span>
+            </div>
 
-          <div class="modal js-target-modal">
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general ">
+                
+                  <p class="result-item__tag">General</p>
+                
+              </span>
+            </div>
+
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>A Chatham House report describing the need for data sharing and collaboration for global public health emergencies and potential lessons learned from the commercial sector</p>
+            </div>
+
+            <div class="modal js-target-modal">
     <header class="modal__header modal__header--yellow">
         <i class="modal__close material-icons js-close-modal">close</i>
-        <h1 class="modal__title">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h1>
+        <h1 class="modal__title">Data Sharing for Public Health: Key Lessons from Other Sectors</h1>
     </header>
     <section class="modal__content">
-        <h3><a href="https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf" title="Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</a></h3>
+        <h3><a href="https://www.chathamhouse.org/sites/files/chathamhouse/field/field_document/20150417DataSharingPublicHealthLessonsBrackCastillo.pdf" title="Data Sharing for Public Health: Key Lessons from Other Sectors">Data Sharing for Public Health: Key Lessons from Other Sectors</a></h3>
         <p class="result-item__authors">
-          Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
+          Matthew Brack and Tito Castillo
         </p>
 
         <!-- Publication -->
         <div class="result-item__taxonomy result-item__taxonomy--publication">
           <span class="result-item__taxonomy__key">Publication</span>
-            <p>false information</p>
+            <p>Chatham House, Centre on Global Health Security</p>
+          </span>
+        </div>
+
+        <!-- Publication Date -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+          <span class="result-item__taxonomy__key">Publication Date</span>
+          <span class="result-item__taxonomy__value">
+            <p class="result-item__tag">2015</p>
+          </span>
+        </div>
+
+        <!-- Resource type -->
+        <div class="result-item__taxonomy result-item__taxonomy--type">
+          <span class="result-item__taxonomy__key">Type</span>
+          <span class="result-item__taxonomy__value">
+            
+              <p class="result-item__tag">Report</p>
+            
+          </span>
+        </div>
+
+        <!-- Short Description -->
+        
+        <p>The Chatham House report provides an overview on public health surveillance data sharing, highlighting the benefits and challenges of shared health data and the complexity in adapting technical solutions from other sectors for public health.
+
+The report describes data sharing processes from several perspectives, including in-depth case studies of actual data sharing in practice at the individual, organizational and sector levels. Among the key lessons for public health data sharing, the report strongly highlights the need to harness momentum for action and maintain collaborative engagement: “Successful data sharing communities are highly collaborative. Collaboration holds the key to producing and abiding by community standards, and building and maintaining productive networks, and is by definition the essence of data sharing itself. Time should be invested in establishing and sustaining collaboration with all stakeholders concerned with public health surveillance data sharing.”
+
+Examples of data collaboratives include H3Africa (a collaboration between NIH and Wellcome Trust) and NHS England’s care.data programme.</p>
+    </section>
+    <footer class="modal__controls">
+        <a class="button js-close-modal" href="#">OK</a>
+    </footer>
+</div>
+
+          </div>
+          
+          <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
+            <h3 class="result-item__name">A Decision Model for Data Sharing</h3>
+            <p class="result-item__authors">
+               Silja M. Eckartz, Wout J. Hofman, Anne Fleur Van Veenstra 
+            </p>
+
+            <!-- Publication -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication">
+              <span class="result-item__taxonomy__key">Publication</span>
+                <p> Lecture Notes in Computer Science (LNCS)</p>
+              </span>
+            </div>
+
+            <!-- Publication Date -->
+            <div class="result-item__taxonomy result-item__taxonomy--publication-date">
+              <span class="result-item__taxonomy__key">Publication Date</span>
+              <span class="result-item__taxonomy__value">
+                <p class="result-item__tag">2014</p>
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Type</span>
+              <span class="result-item__taxonomy__value">
+                
+                  <p class="result-item__tag resource-type" data-type="all paper">Paper</p>
+                
+              </span>
+            </div>
+
+            <!-- Resource type -->
+            <div class="result-item__taxonomy result-item__taxonomy--type">
+              <span class="result-item__taxonomy__key">Themes</span>
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general  benefits  incentives  data-responsibility ">
+                
+                  <p class="result-item__tag">General</p>
+                
+                  <p class="result-item__tag">Benefits</p>
+                
+                  <p class="result-item__tag">Incentives</p>
+                
+                  <p class="result-item__tag">Data Responsibility</p>
+                
+              </span>
+            </div>
+
+            <!-- Short Description -->
+            <div class="result-item__short-description">
+              <p>A paper proposing a decision model for data sharing arrangements aimed at addressing identified risks and challenges</p>
+            </div>
+
+            <div class="modal js-target-modal">
+    <header class="modal__header modal__header--yellow">
+        <i class="modal__close material-icons js-close-modal">close</i>
+        <h1 class="modal__title">A Decision Model for Data Sharing</h1>
+    </header>
+    <section class="modal__content">
+        <h3><a href="http://link.springer.com/chapter/10.1007%2F978-3-662-44426-9_21" title="A Decision Model for Data Sharing">A Decision Model for Data Sharing</a></h3>
+        <p class="result-item__authors">
+           Silja M. Eckartz, Wout J. Hofman, Anne Fleur Van Veenstra 
+        </p>
+
+        <!-- Publication -->
+        <div class="result-item__taxonomy result-item__taxonomy--publication">
+          <span class="result-item__taxonomy__key">Publication</span>
+            <p> Lecture Notes in Computer Science (LNCS)</p>
           </span>
         </div>
 
@@ -480,130 +714,32 @@ The authors provide a ‘’contingency theory model’’ that specifies relati
           <span class="result-item__taxonomy__key">Type</span>
           <span class="result-item__taxonomy__value">
             
-              <p class="result-item__tag">White Paper</p>
+              <p class="result-item__tag">Paper</p>
             
           </span>
         </div>
 
         <!-- Short Description -->
         
-        <p>This white paper, produced by “a group of activists, researchers and data experts” explores the potential of big data to improve development outcomes and spur positive social change in low- and middle-income countries. Using examples, the authors discuss four areas in which the use of big data can impact development efforts:
+        <p>This paper proposes a decision model for data sharing of public and private data based on literature review and three case studies in the logistics sector.
 
-- Advocating and facilitating by “opening[ing] up new public spaces for discussion and awareness building;
-- Describing and predicting through the detection of “new correlations and the surfac[ing] of new questions;
-- Facilitating information exchange through “multiple feedback loops which feed into both research and action,” and
-- Promoting accountability and transparency, especially as a byproduct of crowdsourcing efforts aimed at “aggregat[ing] and analyz[ing] information in real time.
+The authors identify five categories of the barriers to data sharing and offer a decision model for identifying potential interventions to overcome each barrier:
 
-The authors argue that in order to maximize the potential of big data’s use in development, “there is a case to be made for building a data commons for private/public data, and for setting up new and more appropriate ethical guidelines.”
-
-They also identify a number of challenges, especially when leveraging data made accessible from a number of sources, including private sector entities, such as:
-
-- Lack of general data literacy;
-- Lack of open learning environments and repositories;
-- Lack of resources, capacity and access;
-- Challenges of sensitivity and risk perception with regard to using data;
-- Storage and computing capacity; and
-- Externally validating data sources for comparison and verification.</p>
+- Ownership. Possible interventions likely require improving trust among those who own the data through, for example, involvement and support from higher management
+- Privacy. Interventions include “anonymization by filtering of sensitive information and aggregation of data,” and access control mechanisms built around identity management and regulated access.  
+- Economic. Interventions include a model where data is shared only with a few trusted organizations, and yield management mechanisms to ensure negative financial consequences are avoided.
+- Data quality. Interventions include identifying additional data sources that could improve the completeness of datasets, and efforts to improve metadata.
+- Technical. Interventions include making data available in structured formats and publishing data according to widely agreed upon data standards.
+</p>
     </section>
     <footer class="modal__controls">
         <a class="button js-close-modal" href="#">OK</a>
     </footer>
 </div>
 
-        </div>
-        
-        <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-          <h3 class="result-item__name">The Use and Misuse of Biomedical Data: Is Bigger Really Better?</h3>
-          <p class="result-item__authors">
-            Sharona Hoffman, Andy Podgurski
-          </p>
-
-          <!-- Publication -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication">
-            <span class="result-item__taxonomy__key">Publication</span>
-              <p>American Journal of Law & Medicine 497</p>
-            </span>
           </div>
-
-          <!-- Publication Date -->
-          <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-            <span class="result-item__taxonomy__key">Publication Date</span>
-            <span class="result-item__taxonomy__value">
-              <p class="result-item__tag">2012</p>
-            </span>
-          </div>
-
-          <!-- Resource type -->
-          <div class="result-item__taxonomy result-item__taxonomy--type">
-            <span class="result-item__taxonomy__key">Type</span>
-            <span class="result-item__taxonomy__value">
-              
-                <p class="result-item__tag">Journal Article</p>
-              
-            </span>
-          </div>
-
-          <!-- Short Description -->
-          <div class="result-item__short-description">
-            <p>My name is Max. My world is fire. And blood. Once, I was a cop; a road warrior searching for a righteous cause. As the world fell, each of us in our own way was broken. It was hard to know who was more crazy. Me... or everyone else.</p>
-          </div>
-
-          <div class="modal js-target-modal">
-    <header class="modal__header modal__header--yellow">
-        <i class="modal__close material-icons js-close-modal">close</i>
-        <h1 class="modal__title">The Use and Misuse of Biomedical Data: Is Bigger Really Better?</h1>
-    </header>
-    <section class="modal__content">
-        <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2235267" title="The Use and Misuse of Biomedical Data: Is Bigger Really Better?">The Use and Misuse of Biomedical Data: Is Bigger Really Better?</a></h3>
-        <p class="result-item__authors">
-          Sharona Hoffman, Andy Podgurski
-        </p>
-
-        <!-- Publication -->
-        <div class="result-item__taxonomy result-item__taxonomy--publication">
-          <span class="result-item__taxonomy__key">Publication</span>
-            <p>American Journal of Law & Medicine 497</p>
-          </span>
+          
         </div>
-
-        <!-- Publication Date -->
-        <div class="result-item__taxonomy result-item__taxonomy--publication-date">
-          <span class="result-item__taxonomy__key">Publication Date</span>
-          <span class="result-item__taxonomy__value">
-            <p class="result-item__tag">2012</p>
-          </span>
-        </div>
-
-        <!-- Resource type -->
-        <div class="result-item__taxonomy result-item__taxonomy--type">
-          <span class="result-item__taxonomy__key">Type</span>
-          <span class="result-item__taxonomy__value">
-            
-              <p class="result-item__tag">Journal Article</p>
-            
-          </span>
-        </div>
-
-        <!-- Short Description -->
-        
-        <p>This journal article explores the benefits and, in particular, the risks related to large-scale biomedical databases bringing together health information from a diversity of sources across sectors. Some data collaboratives examined in the piece include:
-- __MedMining__ – a company that extracts EHR data, de-identifies it, and offers it to researchers. The data sets that MedMining delivers to its customers include ‘lab results, vital signs, medications, procedures, diagnoses, lifestyle data, and detailed costs’ from inpatient and outpatient facilities.
-- __Explorys__ has formed a large healthcare database derived from financial, administrative, and medical records. It has partnered with major healthcare organizations such as the Cleveland Clinic Foundation and Summa Health System to aggregate and standardize health information from ten million patients and over thirty billion clinical events.
-
-Hoffman and Podgurski note that biomedical databases populated have many potential uses, with those likely to benefit including: “researchers, regulators, public health officials, commercial entities, lawyers,” as well as “healthcare providers who conduct quality assessment and improvement activities,” regulatory monitoring entities like the FDA, and “litigants in tort cases to develop evidence concerning causation and harm.”
-
-They argue, however, that risks arise based on:
-- The data contained in biomedical databases is surprisingly likely to be incorrect or incomplete;
-- Systemic biases, arising from both the nature of the data and the preconceptions of investigators are serious threats the validity of research results, especially in answering causal questions;
-- Data mining of biomedical databases makes it easier for individuals with political, social, or economic agendas to generate ostensibly scientific but misleading research findings for the purpose of manipulating public opinion and swaying policymakers.</p>
-    </section>
-    <footer class="modal__controls">
-        <a class="button js-close-modal" href="#">OK</a>
-    </footer>
-</div>
-
-        </div>
-        
       </div>
     </div>
   </div>
@@ -657,5 +793,6 @@ They argue, however, that risks arise based on:
     <script src="/js/scripts.js"></script>
     <script src="/js/three.js"></script>
     <script src="/js/modal.js"></script>
+    <script src="/js/resource-filter.js"></script>
   </body>
 </html>
