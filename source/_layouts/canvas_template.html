@@ -4,46 +4,56 @@ layout: default
 ---
 
 <div class="canvas-page">
-
   <div class="top-section top-section--yellow">
     <h1>{{ page.phaseTitle }}</h1>
+     <!-- Adding links to each phase of the canvas -->
+    {% assign canvas = site.data.contentful.spaces.cases.canvasPhases %}
+    <div class="top-section__controls">
+      {% for phase in canvas %}
+      <!-- Let's try to disable the button for the current page -->
+      <a class="button" href="{{phase.phaseTitle | slugify }}.html"> {{ phase.phaseTitle }}</a>
+      {% endfor %}  
+    </div>
+    
   </div>
-  <div class="page-section">
+  <div class="page-section page-section--highlight">
     <div class="row align-center">
-      <div class="large-12 column">
+      <div class="large-11 column">
         {{ page.phaseDescription | markdownify }}
       </div>
     </div>
   </div>
 
   {% for phaseStep in page.phaseSteps %}
-  <div class="page-section">
-    <div class="row">
+  <div class="divider canvas-page--step-title">
+    <div class="row expanded">
       <div class="large-12 column">
-        <h3>{{ phaseStep.stepTitle | markdownify }}</h3>
-
-          <h4>Discussion</h4>
-          {{ phaseStep.discussion | markdownify }}
-
-          <h4>Questions</h4>
-          {{ phaseStep.questions | markdownify}}
-
-
-          <h4>Enablers</h4>
-          {{ phaseStep.enablers | markdownify}}
-
-
-          <h4>Resources</h4>
-          {{ phaseStep.resources | markdownify }}
-
+        <h4>{{ phaseStep.stepTitle | markdownify }}</h4>
       </div>
     </div>
   </div>
-  {% endfor %}
 
-  <!-- Adding links to each phase of the canvas -->
- {% assign canvas = site.data.contentful.spaces.cases.canvasPhases %}
-   {% for phase in canvas %}
-    <span><a href="{{phase.phaseTitle | slugify }}.html"> {{ phase.phaseTitle }}</a></span> 
+  <div class="page-section checkerboard">
+    <div class="row expanded">
+      <div class="large-6 column padded">
+        <h4>Discussion</h4>
+        {{ phaseStep.discussion | markdownify }}
+      </div>
+      <div class="large-6 column padded">
+        <h4>Questions</h4>
+        {{ phaseStep.questions | markdownify}}
+      </div>
+    </div>
+    <div class="row expanded">
+      <div class="large-6 column padded">
+        <h4>Enablers</h4>
+        {{ phaseStep.enablers | markdownify}}
+      </div>
+      <div class="large-6 column padded">
+        <h4>Resources</h4>
+        {{ phaseStep.resources | markdownify }}
+      </div>
+    </div>
+  </div>
   {% endfor %}
 </div>

@@ -1,6 +1,56 @@
 .canvas-page {
   .top-section {
+    background-color: darken($main-color, 8);
     padding-bottom: 60px;
     h1 {text-transform: uppercase;}
   }
+
+  &--step-title {
+    text-align: center;
+    strong {
+      display: block;
+      font-size: 1.4rem;
+      opacity: .4;
+    }
+  }
+}
+
+.checkerboard {
+  > .row:nth-of-type(odd) {
+    > .column:nth-of-type(odd),
+    > .columns:nth-of-type(odd) {
+      background-color: rgba(black, .05);
+    }
+  }
+
+  > .row:nth-of-type(even) {
+    > .column:nth-of-type(even),
+    > .columns:nth-of-type(even) {
+      background-color: rgba(black, .05);
+    }
+  }
+}
+
+.padded {
+  padding: 30px 45px;
+
+  > :first-child {margin-top: 0;}
+}
+
+.page-section--highlight {
+  background-color: $main-color;
+  
+  p {
+    font-size:  2.3rem;
+    font-weight: 100;
+    line-height: 1.3;
+    color: darken($main-color, 18);
+    text-align: left;
+  }
+}
+
+// Styleguide
+.top-section__controls {
+  padding-top: 50px;
+  margin-bottom: -40px;
 }
