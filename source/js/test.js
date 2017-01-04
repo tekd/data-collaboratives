@@ -52,18 +52,8 @@
 
 // PREVIOUS/NEXT
 
-  $('.next').on('click', function(e){
-    debugger
-    e.preventDefault();
-    targetSlide = parseInt($(this).parent().attr("data-marker")) + 1;
-    console.log($(this).parent().attr("data-marker"))
-    console.log($("#slide0" + targetSlide));
-    TweenMax.to(window, 0.5, {scrollTo:{y:$("#slide0" + targetSlide).offset().top}});
-  });
-
   $('body').on('click','.next', function(e){
     e.preventDefault();
-    debugger
     targetSlide = parseInt($(this).parent().attr("data-marker")) + 1;
     console.log($(this).parent().attr("data-marker"))
     console.log($("#slide0" + targetSlide));
