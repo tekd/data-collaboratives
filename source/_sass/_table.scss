@@ -133,7 +133,7 @@
        padding: 19px 15px;
        background-color: darken($main-color, 5);
        color: white;
-       // @include placeholder { color: white; }
+      //  @include placeholder { color: white; }
        @include breakpoint($small-only) {
          padding: 18px 15px;
        }

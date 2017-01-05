@@ -45,3 +45,10 @@ $gray: rgba(black, 0.7);
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+// @mixin placeholder {
+//   &::-webkit-input-placeholder { @content }
+//   &:-moz-placeholder { @content }
+//   &::-moz-placeholder { @content }
+//   &:-ms-input-placeholder { @content }
+// }
