@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title></title>
+    <title>Cases | Data Collaboratives</title>
 
     <link rel="stylesheet" href="/scripts/foundation.min.css">
     <link rel="stylesheet" href="/scripts/styleguide-v2.css">
@@ -72,6 +72,8 @@
               
               <option id="sub-saharan-africa">Sub-Saharan Africa</option>
               
+              <option id="worldwide">Worldwide</option>
+              
             </select>
           </div>
         </div>
@@ -87,39 +89,21 @@
               
               <option id="crisis-response">Crisis Response</option>
               
-              <option id="development">Development</option>
-              
               <option id="digital-society">Digital Society</option>
               
-              <option id="economic-development">Economic-Development</option>
+              <option id="economic-development">Economic Development</option>
               
               <option id="education">Education</option>
               
               <option id="environment">Environment</option>
               
-              <option id="environment-infrastructure">Environment, Infrastructure</option>
-              
-              <option id="food">Food</option>
-              
               <option id="health">Health</option>
-              
-              <option id="health-infrastructure-environment">Health, Infrastructure, Environment</option>
-              
-              <option id="humanitarian-response">Humanitarian Response</option>
               
               <option id="infrastructure">Infrastructure</option>
               
-              <option id="infrastructure-transportation">Infrastructure (Transportation)</option>
-              
-              <option id="multiple">Multiple</option>
-              
               <option id="transporation">Transporation</option>
               
-              <option id="public-health">Public Health</option>
-              
               <option id="telecommunications">Telecommunications</option>
-              
-              <option id="various">Various</option>
               
             </select>
           </div>
@@ -130,17 +114,17 @@
             <select data-filter="case__type" id="third" class="dropdown-content">
               <option id="all">Filter by Collaborative Type</option>
               
-              <option id="application-programming-interfaces-apis">Application Programming Interfaces (APIs)</option>
+              <option id="api">API</option>
               
-              <option id="data-cooperatives-and-pooling">Data Cooperatives and Pooling</option>
+              <option id="data-pooling">Data Pooling</option>
               
-              <option id="intelligence-products">Intelligence Products</option>
+              <option id="intelligence-product">Intelligence Product</option>
               
               <option id="prizes-challenges">Prizes & Challenges</option>
               
               <option id="research-partnerships">Research Partnerships</option>
               
-              <option id="trusted-intermediaries">Trusted Intermediaries</option>
+              <option id="trusted-intermediary">Trusted Intermediary</option>
               
             </select>
           </div>
@@ -162,26 +146,15 @@
             </select>
           </div>
         </div>
-        <!-- <div class="close clear_filters table-sortable__control table-sortable__control--simple table-sortable--clear-all">
-          <button type="button" name="button">CLEAR ALL</button>
-          <i class="material-icons">close</i>
-        </div> -->
-      </div>
-    </div>
-    <div class="row align-center">
-      <div class="row large-unstack">
-        <!-- <div class="dropdown-wrapper__search-clear"> -->
-          <div class="columns ">
-            <form class="dropdown-wrapper__search">
-              <input id="" class="fuzzy-search" type="text" placeholder="Filter by keyword" data-sort="">
-            </form>
+
+        <div class="close clear_filters table-sortable__control table-sortable__control--simple table-sortable--clear-all">
+
+          <div class="row clear-all-text">
+            <button class="" type="button" name="button">CLEAR ALL</button>
           </div>
-          <div class="columns ">
-            <div class="clear_filters">
-              <button type="button" name="button">CLEAR ALL</button>
-            </div>
-          </div>
-        <!-- </div> -->
+
+          <i class="material-icons close-icon">close</i>
+        </div>
       </div>
     </div>
   </div>
@@ -194,15 +167,16 @@
 
           <div class="table-sortable__control-group">
 
-            <!-- <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span> -->
+            <span class="table-sortable__control table-sortable__control--simple js-open-table-search" data-target="#case__title--input"><i class="material-icons">search</i></span>
 
             <span class="table-sortable__control table-sortable__control--simple sort" data-sort="case__title"><i class="material-icons">keyboard_arrow_down</i></span>
           </div>
 
-          <!-- <form class="table-sortable__search ">
+          <form class="table-sortable__search ">
+            <!-- <input id="case__title--input" class="fuzzy-search" type="text" placeholder="Filter by text"> -->
             <input id="" class="fuzzy-search" type="text" placeholder="Filter by text">
             <button type="submit" class=""><i class="material-icons">close</i></button>
-          </form> -->
+          </form>
         </th>
 
         <th class="table-sortable__head-cell case__region">
@@ -238,23 +212,6 @@
         <tbody class="list">
           <tr class="case">
             
-            <td case-name="23andMe Patient-Centric Research Portal" class="case__title">
-              <a href="/cases/23andme-patient-centric-research-portal.html">23andMe Patient-Centric Research Portal</a>
-            </td>
-            <td case-region="all worldwide" class="case__region">
-              Worldwide
-            </td>
-            <td case-sector="all  health " class="case__sector">
-              Health
-            </td>
-            <td case-type="all  intelligence-product  research-partnerships " class="case__type">
-              Intelligence Product, Research Partnerships
-            </td>
-            <td case-data-type="all  disclosed-personal-data " class="case__data-type">
-              Disclosed Personal Data
-            </td>
-          </tr>
-          
             <td case-name="Accelerating Medicines Partnership (AMP)" class="case__title">
               <a href="/cases/accelerating-medicines-partnership-amp.html">Accelerating Medicines Partnership (AMP)</a>
             </td>
@@ -266,6 +223,23 @@
             </td>
             <td case-type="all  data-pooling " class="case__type">
               Data Pooling
+            </td>
+            <td case-data-type="all  disclosed-personal-data " class="case__data-type">
+              Disclosed Personal Data
+            </td>
+          </tr>
+          
+            <td case-name="23andMe Patient-Centric Research Portal" class="case__title">
+              <a href="/cases/23andme-patient-centric-research-portal.html">23andMe Patient-Centric Research Portal</a>
+            </td>
+            <td case-region="all worldwide" class="case__region">
+              Worldwide
+            </td>
+            <td case-sector="all  health " class="case__sector">
+              Health
+            </td>
+            <td case-type="all  intelligence-product  research-partnerships " class="case__type">
+              Intelligence Product, Research Partnerships
             </td>
             <td case-data-type="all  disclosed-personal-data " class="case__data-type">
               Disclosed Personal Data
