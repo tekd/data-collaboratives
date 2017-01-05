@@ -37,6 +37,7 @@
     }
   }
 
+
   .case__region, .case__sector, .case__type, .case__data-type {
     @include breakpoint($small-only) {
       display: none;
