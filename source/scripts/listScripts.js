@@ -69,11 +69,65 @@ $(document).ready(function() {
     $(this).text() == "keyboard_arrow_down" ? $(this).text("keyboard_arrow_up") : $(this).text("keyboard_arrow_down");
   });
 
-  
+
   $(".fuzzy-search").keyup(function() {
     $($(this).attr('data-target')).focus();
     var searchString = $(this).val();
     caseList.search(searchString);
   });
+
+  // Table Search
+  $('.js-open-table-search').click(function (e) {
+      e.preventDefault();
+      $(this).parent().siblings('.table-sortable__search').toggleClass('table-sortable__search--active');
+  });
+
+  // Main Menu Click Behavior
+    $('.js-trigger-menu').click(function (e) {
+        $(this).next().addClass('js-active-menu');
+        $('#overlay').addClass('js-active');
+    });
+
+    // General Click Behavior for Overlay
+    $('#overlay').click(function () {
+        $('.js-active').removeClass('js-active');
+        $('.js-active-menu').removeClass('js-active-menu');
+    });
+
+    // Filter by name
+    $(".fuzzy-search").keyup(function() {
+      if (this.id=="case__title--input") {
+        var searchString = $(this).val();
+        caseList.fuzzySearch.search(searchString, ["case__title"]);
+      }
+    });
+
+    $(".js-open-table-search").on("click", function(e) {
+       $($(this).attr('data-target')).focus();
+    })
+
+    // Xs and ESC TO CLOSE OUT FORM
+    var searchButtons = $('.table-sortable__search').find("button[type='submit']")
+
+    searchButtons.on("click", function(e) {
+      e.preventDefault();
+      if ($(this).parent().hasClass("table-sortable__search--active")) {
+        $(this).parent().removeClass("table-sortable__search--active");
+        searchReset();
+      }
+    });
+
+    function clearTextSearch() {
+      $('.table-sortable__search--active').each(function(){
+        $(this).removeClass('table-sortable__search--active');
+      });
+    }
+
+    $("body").keyup(function(event) {
+      if ( event.keyCode == "27" ) {
+        $(this).parent().find('.table-sortable__search').removeClass("table-sortable__search--active");
+        searchReset();
+      }
+    });
 
 });
