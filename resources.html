@@ -26,10 +26,13 @@
     <header class="top-bar top-bar--transparent">
     <span class="top-bar__button js-trigger-menu">menu</span>
     <nav class="main-menu js-target-menu main-menu--left">
-      <a href="/static/files/data-collaboratives.pdf">WHAT<br><span class="bottom-nav-text">Data Collaboratives</span></a>
-      <a href="#">WHERE (Coming Soon)<br><span class="bottom-nav-text">Data Collaboratives Explorer</span></a>
-      <a href="#">HOW (Coming Soon)<br><span class="bottom-nav-text">Designing a Data Collaborative</span></a>
-      <a href="#">MORE (Coming Soon)<br><span class="bottom-nav-text">Additional Resources</span></a>
+      <a href="#">Introduction</a>
+      <a href="./cases.html">Data Collaboratives Explorer</a>
+      <a href="./canvas.html">Designing a Data Collaborative</a>
+      <a href="/static/files/framework.pdf">Data Responsibility Framework</a>
+      <a href="./events.html">Events</a>
+      <a href="#">Current Projects</a>
+      <a href="./resources.html">Additional Resources</a>
     </nav>
      <a class="top-bar__logo" href="/"><img src="/images/govlab-logo-white.png" alt="The GovLab"></a>
     <!-- <span class="top-bar__button js-trigger-menu">more_vert</span>
@@ -80,15 +83,15 @@
             <select data-filter="resource-theme" id="first" class="dropdown-content">
               <option id="all">Filter by Theme</option>
               
+              <option id="risks-and-challenges">Risks and Challenges</option>
+              
+              <option id="data-responsibility">Data Responsibility</option>
+              
               <option id="general">General</option>
               
               <option id="benefits">Benefits</option>
               
               <option id="in-practice">In Practice</option>
-              
-              <option id="risks-and-challenges">Risks and Challenges</option>
-              
-              <option id="data-responsibility">Data Responsibility</option>
               
               <option id="incentives">Incentives</option>
               
@@ -110,15 +113,15 @@
         <div class="list">
           
           <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-            <h3 class="result-item__name">Enabling Humanitarian Use of Mobile Phone Data</h3>
+            <h3 class="result-item__name">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h3>
             <p class="result-item__authors">
-              Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
+              Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
             </p>
 
             <!-- Publication -->
             <div class="result-item__taxonomy result-item__taxonomy--publication">
               <span class="result-item__taxonomy__key">Publication</span>
-                <p>The Brookings Institution, Issues in Technology Innovation</p>
+                <p></p>
               </span>
             </div>
 
@@ -143,37 +146,35 @@
             <!-- Resource type -->
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Themes</span>
-              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general  benefits  in-practice ">
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  risks-and-challenges  data-responsibility ">
                 
-                  <p class="result-item__tag">General</p>
+                  <p class="result-item__tag">Risks and Challenges</p>
                 
-                  <p class="result-item__tag">Benefits</p>
-                
-                  <p class="result-item__tag">In Practice</p>
+                  <p class="result-item__tag">Data Responsibility</p>
                 
               </span>
             </div>
 
             <!-- Short Description -->
             <div class="result-item__short-description">
-              <p>An issues paper from the Brookings Institution on leveraging the benefits of mobile phone data for humanitarian use while minimizing risks to privacy</p>
+              <p>A white paper describing the potential of big data, and corporate data in particular, to positively benefit development efforts</p>
             </div>
 
             <div class="modal js-target-modal">
     <header class="modal__header modal__header--yellow">
         <i class="modal__close material-icons js-close-modal">close</i>
-        <h1 class="modal__title">Enabling Humanitarian Use of Mobile Phone Data</h1>
+        <h1 class="modal__title">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h1>
     </header>
     <section class="modal__content">
-        <h3><a href="https://www.brookings.edu/research/enabling-humanitarian-use-of-mobile-phone-data/" title="Enabling Humanitarian Use of Mobile Phone Data">Enabling Humanitarian Use of Mobile Phone Data</a></h3>
+        <h3><a href="https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf" title="Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</a></h3>
         <p class="result-item__authors">
-          Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
+          Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
         </p>
 
         <!-- Publication -->
         <div class="result-item__taxonomy result-item__taxonomy--publication">
           <span class="result-item__taxonomy__key">Publication</span>
-            <p>The Brookings Institution, Issues in Technology Innovation</p>
+            <p></p>
           </span>
         </div>
 
@@ -197,9 +198,23 @@
 
         <!-- Short Description -->
         
-        <p>Using Ebola as a case study, the authors describe the value of using private telecom data for uncovering “valuable insights into understanding the spread of infectious diseases as well as strategies into micro-target outreach and driving update of health-seeking behavior.”
+        <p>This white paper, produced by “a group of activists, researchers and data experts” explores the potential of big data to improve development outcomes and spur positive social change in low- and middle-income countries. Using examples, the authors discuss four areas in which the use of big data can impact development efforts:
 
-The authors highlight the absence of a common legal and standards framework for “sharing mobile phone data in privacy-conscientious ways” and recommend “engaging companies, NGOs, researchers, privacy experts, and governments to agree on a set of best practices for new privacy-conscientious metadata sharing models.”</p>
+- Advocating and facilitating by “opening[ing] up new public spaces for discussion and awareness building;
+- Describing and predicting through the detection of “new correlations and the surfac[ing] of new questions;
+- Facilitating information exchange through “multiple feedback loops which feed into both research and action,” and
+- Promoting accountability and transparency, especially as a byproduct of crowdsourcing efforts aimed at “aggregat[ing] and analyz[ing] information in real time.
+
+The authors argue that in order to maximize the potential of big data’s use in development, “there is a case to be made for building a data commons for private/public data, and for setting up new and more appropriate ethical guidelines.”
+
+They also identify a number of challenges, especially when leveraging data made accessible from a number of sources, including private sector entities, such as:
+
+- Lack of general data literacy;
+- Lack of open learning environments and repositories;
+- Lack of resources, capacity and access;
+- Challenges of sensitivity and risk perception with regard to using data;
+- Storage and computing capacity; and
+- Externally validating data sources for comparison and verification.</p>
     </section>
     <footer class="modal__controls">
         <a class="button js-close-modal" href="#">OK</a>
@@ -315,15 +330,15 @@ They argue, however, that risks arise based on:
           </div>
           
           <div class="result-item js-open-modal" style="display: inline-block; margin-left: -4px;">
-            <h3 class="result-item__name">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h3>
+            <h3 class="result-item__name">Enabling Humanitarian Use of Mobile Phone Data</h3>
             <p class="result-item__authors">
-              Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
+              Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
             </p>
 
             <!-- Publication -->
             <div class="result-item__taxonomy result-item__taxonomy--publication">
               <span class="result-item__taxonomy__key">Publication</span>
-                <p></p>
+                <p>The Brookings Institution, Issues in Technology Innovation</p>
               </span>
             </div>
 
@@ -348,35 +363,37 @@ They argue, however, that risks arise based on:
             <!-- Resource type -->
             <div class="result-item__taxonomy result-item__taxonomy--type">
               <span class="result-item__taxonomy__key">Themes</span>
-              <span class="result-item__taxonomy__value resource-theme" data-theme="all  risks-and-challenges  data-responsibility ">
+              <span class="result-item__taxonomy__value resource-theme" data-theme="all  general  benefits  in-practice ">
                 
-                  <p class="result-item__tag">Risks and Challenges</p>
+                  <p class="result-item__tag">General</p>
                 
-                  <p class="result-item__tag">Data Responsibility</p>
+                  <p class="result-item__tag">Benefits</p>
+                
+                  <p class="result-item__tag">In Practice</p>
                 
               </span>
             </div>
 
             <!-- Short Description -->
             <div class="result-item__short-description">
-              <p>A white paper describing the potential of big data, and corporate data in particular, to positively benefit development efforts</p>
+              <p>An issues paper from the Brookings Institution on leveraging the benefits of mobile phone data for humanitarian use while minimizing risks to privacy</p>
             </div>
 
             <div class="modal js-target-modal">
     <header class="modal__header modal__header--yellow">
         <i class="modal__close material-icons js-close-modal">close</i>
-        <h1 class="modal__title">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</h1>
+        <h1 class="modal__title">Enabling Humanitarian Use of Mobile Phone Data</h1>
     </header>
     <section class="modal__content">
-        <h3><a href="https://www.rockefellerfoundation.org/app/uploads/Big-Data-and-Positive-Social-Change-in-the-Developing-World.pdf" title="Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers">Big Data and Positive Social Change in the Developing World: A White Paper for Practitioners and Researchers</a></h3>
+        <h3><a href="https://www.brookings.edu/research/enabling-humanitarian-use-of-mobile-phone-data/" title="Enabling Humanitarian Use of Mobile Phone Data">Enabling Humanitarian Use of Mobile Phone Data</a></h3>
         <p class="result-item__authors">
-          Agaba, G., Akindès, F., Bengtsson, L., Cowls, J., Ganesh, M., Hoffman, N., . . . Meissner, F.
+          Yves-Alexandre de Montjoye, Jake Kendall, and Cameron F. Kerry
         </p>
 
         <!-- Publication -->
         <div class="result-item__taxonomy result-item__taxonomy--publication">
           <span class="result-item__taxonomy__key">Publication</span>
-            <p></p>
+            <p>The Brookings Institution, Issues in Technology Innovation</p>
           </span>
         </div>
 
@@ -400,23 +417,9 @@ They argue, however, that risks arise based on:
 
         <!-- Short Description -->
         
-        <p>This white paper, produced by “a group of activists, researchers and data experts” explores the potential of big data to improve development outcomes and spur positive social change in low- and middle-income countries. Using examples, the authors discuss four areas in which the use of big data can impact development efforts:
+        <p>Using Ebola as a case study, the authors describe the value of using private telecom data for uncovering “valuable insights into understanding the spread of infectious diseases as well as strategies into micro-target outreach and driving update of health-seeking behavior.”
 
-- Advocating and facilitating by “opening[ing] up new public spaces for discussion and awareness building;
-- Describing and predicting through the detection of “new correlations and the surfac[ing] of new questions;
-- Facilitating information exchange through “multiple feedback loops which feed into both research and action,” and
-- Promoting accountability and transparency, especially as a byproduct of crowdsourcing efforts aimed at “aggregat[ing] and analyz[ing] information in real time.
-
-The authors argue that in order to maximize the potential of big data’s use in development, “there is a case to be made for building a data commons for private/public data, and for setting up new and more appropriate ethical guidelines.”
-
-They also identify a number of challenges, especially when leveraging data made accessible from a number of sources, including private sector entities, such as:
-
-- Lack of general data literacy;
-- Lack of open learning environments and repositories;
-- Lack of resources, capacity and access;
-- Challenges of sensitivity and risk perception with regard to using data;
-- Storage and computing capacity; and
-- Externally validating data sources for comparison and verification.</p>
+The authors highlight the absence of a common legal and standards framework for “sharing mobile phone data in privacy-conscientious ways” and recommend “engaging companies, NGOs, researchers, privacy experts, and governments to agree on a set of best practices for new privacy-conscientious metadata sharing models.”</p>
     </section>
     <footer class="modal__controls">
         <a class="button js-close-modal" href="#">OK</a>
