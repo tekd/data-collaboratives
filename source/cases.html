@@ -159,7 +159,20 @@ data-type:
           <tr class="case">
             {% for item in site.data.contentful.spaces.cases.datacollaborative %}
             <td width="25%" case-name="{{item.caseStudy}}" class="case__title">
-              <a href="/cases/{{item.caseStudy | slugify }}.html">{{ item.caseStudy }}</a>
+
+              {% assign link = item.caseStudy %}
+              {% assign char = "|" %}
+
+              {% capture link %}
+                {{ link | remove: "'"  | replace: char, "-" }}
+              {% endcapture %}
+
+              {% if item.caseStudy == "Data City | Data Nation"%}
+                <a href="/cases/data-city--data-nation.html">{{ item.caseStudy }}</a>
+              {% else %}
+                <a href="/cases/{{ link | slugify }}.html">{{ item.caseStudy }}</a>
+              {% endif %}
+
             </td>
             <td width="15%" case-region="all {{item.region | slugify }}" class="case__region">
               {{ item.region }}
