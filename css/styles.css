@@ -250,7 +250,8 @@
       .footer__icons {
         position: relative;
         left: 20px;
-        top: 170px; } }
+        top: 170px;
+        width: 90%; } }
   .footer__partner-logo {
     color: white;
     display: inline; }
