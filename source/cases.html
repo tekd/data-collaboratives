@@ -158,19 +158,19 @@ data-type:
         <tbody class="list">
           <tr class="case">
             {% for item in site.data.contentful.spaces.cases.datacollaborative %}
-            <td case-name="{{item.caseStudy}}" class="case__title">
+            <td width="25%" case-name="{{item.caseStudy}}" class="case__title">
               <a href="/cases/{{item.caseStudy | slugify }}.html">{{ item.caseStudy }}</a>
             </td>
-            <td case-region="all {{item.region | slugify }}" class="case__region">
+            <td width="15%" case-region="all {{item.region | slugify }}" class="case__region">
               {{ item.region }}
             </td>
             <td case-sector="all {% for d in item.sector %} {{ d | slugify }} {% endfor %}" class="case__sector">
               {{ item.sector | join: ", " }}
             </td>
-            <td case-type="all {% for d in item.collaborativeType %} {{ d | slugify }} {% endfor %}" class="case__type">
+            <td width="20%" case-type="all {% for d in item.collaborativeType %} {{ d | slugify }} {% endfor %}" class="case__type">
               {{ item.collaborativeType  | join: ", " }}
             </td>
-            <td case-data-type="all {% for d in item.dataType %} {{ d | slugify }} {% endfor %}" class="case__data-type">
+            <td width="30%" case-data-type="all {% for d in item.dataType %} {{ d | slugify }} {% endfor %}" class="case__data-type">
               {{ item.dataType | join: ", " }}
             </td>
           </tr>

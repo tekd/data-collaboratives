@@ -34,9 +34,9 @@
 
     td {
       padding-left: 30px;
+
     }
   }
-
 
   .case__region, .case__sector, .case__type, .case__data-type {
     @include breakpoint($small-only) {
@@ -149,8 +149,6 @@
        background-color: darken($main-color, 8);
 
        &:hover { background-color: darken($main-color, 10); }
-
-     }
-
- }
+    }
+  }
 }
