@@ -34,6 +34,7 @@
 
     td {
       padding-left: 30px;
+
     }
   }
 
@@ -148,8 +149,6 @@
        background-color: darken($main-color, 8);
 
        &:hover { background-color: darken($main-color, 10); }
-
-     }
-
- }
+    }
+  }
 }
