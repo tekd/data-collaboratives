@@ -1,0 +1,42 @@
+.bg-panel {
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    padding: 80px;
+    background-color: rgba(darken($main-color, 3), .9);
+  }
+
+  h3, h4 {
+    margin: 0;
+    color: white;
+  }
+
+  h3 { 
+    font-size: 1.6rem;
+  }
+  h4 { 
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+p.large-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  a { 
+    text-decoration: none; 
+    border-bottom: 1px solid rgba(black, .2);
+  }
+  a:hover {
+    background-color: rgba(black, .1);
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+// ADD THIS TO STYLEGUIDE
+
+.button--outline {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+
+  &:hover {
+    background-color: rgba(darken($main-color, 7), .9);
+    color: white;
+  }
+}
+
+.button--main-color {
+  background-color: $main-color;
+
+  &:hover { background-color: darken($main-color, 4); } 
+}

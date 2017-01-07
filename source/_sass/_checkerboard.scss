@@ -1,0 +1,71 @@
+// ADD TO STYLEGUIDE
+
+// This is a very specific component. 
+// Requiring a strict structure of foundation elements.
+
+// This is an example of the structure
+
+// <section class="checkerboard">
+// <div class="row expanded collapse">
+//   <div class="column large-4">
+//     <div class="checkerboard__content">...</div>
+//   </div>
+//   <div class="column large-4">
+//     <div class="checkerboard__content">...</div>
+//   </div>
+//   <div class="column large-4">
+//     <div class="checkerboard__content">...</div>
+//   </div>
+// </div>
+// <div class="row expanded collapse">
+//   <div class="column large-4">
+//     <div class="checkerboard__content">...</div>
+//   </div>
+//   <div class="column large-4">
+//     <div class="checkerboard__content">...</div>
+//   </div>
+//   <div class="column large-4">
+//     <div class="checkerboard__content">...</div>
+//   </div>
+// </div>
+// </section>
+
+.checkerboard {
+  .row:nth-of-type(odd) {
+    .column:nth-of-type(odd),
+    .columns:nth-of-type(odd) {
+      background-color: rgba(black, .05);
+    }
+  }
+  .row:nth-of-type(even) {
+    .column:nth-of-type(even),
+    .columns:nth-of-type(even) {
+      background-color: rgba(black, .05);
+    }
+  }
+
+  &__content { 
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__header {
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+  &__main { 
+    flex:1; 
+    margin: 0;
+  }
+  &__footer {
+    margin: 30px 0 0;
+
+    > a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+}

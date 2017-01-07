@@ -1,0 +1,95 @@
+.dual-panel {
+  @include breakpoint($large) {
+    position: relative;
+  }
+
+  &--img-bg {
+    background: url(../images/temporary.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  &__p {
+    padding-top: 150px!important;
+    padding: 100px;
+    margin: 0;
+    @include breakpoint($small-only) {
+      font-size: 1.2rem;
+      padding: 30px;
+      padding-top: 50px!important;
+    }
+
+    &--mod {
+      padding-right: 100px;
+      padding-left: 100px;
+
+      &--last {
+        padding-bottom: 200px;
+      }
+    }
+  }
+
+  &__first-panel {
+    // width: 100%!important;
+    background-color: $main-color;
+    color: $gray;
+    font-size: 1.7rem;
+    text-align: right;
+
+    &__logo {
+      width: 30%;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      padding-top: 100px;
+      @include breakpoint($small-only) {
+        padding-right: 25px;
+        padding-top: 70px;
+        width: 25%;
+      }
+    }
+
+    &--transparent {
+      display: none;
+    }
+  }
+
+  &__second-panel {
+
+    background-color: $gray;
+    height: 100%!important;
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+
+    @include breakpoint($small-only) {
+      padding-bottom: 150px;
+    }
+
+    @include breakpoint($large) {
+      position: absolute;
+    }
+
+    &--yellow-opaque {
+      background-color: $yellow;
+      opacity: 0.9;
+      color: $gray;
+      height: 100%;
+    }
+
+    .link {
+      text-decoration: none;
+      border-bottom: 2px solid $yellow;
+
+      &:hover {
+        border-bottom: 2px solid $gray;
+      }
+    }
+  }
+
+
+  h5 {
+    margin: 0;
+    padding-top: 150px;
+    padding-left: 100px;
+  }
+
+}

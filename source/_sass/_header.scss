@@ -1,17 +1,12 @@
 .top-bar {
-  &--transparent {
-    background-color: transparent;
+  &--transparent { 
+    background-color: rgba(black, .2); 
+    position: relative;
   }
 
-  .bottom-nav-text {
-    font-size: .8rem;
-  }
+  .bottom-nav-text { font-size: .8rem; }
 
-  &__logo {
-    img {
-      padding-right: 50px;
-    }
-  }
+  &__logo img { padding-right: 50px; }
 }
 
 .main-menu:not(.m-active) {
@@ -20,7 +15,16 @@
 
 .top-section {
   margin-top: -50px;
+  
+  &__band {
+    background-color: rgba($main-color, .95);
+  }
 
+  &--bg {
+    background-position: center;
+    background-size: cover;
+    padding: 140px 0;
+  }
 
   &--yellow {
     background-color: $yellow;
@@ -40,20 +44,14 @@
     padding: 0;
     margin: 0;
     @include breakpoint($small-only) {
-
     }
-
   }
 
-
-
-
   &--logo {
-    padding-bottom: 130px;
+    
   }
 
   &__logo {
-    padding-top: 50px;
     z-index: 10;
     position: relative;
     // padding-top: 5%;
@@ -76,16 +74,7 @@
   }
 }
 
-.webgl {
-  .top-section {
-    &__backup-logo {
-      display: none;
-      // width: 150px;
-      // padding-bottom: 10%;
-      // padding-top: 15%;
-    }
-  }
-}
+.webgl .top-section__backup-logo { display: none; }
 
 .no-webgl {
   .top-section {

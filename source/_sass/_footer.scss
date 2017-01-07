@@ -1,37 +1,62 @@
 .footer {
   background-color: $main-color;
-  height: 450px;
-  padding: 0;
-  position: relative;
-  @include breakpoint($small-only) {
-    height: 400px;
+  padding: 0 0 30px 0;
+
+  h5 {
+    margin: 10px 0;
+    color: darken($main-color, 20);
+  }
+
+  &__nav {
+    color: rgba(black, .5);
+    font-size: 1rem;
+    padding: 25px;
+
+    a { 
+      display: block;
+      border-bottom: 1px solid rgba(black, .1);
+      padding: 5px;
+    }
+
+    a:hover {
+      background-color: rgba(black, .05);
+      text-decoration: none;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: darken($main-color, 15);
+
+    p:first-of-type { margin-top: 0; }
+  }
+
+  &__panel {
+    padding: 10px 25px;
   }
 
   &--darken {
-    background-color: darken($main-color, 4) !important;
-    height: 80px;
+    background-color: darken($main-color, 4);
     width: 100%;
   }
+}
 
-  &__icons {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @include breakpoint($small-only) {
-      position: relative;
-      left: 20px;
-      top: 170px;
-    }
+  &__item {
+    flex: 1;
+    max-width: 160px;
+    margin: 15px;
+    display: inline-block;
   }
 
-  &__partner-logo {
-    color: white;
-    display: inline;
+  &--nyu { max-width: 200px; }
+  &--on { max-width: 70%; }
 
-    img {
-      opacity: 1;
-      padding-right: 50px;
-    }
+  &--govlab {
+
   }
 }
