@@ -13,10 +13,20 @@ $gray: rgba(black, 0.7);
 @import 'custom_styles';
 @import 'base';
 @import 'header';
+@import 'button-extend';
+@import 'icon-box';
+@import 'checkerboard';
+@import 'callout';
 @import 'panels';
+@import 'dual-panel';
+@import 'bg-panel';
 @import 'footer';
 @import 'table';
 @import 'case';
+
+@import 'custom-sections';
+
+
 
 
 .material-icons {
