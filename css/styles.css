@@ -595,6 +595,37 @@
   .events-page .top-section h1 {
     text-transform: uppercase; }
 
+#introduction .section {
+  background-color: black; }
+
+.fp-enabled body .top-bar {
+  background-color: black !important;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 9;
+  top: 0px;
+  text-align: center;
+  height: 50px;
+  display: flex; }
+
+#fp-nav {
+  opacity: .5 !important; }
+
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent rgba(255, 255, 255, 0.4) transparent transparent !important; }
+
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.4) !important; }
+
+.fp-tooltip {
+  color: black !important; }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
